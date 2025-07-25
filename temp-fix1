@@ -1,1 +1,0 @@
-sed -i 's|users/getUser|auth/getUser|g' /usr/share/vitxi/frontend/dist/assets/PhoneBook.c2964524.js
