@@ -1,0 +1,1996 @@
+{
+	"app": {
+		"title": "Aplikace je otevřená v jiném panelu",
+		"explanation": "Aby se předešlo duplicitnímu zvonění, kolizím hovorů a neočekávanému chování, je povolen pouze jeden aktivní panel.",
+		"takeover": {
+			"can": "Nyní můžete ovládnout aplikaci v tomto panelu.",
+			"cannot": "V jiném panelu právě probíhá hovor. Můžete převzít kontrolu po jeho skončení.",
+			"button": "Použít zde",
+			"close": "Zavřít tento panel"
+		}
+	},
+	"about": {
+		"app_name": "{app_name} Omnikanálový komunikační systém",
+		"features": {
+			"calls": "Audio a video hovory",
+			"chats": "Chatujte se členy svého týmu",
+			"transfer_calls": "Přepojení s nebo bez oznámení"
+		},
+		"information": "{app_name} je plnohodnotný klient WebRTC se všemi funkcemi, které potřebujete."
+	},
+	"administration": {
+		"agent_profiles": {
+			"agent_pauses_reason": {
+				"description": "Důvody pauz se používají, když agent pozastaví relaci ve frontách",
+				"fields": {
+					"name": "Jméno"
+				},
+				"label": "Důvody pro pauzy",
+				"pause": "Pauza | Pauzy",
+				"rules": {
+					"name": "Název důvodu je povinný"
+				}
+			},
+			"agent_profile": "Profil agenta",
+			"default_profile_alert": "Výchozí profil nelze smazat.",
+			"description": "Vytvořte profily agentů, ve kterých můžete nastavit důvody pro pauzy. Profily lze přiřadit uživatelským rolím",
+			"fields": {
+				"crm_url": {
+					"actions": {
+						"add_parameter": "Přidat parametr",
+						"remove_parameter": "Odebrat parametr"
+					},
+					"description": "Nakonfigurujte koncový bod vašeho CRM pro ukládání dat z hovoru.",
+					"fields": {
+						"base_url": {
+							"invalid": "Adresa URL není platná",
+							"label": "Základní URL"
+						},
+						"dynamic_call_values": {
+							"call_type": {
+								"label": "Typ hovoru"
+							},
+							"callee_name": {
+								"label": "Jméno volaného"
+							},
+							"callee_number": {
+								"label": "Číslo volaného"
+							},
+							"caller_id_name": {
+								"label": "Jméno volajícího"
+							},
+							"caller_id_number": {
+								"label": "Číslo volajícího"
+							},
+							"hint": "Použijte dynamickou proměnnou",
+							"label": "Dynamická proměnná",
+							"queue": {
+								"label": "Fronta"
+							}
+						},
+						"parameter_name": {
+							"label": "Název parametru",
+							"placeholder": "https://your-crm.com"
+						},
+						"value": {
+							"label": "Hodnota"
+						}
+					},
+					"label": "URL CRM (volitelné)",
+					"preview": "Náhled URL"
+				},
+				"is_global": {
+					"description": "Pokud je zaškrtnuto, profil může být použit kterýmkoli z tenantů.",
+					"label": "je globální"
+				},
+				"website_tab": {
+					"hint": "Přidejte do aplikace vlastní kartu s vloženým webem",
+					"label": "Vlastní záložka webu",
+					"preview": "Náhled",
+					"tab_name": {
+						"label": "Název karty"
+					},
+					"url": {
+						"hint": "Zadejte zabezpečený web (https://), kterému můžete důvěřovat. To je důležité, aby byli vaši uživatelé v bezpečí.",
+						"label": "Webová adresa URL"
+					}
+				}
+			},
+			"module_name": "Profily agentů",
+			"profile": "Profil | Profily"
+		},
+		"blf_settings": {
+			"contact_control": {
+				"description": "Spravujte počet kontaktů BLF povolených na uživatele, abyste zabránili přetížení serveru a optimalizovali výkon. Nastavte hodnotu mezi 1 a 100.",
+				"fields": {
+					"label": "Omezit"
+				},
+				"label": "Ovládání kontaktů BLF"
+			},
+			"module_name": "Nastavení BLF"
+		},
+		"event_logs": {
+			"datetime_picker": {
+				"placeholder": "Vyberte rozsah data a času",
+				"shortcuts": {
+					"last_month": "Minulý měsíc",
+					"last_week": "Minulý týden",
+					"select_date": "Vyberte datum",
+					"select_time": "Vyberte čas",
+					"this_month": "Tento měsíc",
+					"this_week": "Tento týden",
+					"today": "Dnes",
+					"yesterday": "Včera"
+				}
+			},
+			"headers": {
+				"client_ip": "IP adresa",
+				"date": "Datum",
+				"device": "Prohlížeč/Zařízení",
+				"event": "Událost",
+				"metadata": "Metadata",
+				"module": "Modul",
+				"payload": "Užitečné zatížení",
+				"tenant": "Tenant",
+				"user": "Uživatel"
+			},
+			"info": "Prohlížeč hlavních událostí aplikace. Dostupné pouze v případě, že je aplikace nainstalována na stejném serveru jako ústředna.",
+			"module_name": "Protokoly událostí"
+		},
+        "global_setting": "globální nastavení",
+        "global_setting_hint": "Toto je globální nastavení a platí pro všechny nájemce",
+		"groups": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "Pro potvrzení zadejte {name}.",
+					"content": "Opravdu chcete smazat tuto skupinu? Všechny doručené pošty, konverzace a související data budou trvale smazána."
+				}
+			},
+			"description": "Aby uživatelé {app_name} byli mezi sebou viditelní, je nutné, aby každý uživatel měl přiřazenou skupinu a poté umožníme ostatním uživatelům přístup k zobrazení této skupiny. Tímto způsobem můžete vytvořit více skupin uživatelů a omezit je, které skupiny mohou vidět. Za tímto účelem nejprve vytvoříme název skupiny.",
+			"errors": {
+				"groups": "Skupiny nelze načíst",
+				"tenants": "Tenanty se nepodařilo načíst"
+			},
+			"fields": {
+				"description": "Popis",
+				"name": "Jméno",
+				"tenant": "Tenant"
+			},
+			"group": "skupina | skupiny",
+			"manage-users": "Přidat/odebrat uživatele",
+            "manage_members": "Spravovat členy",
+            "members_disabled_until_save": "Vytvořte skupinu pro správu členů.",
+			"module_name": "Skupiny",
+			"rules": {
+				"name": "Název skupiny je povinný",
+                "name_min": "Název skupiny musí mít alespoň 3 znaky",
+				"tenant": "Je vyžadován tenant"
+			},
+            "sections": {
+              "basic_info": "Základní informace",
+              "basic_info_hint": "Pojmenujte svou skupinu a popište její účel",
+              "members": "Členové",
+              "members_hint": "Zobrazit a spravovat členy této skupiny"
+            },
+			"settings": {
+				"member_limit": {
+					"confirm": {
+						"content": "⚠️ Upozornění: Nastavení limitu nad 150 může přetížit server a ovlivnit výkon. Pro lepší správu zvažte uspořádání uživatelů do různých skupin.",
+						"excessMembers": "Nový počet členů, který chcete nastavit, je nižší než aktuální počet členů. Budete muset ručně zkontrolovat a odstranit členy, abyste splnili nový limit."
+					},
+					"description": "Spravujte počet členů povolených na skupinu, abyste zabránili přetížení serveru a optimalizovali výkon.",
+					"fields": {
+						"label": "Omezit"
+					},
+					"label": "Limit členů"
+				},
+				"title": "Nastavení skupiny"
+			},
+            "tooltips": {
+              "tenant_scope": "Tato skupina bude patřit vybranému nájemci."
+            }
+		},
+		"inboxes": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "Pro potvrzení zadejte {name}.",
+					"content": "Opravdu chcete smazat tuto doručenou poštu? Všechny konverzace a související data budou trvale odstraněny."
+				}
+			},
+			"channels": {
+				"sms": {
+					"label": "Sms kanál",
+					"providers": {
+						"vitalpbx": {
+							"hint": "Nakonfigurujte svého poskytovatele SMS zde: Vaše instalace PBX > PBX/SMS/Poskytovatelé zpráv"
+						}
+					}
+				},
+				"whatsapp": {
+					"api_key": {
+						"label": "Token api",
+						"placeholder": "Zadejte přístupový token uživatele firemního účtu"
+					},
+					"business_account_id": {
+						"label": "ID obchodního účtu",
+						"placeholder": "Zadejte ID obchodního účtu z vývojářského panelu Facebooku."
+					},
+					"label": "Kanál WhatsApp",
+					"phone_number": {
+						"invalid": "Zadejte platné telefonní číslo začínající znakem + a bez mezer.",
+						"placeholder": "+1234567890 (bez mezer)"
+					},
+					"phone_number_id": {
+						"label": "ID telefonního čísla",
+						"placeholder": "Zadejte ID telefonního čísla z Facebook Developer Dashboard."
+					},
+					"webhook_verification_token": {
+						"hint": "Tento token slouží k ověření pravosti koncového bodu Webhooku.",
+						"label": "Ověřovací token webhooku"
+					},
+					"whatsapp_templates": {
+						"sync": {
+							"label": "Synchronizovat zprávu šablon"
+						}
+					}
+				}
+			},
+			"confirm_navigation": "Nedokončili jste nastavení. Opravdu chcete tuto stránku opustit?",
+			"description": "Modul správy doručené pošty umožňuje vytvářet a spravovat různé doručené pošty. Usnadňuje efektivní organizaci příchozí komunikace.",
+			"form": {
+				"fields": {
+					"assignment_config": {
+						"auto_assignment_limit": {
+							"description": "Omezte maximální počet konverzací z této doručené pošty, které lze automaticky přiřadit agentovi.",
+							"label": "Limit automatického přiřazení"
+						},
+						"label": "Zadání konverzace",
+						"strategy": {
+							"label": "Strategie",
+							"options": {
+								"round_robin": {
+									"hint": "Distribuuje konverzace online agentům v cyklickém pořadí.",
+									"label": "Round Robin"
+								},
+								"self_assignment": {
+									"hint": "Umožňuje agentům přiřadit si konverzace.",
+									"label": "Samopřiřazení agenta"
+								}
+							}
+						}
+					},
+					"channel_info": {
+						"sms": {
+							"phone_number": {
+								"label": "Telefonní číslo"
+							}
+						},
+						"whatsapp": {
+							"phone_number": {
+								"label": "Obchodní číslo WhatsApp"
+							}
+						}
+					},
+					"channel_type": {
+						"choose": "Vyberte kanál",
+						"label": "Typ kanálu"
+					},
+					"greeting": {
+						"enable_channel_greeting": {
+							"description": "Automaticky posílejte uvítací zprávy zákazníkům, jakmile zahájí konverzaci a pošlou první zprávu.",
+							"label": "Povolit pozdrav kanálu"
+						},
+						"greeting_message": {
+							"label": "Pozdrav",
+							"limit": "Max {count} znaků.",
+							"placeholder": "Ahoj! děkujeme, že jste nás kontaktovali. Brzy se vám bude věnovat jeden z našich agentů."
+						},
+						"label": "Pozdrav"
+					},
+					"group": {
+						"hint": "Vyberte skupinu, do které bude doručená pošta patřit."
+					},
+					"inbox": {
+						"create": "Vytvořit schránku"
+					},
+					"name": {
+						"placeholder": "Například Podpora, Prodej, Marketing"
+					},
+					"provider": {
+						"options": {
+							"pbx": {
+								"hint": "Připojeno přes PBX API",
+								"label": "PBX"
+							}
+						}
+					},
+					"webhook": {
+						"label": "URL adresa webhooku",
+						"sms": {
+							"hint": "Zkopírujte URL adresu a vložte ji do pole „URL pro oznámení události“ v nastavení vybraného poskytovatele čísel: Vaše instalace PBX > PBX/SMS/Poskytovatelé zpráv."
+						},
+						"whatsapp": {
+							"hint": "Nakonfigurujte webhook v aplikaci Facebook Developer."
+						}
+					}
+				}
+			},
+			"inboxes": "Doručená pošta | Doručená pošta",
+			"module_name": "Doručená pošta",
+			"new_inbox": "Nová schránka",
+			"reports": {
+				"agents": {
+					"status": {
+						"busy": {
+							"label": "Zaneprázdněný"
+						},
+						"offline": {
+							"label": "Offline"
+						},
+						"online": {
+							"label": "Online"
+						},
+						"total": {
+							"label": "Celkem"
+						}
+					}
+				},
+				"conversations": {
+					"agent_productivity": "Produktivita agenta",
+					"agents": {
+						"handled": "Vyřízené konverzace",
+						"title": "Konverzace podle agentů"
+					},
+					"avg_first_response_minutes": "Průměrný čas do první odpovědi (v minutách)",
+					"avg_resolution_minutes": "Průměrný čas vyřešení (v minutách)",
+					"avg_resolution_time": "Průměrná doba vyřešení",
+					"conversations_over_time": "Konverzace v průběhu času",
+					"first_response_time": "Doba první reakce",
+					"messages_by_channel": "Zprávy podle kanálu",
+					"messages_received": "Přijaté zprávy",
+					"resolution_time": "Doba rozlišení",
+					"resolved": "Vyřešeno",
+					"resolved_conversations": "Vyřešené konverzace",
+					"started": "Založeno",
+					"title": "Rozhovory",
+					"total": "Celkový počet rozhovorů",
+					"total_conversations": "Celkový počet konverzací",
+					"total_messages_received": "Přijaté zprávy",
+					"total_messages_sent": "Odeslané zprávy",
+					"traffic": {
+						"title": "Provoz konverzace"
+					}
+				},
+				"overview": {
+					"title": "Přehled"
+				},
+				"reports": "Zprávy"
+			},
+			"setup_instructions": {
+				"label": "Pokyny k nastavení",
+				"short_description": "Vaše schránka je nastavena a připravena k použití! Začněte snadno spravovat své zprávy a konverzace.",
+				"title": "Vaše schránka je nastavena a připravena k použití!"
+			},
+			"tabs": {
+				"general": {
+					"label": "Obecné"
+				},
+				"messaging_and_routing": {
+					"label": "Zprávy a směrování"
+				},
+				"phone_number_and_api": {
+					"label": "Telefonní číslo a API"
+				}
+			}
+		},
+		"manage": "spravovat",
+		"module_name": "správa",
+		"presence": {
+			"description": "Zde může správce systému vytvořit různé stavy přítomnosti, které mohou uživatelé používat. Ve výchozím nastavení je k dispozici pět (5) stavů, které jsou k dispozici, Nerušit, Přestávka na oběd a Služební cesta, můžete však přidat další.",
+			"info": {
+				"default_status": "Výchozí stavy nelze upravovat ani mazat."
+			},
+			"module_name": "stav přítomnosti",
+			"offline": "offline",
+			"online": "online",
+			"select_icon": "vyberte ikonu",
+			"status": {
+				"available": "k dispozici",
+				"away": "pryč",
+				"business_trip": "služební cesta",
+				"do_not_disturb": "Nerušit",
+				"lunch_break": "polední přestávka"
+			},
+			"status_color": "stavová barva"
+		},
+		"role_manager": {
+			"agent_profile": {
+				"hint": "Přiřaďte profil agenta, který se má použít v případě, že má přiřazená role oprávnění call centra."
+			},
+			"default_roles": {
+				"admin": "správce tenantu",
+				"agent": "agent",
+				"super-admin": "super správce",
+				"user": "uživatel"
+			},
+			"description": "upravovat nebo vytvářet vlastní role a přidělovat oprávnění podle rolí, které budou uživatelé vykonávat.",
+			"full_access": "plný přístup",
+			"module_name": "manažer rolí",
+			"permissions": {
+				"label": "oprávnění | oprávnění",
+				"permissions": {
+					"assigned-tenant": "Přidělený nájemce",
+					"call-center": {
+						"call-center-features": {
+							"description": "Jsou povoleny funkce call centra, jako je přihlášení a odhlášení ve frontách.",
+							"label": "Funkce call centra"
+						},
+						"group_name": "Call centrum",
+						"queue-selection": {
+							"description": "Když je tato možnost zaškrtnuta, agent bude moci vybrat fronty, do kterých se bude přihlašovat. Pokud není vybráno, přihlásí se do všech front, do kterých patří.",
+							"label": "Výběr z fronty"
+						}
+					},
+					"management": {
+						"agent-profiles": {
+							"description": "Zaškrtněte tuto možnost, pokud chcete povolit přístup k modulu profilů agentů",
+							"label": "Profily agentů"
+						},
+						"events-log": {
+							"description": "Oprávnění pro přístup k prohlížeči událostí aplikace (dostupné pouze v případě, že je aplikace nainstalována na stejném serveru jako PBX).",
+							"label": "Protokoly událostí"
+						},
+						"group_name": "Řízení",
+						"groups": {
+							"description": "Zaškrtněte tuto možnost, pokud chcete povolit přístup k modulu skupin.",
+							"label": "Skupiny"
+						},
+						"inboxes": {
+							"description": "Zaškrtněte tuto možnost, pokud chcete povolit přístup k modulu doručené pošty.",
+							"label": "Doručená pošta"
+						},
+						"roles": {
+							"description": "Zaškrtněte tuto možnost, pokud chcete povolit přístup k modulu rolí.",
+							"label": "Role"
+						},
+						"users": {
+							"description": "Zaškrtněte tuto volbu, pokud chcete povolit přístup k uživatelskému modulu.",
+							"label": "Uživatelé"
+						}
+					},
+					"misc": {
+						"chat": {
+							"description": "Uživatelé budou moci odesílat a přijímat zprávy ostatním členům skupiny a od nich.",
+							"label": "Povídání"
+						},
+						"conversation-assignment": {
+							"description": "Toto oprávnění uděluje možnost přiřadit konverzace z doručené pošty jiným agentům.",
+							"label": "Zadání konverzace"
+						},
+						"group_name": "Smíšený",
+						"update_social_networks": {
+							"description": "Oprávnění ke konfiguraci sociálních sítí, které se zobrazí v zápatí.",
+							"label": "Aktualizujte sociální sítě"
+						},
+						"view-recordings": {
+							"description": "Uživatel bude moci vidět své nahrávky hovorů generované ústřednou",
+							"label": "Zobrazit nahrávky"
+						}
+					}
+				},
+				"select_all": "vybrat vše",
+				"unselect": "zrušit výběr"
+			},
+			"role": "role | role"
+		},
+		"social_networks": {
+			"description": "Zde můžete nakonfigurovat sociální média, která se zobrazí v zápatí.",
+			"module_name": "sociální sítě",
+			"socials": {
+				"facebook": {
+					"hint_text": "Nastavte uživatelské jméno své facebookové stránky",
+					"prefix": "https://facebook.com/"
+				},
+				"instagram": {
+					"hint_text": "Nastavte uživatelské jméno pro svůj účet Instagram",
+					"prefix": "https://instagram.com/"
+				},
+				"twitter": {
+					"hint_text": "Nastavte uživatelské jméno pro svůj twitterový účet",
+					"prefix": "https://twitter.com/"
+				},
+				"youtube": {
+					"hint_text": "Nastavte uživatelské jméno svého kanálu youtube",
+					"prefix": "https://youtube.com/"
+				}
+			}
+		},
+		"user_manager": {
+			"description": "vytvořit různé uživatele pro {app_name}. Spravujte jejich rozšíření a oprávnění z tohoto modulu.",
+			"error_on_delete": "Není povoleno smazat jediného uživatele z aplikace",
+			"module_name": "správce uživatelů",
+			"sections": {
+				"details": {
+					"change_password": "změnit uživatelské heslo (volitelné)",
+					"permissions": "oprávnění",
+					"role": "role",
+					"role_with_call_center_features": "tato role má funkce call centra.",
+					"section_name": "detaily uživatele",
+					"validations": {
+						"name": "Jméno je povinné",
+						"password": "Heslo musí mít minimálně 8 znaků",
+						"role": "Je vyžadována uživatelská role",
+						"username": "Uživatelské jméno je povinné"
+					}
+				},
+				"device": {
+					"can_view_recordings": "Uživatel si může prohlížet své nahrávky",
+					"device": "pobočka",
+					"device_not_found": "Přiřazené zařízení, {zdroj}, nebylo na ústředně nalezeno nebo není dostupné.",
+					"group_module_info": "Pro vybraného tenanta nebyly zjištěny žádné skupiny, skupinu můžete vytvořit zde:",
+					"group_placeholder": "vyberte skupinu",
+					"groups": "skupiny",
+					"groups_hint": "určit, do kterých skupin uživatel patří",
+					"no_devices": "nejsou k dispozici žádná zařízení",
+					"no_phonebooks": "nejsou k dispozici žádné telefonní seznamy",
+					"phonebooks": "telefonní seznamy",
+					"phonebooks_hint": "vyberte telefonní seznamy k přiřazení",
+					"remove_device": "odebrat přiřazené zařízení",
+					"section_name": "uživatelská data",
+					"tenant": "tenant",
+					"validations": {
+						"device": "vyberte zařízení, které chcete přiřadit",
+						"phonebooks": "vyberte prosím telefonní seznamy, které chcete přiřadit",
+						"tenant": "vyberte tenant, kterého chcete přiřadit"
+					}
+				}
+			},
+			"user": "uživatel | uživatelů",
+			"user_already_exists": "Uživatelské jméno již existuje."
+		}
+	},
+	"app_setup": {
+		"alerts": {
+			"error": "Aplikace {app_name} není na poskytnutém hostiteli nainstalována",
+			"success": "Aplikace byla úspěšně zjištěna"
+		},
+		"fields": {
+			"auto_launch": {
+				"label": "Automatické spouštění aplikace při startu OS"
+			},
+			"host": {
+				"placeholder": "vaše-pbx.com"
+			}
+		},
+		"title": "Zadejte hostitele PBX, kde je nainstalována aplikace {app_name}"
+	},
+	"calls": {
+		"actions": {
+			"answer": "Přijmout",
+			"audio_answer": "Přijmout zvuk",
+			"call": "Volání",
+			"cancel_share_screen": "Zrušit sdílení obrazovky",
+			"crm": {
+				"label": "CRM"
+			},
+			"direct_call": {
+				"label": "Přímé volání"
+			},
+			"disable_camera": "Zakázat kameru",
+			"enable_camera": "Povolit kameru",
+			"forward": {
+				"forward": "Přesměrovat hovor"
+			},
+			"hang_up": "Zavěsit",
+			"hold": {
+				"hold": "Nastavit přidržení",
+				"unhold": "Obnovit hovor"
+			},
+			"keypad": "Klávesnice",
+			"make_call": "Zavolat",
+			"mute_audio": "Ztlumit zvuk",
+			"mute_video": "Ztlumit video",
+			"reject": "Odmítnout",
+			"share_screen": "Sdílet obrazovku",
+			"transfer": {
+				"alerts": {
+					"accepted": "Přijato",
+					"failed": "Nepodařilo se",
+					"progress": "Probíhá",
+					"request_failed": "Požadavek se nezdařil",
+					"request_succeeded": "Žádost byla úspěšná",
+					"success": "Úspěšné přepojení",
+					"trying": "Snažím se"
+				},
+				"complete_transfer": "Přepojení kompletní",
+				"label": "Zadejte číslo na které chcete přepojit",
+				"transfer": "Přepojit",
+				"type": {
+					"attended": "S oznámením",
+					"blind": "Bez oznámení"
+				}
+			},
+			"unmute_audio": "Zapnout zvuk",
+			"video_answer": "Video"
+		},
+		"call": "Hovor | Hovory",
+		"conference": {
+			"actions": {
+				"end_conference": "Konec konference",
+				"end_conference_and_hang_up": "Ukončete konferenci a zavěste hovory",
+				"start_audio_conference": "Spusťte zvukovou konferenci",
+				"start_conference": "Zahájit konferenci"
+			},
+			"add_participant": "Přidat účastníka",
+			"audio_conferences": "Audio konference",
+			"conference": "Konference",
+			"join_call": "Připojte se ke konferenčnímu hovoru",
+			"participant_limit": "Až {limit} účastníků.",
+			"participants": "Účastníci",
+			"status": {
+				"in_audio_conference": "Na audiokonferenci"
+			},
+			"type": {
+				"audio_conference": "Audio konference",
+				"video_conference": "Videokonference"
+			}
+		},
+		"current_call": "Aktuální hovor",
+		"current_calls": "Aktuální hovory",
+		"incoming": {
+			"auto_answer": {
+				"label": "Automatické vyzvednutí je povoleno"
+			},
+			"incoming_from": "Příchozí hovor od {uri}",
+			"type": {
+				"audio_call": "Audio hovor",
+				"video_call": "Videohovor"
+			}
+		},
+		"info": {
+			"answered": "Odpovězeno",
+			"auto_answered": "Hovor přijat automaticky",
+			"busy": "Obsazený",
+			"calling": "Volání",
+			"call_forwarding_to": "Hovor je přesměrován na {target}...",
+			"unknown_destination": "Neznámý cíl",
+			"call_on_hold": "Hovor je podržen",
+			"connected": "Spojeno",
+			"duration": "Trvání",
+			"failed": "Nepodařilo se",
+			"history": "Historie hovorů",
+			"in_progress": "Probíhá",
+			"incoming_call": "Příchozí hovor",
+			"info": "informace o volání",
+			"media_errors": {
+				"DevicesNotFoundError": "nebyla zjištěna žádná zvuková nebo video zařízení pro inicializaci hovoru"
+			},
+			"no_answer": "žádná odpověď",
+			"ringing": "zvonění",
+			"tenant": "tenant",
+			"type": "typ hovoru",
+			"types": {
+				"incoming": "přichozí",
+				"internal": "interní",
+				"outgoing": "odchozí",
+				"transit": "tranzit",
+				"undefined": "nedefinováno"
+			}
+		},
+		"line": "řádek {řádek}",
+		"loaders": {
+			"connecting": "spojování"
+		},
+		"media_errors": {
+			"DevicesNotFoundError": "nebyla detekována žádná audio nebo video zařízení pro inicializaci hovoru"
+		},
+		"search": {
+			"hint": "Abyste mohli použít vyhledávací pole, musíte vybrat filtr „Vše“.",
+			"label": "Hledejte podle zdroje nebo cíle"
+		}
+	},
+	"chats": {
+		"add_contact_to_chat": "Chcete-li začít chatovat, přidejte kontakt",
+		"attachments": {
+			"attachment": "Příloha | Přílohy",
+			"types": {
+				"audio": "Audio",
+				"file": "Soubor",
+				"image": "Obrázek",
+				"video": "Video"
+			}
+		},
+		"chat": "Chat | Chaty",
+		"conversation": "Konverzace | Konverzace",
+		"conversation_actions": {
+			"clear": "Vymazat historii konverzace",
+			"delete": "Vymazat",
+			"load_more": "Načíst více"
+		},
+		"conversation_types": {
+			"sip": "SIP konverzace",
+			"vitxi": "Konverzace VitXi"
+		},
+		"draft": "Návrh",
+		"exceptions": {
+			"conversation": "Při načítání konverzace došlo k chybě.",
+			"messages": "Zprávy se nepodařilo načíst"
+		},
+		"message": "Zpráva",
+		"message_actions": {
+			"copy": "Kopírovat",
+			"delete": "Vymazat",
+			"forward": "Předat",
+			"reply": "Odpovědět"
+		},
+		"message_rules": {
+			"sip_message_character_limit": "Je povoleno maximálně 1023 znaků"
+		},
+		"new": {
+			"placeholder": {
+				"description": "Vyberte účastníka a napište svou první zprávu níže.",
+				"first_message": "Níže napište svou první zprávu.",
+				"heading": "Začněte novou konverzaci"
+			}
+		},
+		"new_conversation": "Nová konverzace",
+		"new_message": "Nová zpráva",
+		"say_hello": "Pozdravte",
+		"start_conversation": "Zahajte konverzaci",
+		"suggestions": {
+			"app": {
+				"description": "Chatujte v aplikaci",
+				"label": "App Chat",
+				"search_placeholder": "Vyhledejte uživatele podle jména, e-mailu nebo přípony"
+			},
+			"sip": {
+				"description": "Chatujte se svými uloženými kontakty",
+				"label": "SIP chat",
+				"search_placeholder": "Vyhledejte kontakt nebo zadejte číslo pobočky"
+			}
+		},
+		"typing": "píše"
+	},
+	"contacts": {
+		"actions": {
+			"edit": {
+				"label": "Upravit kontakt"
+			},
+			"favorites": {
+				"mark_as_favorite": "Označit jako oblíbené",
+				"unmark_as_favorite": "Zrušit označení jako oblíbené"
+			}
+		},
+		"contact_info": {
+			"company": "Společnost: {source}",
+			"email": "E-mail",
+			"info": "Kontaktní informace",
+			"job_title": "Pracovní pozice: {source}",
+			"type": "Typ: {source}",
+			"types": {
+				"external": "Externí kontakt",
+				"internal": "Interní kontakt"
+			}
+		},
+		"contacts": "Kontakt | Kontakty",
+		"create": {
+			"add": "Přidat kontakt",
+			"errors": {
+				"save": "Chyba při přidávání kontaktu"
+			},
+			"fields": {
+				"avatar": {
+					"label": "Avatar",
+					"limit_size_alert": "Velikost avatara by měla být menší než 512 kb!",
+					"placeholder": "Vyberte si avatara"
+				},
+				"blf": {
+					"description": "Povolit zobrazení stavů BLF.",
+					"label": "BLF"
+				},
+				"company": "Společnost",
+				"contact_type": "Typ kontaktu",
+				"contact_types": {
+					"external": "Externí",
+					"internal": "Interní"
+				},
+				"email": "E-mail",
+				"first_name": "Křestní jméno",
+				"job_title": "Pracovní pozice",
+				"last_name": "Příjmení",
+				"location": "Umístění",
+				"phone": {
+					"add_phone": "Přidat telefon",
+					"country": "Země",
+					"extension": "Pobočka",
+					"invalid_number": "Neplatné číslo",
+					"phone": "Telefon | Telefony",
+					"phone_number": "Číslo",
+					"prefix": "Prefix",
+					"required_phone": "Musíte přidat alespoň jeden telefon",
+					"type": "Typ",
+					"types": {
+						"alerts": {
+							"external": {
+								"content": "Jsou-li telefony externí, budou zprávy (SMS) odesílány prostřednictvím svazků SMS nakonfigurovaných a přiřazených administrátorem.",
+								"title": "Externí telefon"
+							},
+							"internal_sip": {
+								"content": "Pokud jsou telefony typu \"Interní SIP\", budou zprávy odesílány přes Asterisk. Zprávy jsou pouze textového typu.",
+								"title": "Interní (SIP)"
+							}
+						},
+						"external": "Externí",
+						"internal_sip": "Interní (SIP)"
+					}
+				}
+			},
+			"required_fields_alert": "označuje povinné pole"
+		},
+		"favorites": {
+			"favorites": "oblíbené"
+		},
+		"my_contacts": "Moje kontakty",
+		"no_contacts": "nejsou k dispozici žádné kontakty",
+		"pagination_info": "Zobrazuje se {startIndex}-{endIndex} z {total} kontaktů",
+		"rules": {
+			"phone": {
+				"dial_code": {
+					"required": "Vyberte prosím vytáčecí kód ze seznamu"
+				},
+				"invalid": "Telefonní číslo musí být ve formátu E.164."
+			}
+		}
+	},
+	"device": {
+		"actions": {
+			"refresh": "Obnovit"
+		},
+		"alerts": {
+			"not_found": "Nelze se zaregistrovat, zařízení související s tímto účtem neexistuje.\n Pro další podrobnosti kontaktujte správce."
+		},
+		"call_center": {
+			"active_queues": "Aktivní fronty",
+			"alerts": {
+				"failed": {
+					"login": "Při pokusu o přihlášení došlo k neočekávané chybě. Ověřte si prosím u svého správce, zda jsou vám přiřazeny fronty."
+				},
+				"no_active_queues": "Žádné aktivní fronty",
+				"no_queues_paused": "Žádné fronty v pauze",
+				"success": {
+					"login": "Úspěšně jste se přihlásili do front.",
+					"logout": "Úspěšně jste se odhlásili",
+					"pause": "Úspěšně přepnuto do pauzy",
+					"unpause": "Úspěšně obnoveno"
+				}
+			},
+			"default_reasons": {
+				"administrative": "Administrativa",
+				"break": "Přestávka",
+				"lunch": "Oběd",
+				"wc": "WC"
+			},
+			"manage": {
+				"tabs": {
+					"logged_in_queues": "Přihlášen ve frontách",
+					"logged_out_queues": "Odhlášen z front",
+					"paused_queues": "Fronty v pauze"
+				}
+			},
+			"queue": "Fronta | Fronty",
+			"queue_actions": {
+				"login": "Přihlášení",
+				"login_all": "Přihlášení všude",
+				"logout": "Odhlášení",
+				"logout_all": "Odhlásit se všude",
+				"manage": "Spravovat",
+				"pause": "Pauza",
+				"pause_all": "Do pauzy všude",
+				"pause_section_title": "Vyberte fronty, které chcete do pauzy.",
+				"reload_queues": "Znovu načíst fronty",
+				"select_queues": "Vyberte fronty",
+				"unpause": "Zrušit pauzy",
+				"unpause_all": "Zrušit pauzy všude",
+				"unpause_section_title": "Vyberte fronty, u kterých chcete zrušit pauzu."
+			},
+			"queues_paused": "Fronty v pauze",
+			"reason": "Důvod",
+			"tooltips": {
+				"is_active": "Aktivní v {count} frontách",
+				"logged_out_queues": "Počet odhlášených front: {count}",
+				"logged_queues": "Přihlášeno do {count} front.",
+				"login": "Přihlášení do front",
+				"paused_queues": "{count} front v pauze."
+			}
+		},
+		"disconnected": {
+			"reconnect": "Zkuste se nyní připojit",
+			"reconnection_attempt": "Pokus o opětovné připojení v",
+			"seconds": "sekundy",
+			"ssl_error": "Zkontrolujte, zda je povolen port {port}:",
+			"title": "Spojení s vaší ústřednou se nepodařilo navázat."
+		},
+		"status": {
+			"registered": "registrovaný",
+			"sending_registration": "odeslání registrace",
+			"unregistered": "neregistrovaný"
+		},
+		"unregistered": {
+			"title": "Vaše zařízení není zaregistrováno. Chcete-li se vyhnout zmeškaným hovorům, obraťte se na správce ústředny.",
+			"try_register": "zkuste se zaregistrovat"
+		}
+	},
+	"directories": {
+		"directory": "Adresář | Adresáře",
+		"info": {
+			"actions": "Akce",
+			"email": "E-mail",
+			"home_number": "Číslo domů",
+			"job_title": "Pracovní pozice",
+			"mobile_number": "Mobilní číslo",
+			"name": "Jméno",
+			"organization": "Organizace",
+			"telephone": "Telefon"
+		},
+		"loading": "Načítání kontaktů",
+		"no_assigned": "Nemáte přiřazené telefonní seznamy",
+		"no_contacts": "Žádná data k zobrazení",
+		"type": {
+			"external": "Externí",
+			"internal": "Interní"
+		}
+	},
+	"export": {
+		"alerts": {
+			"success": "Data byla úspěšně exportována"
+		},
+		"delimiter": {
+			"label": "Vyberte oddělovač csv",
+			"options": {
+				"comma": "Čárka (,)",
+				"semicolon": "středník (;)"
+			}
+		}
+	},
+	"footer": {
+		"copyright": "{app_name} Omnikanálový komunikační systém – {company} Copyright © {year}",
+		"documentation": "Dokumentace a další informace",
+		"slogan": "Sjednocená komunikace"
+	},
+	"globals": {
+		"actions": {
+			"back": "Zpět",
+			"cancel": "Zrušit",
+			"create": {
+				"create": "Vytvořit",
+				"success": "Zdroj {source} byl úspěšně vytvořen"
+			},
+			"delete": {
+				"delete": "Smazat",
+				"success": "Zdroj {source} byl úspěšně smazán"
+			},
+			"done": "Hotovo",
+			"edit": "Upravit",
+			"export": "Exportovat",
+			"import": "Importovat",
+			"reset": "Resetovat",
+			"restart": "Restartovat",
+			"save": "Uložit",
+			"update": {
+				"success": "Zdroj {source} byl úspěšně aktualizován",
+				"update": "Aktualizovat"
+			}
+		},
+		"alerts": {
+			"actions": {
+				"close": "Zavřít",
+				"ok": "Ok",
+				"view": "Pohled"
+			},
+			"avatar": {
+				"invalid_file_size": "Váš soubor je příliš velký! Vyberte prosím obrázek menší než 2 MB",
+				"invalid_file_type": "Vyberte prosím platný obrázek"
+			},
+			"confirm": {
+              "switch_tenant": {
+                "content": "Máte neuložené změny. Přepnutí nájemce je může ztratit. Pokračovat?",
+                "title": "Přepnout na nájemce {name}?"
+              },
+              "delete": {
+					"content": "Opravdu chcete smazat tento {source}?",
+					"title": "Smazat {name}"
+				}
+			},
+			"dev_console_alert_content": "Tato funkce prohlížeče je určena pro vývojáře. Pokud vám někdo dal pokyn, abyste sem něco zkopírovali a vložili, abyste aktivovali funkci, jedná se o podvod. Pokud tak učiníte, tato osoba bude mít přístup k vašemu účtu.",
+			"dev_console_alert_title": "Stop!",
+			"not_authorized": "K provedení této akce nemáte oprávnění.",
+			"restart_app": {
+				"message": "Některé změny vyžadují restartování aplikace {app_name}, než je bude možné použít.",
+				"title": "{app_name}"
+			},
+			"success": "Akce dokončena"
+		},
+		"bar_chart": "Sloupcový graf",
+		"created_at": "Vytvořeno v",
+        "close_search_box": "Zavřít vyhledávací pole",
+		"daily_traffic": "Denní provoz",
+        "display_search_box": "Zobrazit vyhledávací pole",
+		"email": "E-mail",
+		"hourly_traffic": "Hodinový provoz",
+		"invalid_file": "Vyberte platný soubor",
+		"last_7_days": "Posledních 7 dní",
+		"last_30_days": "Posledních 30 dní",
+		"last_activity_at": "Poslední aktivita v",
+		"line_chart": "Čárový graf",
+		"loaders": {
+			"creating": "Vytváření",
+			"deleting": "Mazání",
+			"loading": "Načítání",
+			"updating": "Aktualizace"
+		},
+		"max_file_size_exceeded": "Váš soubor je příliš velký! Vyberte soubor menší než {size} MB.",
+		"name": "Jméno",
+		"no_extension": "Nemáte přiřazenou pobočku.",
+		"no_results": "Nebyly nalezeny žádné výsledky",
+		"not_available": "Není k dispozici",
+		"notifications": {
+			"info": {
+				"read": "Oznámení, která jsou označena jako přečtená, se automaticky vymažou každých 24 hodin."
+			},
+			"mention": {
+				"label": "Byli jste zmíněni v konverzaci (#{id}).",
+				"type": "Zmínka"
+			},
+			"unread_notifications": {
+				"label": "Nepřečtená oznámení",
+				"mark_all_as_read": "Označit vše jako přečtené"
+			}
+		},
+		"order_by": {
+			"options": {
+				"date": "Datum",
+				"name": "jméno"
+			}
+		},
+		"pagination": {
+			"page": "Page"
+		},
+		"password": "Heslo",
+		"peak_day": "Špičkový den",
+		"received": "Přijaté",
+		"required": "Požadovaný",
+		"rules": {
+			"email": "e-mail musí být platný",
+			"number": "Hodnota musí být číselná",
+			"phone-number": {
+				"pattern": "Povolena jsou pouze čísla #, * a +",
+				"required": "Telefonní číslo je povinné"
+			}
+		},
+		"search": "vyhledávání",
+		"search_source": "hledat {zdroj}",
+		"sent": "Odesláno",
+		"sort_by": {
+			"options": {
+				"asc": "asc",
+				"desc": "desc"
+			}
+		},
+		"suggestions": "návrhy",
+        "timezone_used": "Časové pásmo",
+        "timezone_context": {
+          "inbox": "Schránka",
+          "user": "Uživatel",
+          "system": "Výchozí systému"
+        },
+		"unknown": "neznámý",
+		"updated_at": "Aktualizováno na",
+		"username": "uživatelské jméno",
+		"validation": {
+			"required": "Pole {attribute} je povinné."
+		}
+	},
+	"ice_servers": {
+		"actions": {
+			"add_server": {
+				"label": "Přidat sekundární server"
+			},
+			"remove_server": {
+				"label": "Odebrat sekundární server"
+			}
+		},
+		"alerts": {
+			"error": "Konfigurace se nepodařilo aktualizovat. Zkontrolujte zadaná data a zkuste to znovu.",
+			"success": "Nastavení byla úspěšně aktualizována."
+		},
+		"connectivity": {
+			"checking": "Kontrola připojení",
+			"failed": "Server nefunguje",
+			"success": "Server funguje"
+		},
+		"description": "Tato konfigurace Zadejte adresy URL serverů, které se mají použít pro vyjednávání ICE. Obvykle jsou to servery STUN a/nebo TURN.\n\nToto je globální nastavení a musíte zadat dvě adresy URL.",
+		"fields": {
+			"credential": {
+				"label": "Pověření"
+			},
+			"url": {
+				"label": "STUN nebo TURN URI"
+			},
+			"username": {
+				"label": "Uživatelské jméno"
+			}
+		},
+		"module_name": "ICE servery",
+		"servers": "Server | servery"
+	},
+	"import": {
+		"actions": {
+			"download_template": "Stáhnout formát importu",
+			"remove_file": "Odebrat soubor",
+			"replace": "Nahradit stávající záznamy",
+			"skip": "Přeskočit existující záznamy"
+		},
+		"alerts": {
+			"failed": "Při importu došlo k chybě"
+		}
+	},
+	"inboxes": {
+		"contacts": {
+			"phone_number": {
+				"duplicate": "Toto telefonní číslo je používáno pro jiný kontakt."
+			},
+			"title": "Uložené kontakty"
+		},
+		"conversations": {
+			"actions": {
+				"accept": {
+					"description": "Přijměte konverzaci",
+					"label": "Přijmout"
+				},
+				"status": {
+					"label": "Stav",
+					"open": "Označit jako otevřené",
+					"resolve": "Označit jako vyřešené",
+					"success": {
+						"label": "Změna stavu konverzace"
+					}
+				},
+				"watch": {
+					"description": "Budete přidáni jako účastník konverzace",
+					"label": "Sledujte konverzaci"
+				}
+			},
+			"assignee": {
+				"agent": "Agent"
+			},
+			"messages": {
+				"location": {
+					"google_map_url": {
+						"label": "Podívejte se na Mapy Google"
+					}
+				},
+				"media": {
+					"not_found": {
+						"label": "Příloha médií není k dispozici. Pokud je to neočekávané, obraťte se na podporu."
+					}
+				},
+				"status": {
+					"failed": {
+						"generic_message": "Nepodařilo se odeslat zprávu",
+						"label": "Nepodařilo se"
+					}
+				},
+				"whatsapp_templates": {
+					"form_error_message": "Před odesláním vyplňte všechny proměnné",
+					"go_back_label": "Zpět",
+					"labels": {
+						"category": "Kategorie",
+						"language": "Jazyk",
+						"template_body": "Šablona Tělo"
+					},
+					"message": "Šablona zprávy",
+					"no_templates_found": "Nebyly nalezeny žádné šablony pro",
+					"search_placeholder": "Šablony pro vyhledávání",
+					"selected": {
+						"subtitle": "Vybraná {šablona}"
+					},
+					"send_message_label": "Odeslat zprávu",
+					"subtitle": "Vyberte šablonu aplikace WhatsApp, kterou chcete odeslat",
+					"title": "Šablony aplikace WhatsApp",
+					"variable_placeholder": "Zadejte hodnotu {proměnné}",
+					"variables": {
+						"body": {
+							"label": "Tělo"
+						},
+						"buttons": {
+							"label": "tlačítko | tlačítka",
+							"types": {
+								"copy_code": {
+									"label": "Kopírovat kód"
+								},
+								"phone_number": {
+									"label": "Zavolejte na telefonní číslo"
+								},
+								"quick_reply": {
+									"label": "Rychlá odpověď"
+								},
+								"url": {
+									"label": "URL"
+								}
+							}
+						},
+						"footer": {
+							"label": "Zápatí"
+						},
+						"header": {
+							"label": "Záhlaví"
+						},
+						"placeholder": "Zadejte hodnotu pro {proměnná}"
+					},
+					"variables_label": "Proměnné"
+				}
+			},
+			"panels": {
+				"contact_information": {
+					"header": {
+						"title": "Kontaktní informace"
+					}
+				},
+				"conversation_actions": {
+					"assigned_agent": {
+						"alert": "Zástupce musí patřit do skupiny přidružené k doručené poště.",
+						"assign_to_me": "Přiřazeno mě",
+						"hint": "Klikněte na uživatele, kterému chcete konverzaci přiřadit.",
+						"label": "Přiřazený agent",
+						"placeholder": "Hledejte podle jména, uživatelského jména, přípony nebo e-mailu."
+					},
+					"header": {
+						"title": "Konverzační akce"
+					},
+					"priority": {
+						"high": "Vysoká",
+						"label": "Priorita",
+						"low": "Nízká",
+						"medium": "Střední",
+						"none": "Žádné",
+						"urgent": "Naléhavé"
+					}
+				},
+				"conversation_information": {
+					"header": {
+						"title": "Informace o konverzaci"
+					},
+					"items": {
+						"channel": "Kanál",
+						"group": "Skupina",
+						"initiated_from": "Vytvořeno v",
+						"participants": "{count} účastník | {count} účastníků",
+						"status": {
+							"open": {
+								"label": "Otevřeno"
+							},
+							"resolved": {
+								"label": "Vyřešeno"
+							}
+						}
+					}
+				}
+			},
+			"placeholder": {
+				"titles": {
+					"variation_1": "Začněte výběrem konverzace",
+					"variation_2": "Vyberte svou konverzaci, začněte mluvit",
+					"variation_3": "Vyberte chat pro smysluplná spojení",
+					"variation_4": "Zaujměte své zákazníky – začněte výběrem",
+					"variation_5": "Váš Engagement Inbox – Vyberte a připojte se"
+				}
+			},
+			"private": {
+				"placeholder": "Tato zpráva je pouze pro agenty.",
+				"send": "Odeslat soukromou poznámku"
+			},
+			"reply": {
+				"characters": "Znaky",
+				"placeholder": "Sem napište svou zprávu...",
+				"send": "Poslat",
+				"whatsapp_reply_alert": "Na tuto konverzaci můžete odpovědět pouze pomocí šablony zprávy kvůli 24hodinovému omezení okna pro zprávy.",
+				"words": "Slova",
+				"assigned_user_alert": "Nemůžete odpovědět na tuto konverzaci, protože je přiřazena jinému agentovi."
+			},
+			"sort_options": {
+				"created_at_asc": {
+					"text": "Vytvořeno: Nejstarší jako první"
+				},
+				"created_at_desc": {
+					"text": "Vytvořeno v: Nejnovější jako první"
+				},
+				"last_activity_at_asc": {
+					"text": "Poslední aktivita: Nejstarší jako první"
+				},
+				"last_activity_at_desc": {
+					"text": "Poslední aktivita: Nejnovější jako první"
+				},
+				"priority_asc": {
+					"text": "Priorita: Nejdříve nejnižší"
+				},
+				"priority_desc": {
+					"text": "Priorita: Nejdříve nejvyšší"
+				},
+				"waiting_since_asc": {
+					"text": "Čeká se na odpověď: Nejdéle trvající první"
+				},
+				"waiting_since_desc": {
+					"text": "Čeká se na odpověď: Nejdříve nejkratší"
+				}
+			},
+			"tabs": {
+				"private_note": "Soukromá poznámka",
+				"reply": "Odpověď"
+			}
+		},
+		"filters": {
+			"assignee": {
+				"all": "Vše",
+				"assigned": "Přiřazené",
+				"mine": "Moje",
+				"unassigned": "Nepřiřazeno"
+			}
+		},
+		"list": {
+			"all_conversations": "Všechny konverzace",
+			"conversations": "Konverzace | Konverzace",
+			"sort": {
+				"label": "Třídit konverzace"
+			},
+			"unassigned": "Nepřiřazeno",
+			"unattended": "Bez dozoru"
+		},
+		"status": {
+			"label": "Stav",
+			"options": {
+				"all": "Vše",
+				"open": "Otevřeno",
+				"resolved": "Vyřešeno",
+				"unassigned": "Nepřiřazeno",
+				"unattended": "Bezobslužný",
+				"unattendedTooltip": "Čekání na odpověď déle než {minutes} minut"
+			},
+			"tooltips": {
+				"unattended": "Čekání na odpověď déle než {minutes} minut"
+			}
+		}
+	},
+	"login": {
+		"copyright": "Provozováno společností {company} © {year} . Všechna práva vyhrazena.",
+		"loginButton": "Přihlášení",
+		"loginError": "Nesprávné uživatelské jméno nebo heslo",
+		"password_reset": {
+			"change": "Změňte si heslo",
+			"forgot_password": "Zapomněli jste heslo?",
+			"reset": "Obnovit heslo"
+		},
+		"username_or_email": "Uživatelské jméno nebo email"
+	},
+	"2fa": {
+		"title": "Dvoufázové ověření",
+		"code": "Zadejte 2FA kód",
+		"verify": "Ověřit",
+		"remember_device": "Důvěřovat tomuto zařízení po dobu 30 dnů",
+		"error": "Neplatný kód nebo ověření selhalo"
+	},
+	"mail_settings": {
+		"alerts": {
+			"error": "Konfigurace se nepodařilo aktualizovat. Zkontrolujte zadaná data a zkuste to znovu.",
+			"success": "Data byla úspěšně aktualizována."
+		},
+		"description": "Nakonfigurujte svůj poštovní server tak, aby aplikace mohla odesílat e-maily.",
+		"fields": {
+			"authentication": {
+				"label": "Ověření"
+			},
+			"bcc_mail": {
+				"label": "Skrytý příjemce"
+			},
+			"encryption": {
+				"label": "Šifrování"
+			},
+			"from_address": {
+				"label": "Z adresy"
+			},
+			"from_name": {
+				"label": "Ze jména"
+			},
+			"host": {
+				"host": "Hostitel"
+			},
+			"password": {
+				"label": "Heslo"
+			},
+			"port": {
+				"port": "Port"
+			},
+			"test": {
+				"label": "Odeslat testovací e-mail"
+			},
+			"type": {
+				"label": "Typ",
+				"options": {
+					"default": {
+						"label": "Výchozí (použít vestavěný poštovní server)"
+					},
+					"smtp": "SMTP"
+				}
+			},
+			"username": {
+				"label": "Uživatelské jméno"
+			}
+		},
+		"module_name": "Nastavení pošty",
+		"pbx_status": {
+			"checking_connection": "Kontrola připojení",
+			"connected": "Připojeno",
+			"disconnected": "Odpojeno"
+		},
+		"test": {
+			"alerts": {
+				"failed": "E-mail se nepodařilo odeslat",
+				"success": "E-mail byl úspěšně odeslán"
+			}
+		}
+	},
+	"main_menu": {
+		"about": "O",
+		"administration": {
+			"groups": "Skupiny",
+			"menu_name": "Správa",
+			"presence_status": "Stav přítomnosti",
+			"sms_provider": "Poskytovatel SMS",
+			"users_manager": "Uživatelé"
+		},
+		"logout": "Odhlášení",
+		"settings": "Nastavení"
+	},
+	"misc": {
+		"active": "Aktivní",
+		"add": "Přidat",
+		"advanced": "Pokročilé",
+		"agents": "Agenti",
+		"all": "Vše",
+		"all-tenants": {
+			"label": "Všichni tenanti"
+		},
+		"cause": "Příčina",
+		"copied": "Zkopírováno",
+		"default": "Výchozí",
+		"dial": "Vytáčení",
+		"error_title": "Došlo k chybě",
+		"filter_by_name": "Filtrujte podle názvu",
+		"finish": "Dokončení",
+		"generate": "Generovat",
+		"global": "Globální",
+		"hello": "Dobrý den, {user_name}",
+		"info": "Info",
+		"invalid_value": "Neplatná hodnota",
+		"live_data": "Živě",
+		"main_tenant": "Hlavní tenant",
+		"more": "Více",
+		"next": "Další",
+		"no_data": "Žádná data k zobrazení",
+		"no_tenant_change": "* Není dovoleno měnit tenant.",
+		"not_found": "Nenalezeno",
+		"offline_ready": "Aplikace připravena k práci offline",
+		"order_by": "Objednávejte podle",
+		"paused": "Pauza",
+		"percentage": "Procento",
+		"preferences": "Předvolby",
+		"pwa": {
+			"actions": {
+				"install": "Instalovat",
+				"not_now": "Teď ne"
+			},
+			"promote_install": "Najděte, co potřebujete, rychleji s naší aplikací!"
+		},
+		"realtime": "V reálném čase",
+		"reload": "Znovu načíst",
+		"send-message": "Odeslat zprávu",
+		"server_connection": {
+			"connection_error": {
+				"suggestion": "Kontaktujte prosím administrátora.",
+				"title": "Připojení k vašemu serveru se nepodařilo navázat."
+			}
+		},
+		"text": "Text",
+		"try_again": "Zkuste to znovu",
+		"type": "Typ",
+		"unsupported_feature": "Tento prohlížeč tuto funkci nepodporuje.",
+		"update": "K dispozici je nový obsah, pro aktualizaci klikněte na tlačítko znovu načíst!",
+		"value": "Hodnota",
+		"welcome": "Vítejte v {app_name}",
+		"welcome_features_section_title": "Zůstaňte ve spojení s {app_name}",
+		"yesterday": "Včera",
+		"you": "Vy"
+	},
+	"no_extension": "Žádná pobočka",
+	"pbx_settings": {
+		"alerts": {
+			"error": "Nastavení nebyla aktualizována, protože se nepodařilo navázat spojení. Zkontrolujte prosím zadaná data a zkuste to znovu.",
+			"success": "Data byla úspěšně aktualizována."
+		},
+		"description": "Nastavte příslušná data pro připojení k vaší ústředně. Tyto informace jsou nezbytné pro registraci rozšíření od jeho uživatelů, hlasové schránky, historie hovorů a dalších vlastností.",
+		"fields": {
+			"api_port": {
+				"hint": "Uveďte port používaný rozhraním API.",
+				"label": "API port"
+			},
+			"host": {
+				"host": "Hostitel"
+			},
+			"https_port": {
+				"hint": "Port HTTPS VitalPBX (užitečné pro získání aktiv z modulu značky).",
+				"label": "HTTPS port"
+			},
+			"key": {
+				"edit": "Upravit klíč aplikace",
+				"hint": "Ve své ústředně můžete vytvořit klíče: Admin/Admin/Application Keys",
+				"key": "Klíč"
+			},
+			"pjsip_port": {
+				"hint": "Nakonfigurujte port, který se má použít pro registraci pobočky",
+				"pjsip_port": "port PJSIP"
+			},
+			"wss_port": {
+				"hint": "Pokud máte firewall, nezapomeňte povolit TCP port, aby se váš klient mohl připojit.",
+				"wss_port": "WSS port"
+			}
+		},
+		"module_name": "nastavení PBX",
+		"pbx_status": {
+			"checking_connection": "Kontrola připojení",
+			"connected": "Připojeno",
+			"disconnected": "Odpojeno"
+		}
+	},
+	"recordings": {
+		"not_allowed": "Nemáte oprávnění pro přístup k tomuto modulu",
+		"recording": "Nahrávka | Nahrávky"
+	},
+	"right_menu": {
+		"check_updates": "Zkontrolujte aktualizace",
+		"logout": "Odhlášení",
+		"reset_app_data": "Resetovat data aplikace",
+		"settings": "Nastavení",
+		"toggle_desktop_app_size": {
+			"desktop": "Výchozí zobrazení",
+			"mobile": "Mobilní pohled"
+		},
+		"troubleshooting": "Odstraňování problémů"
+	},
+	"settings": {
+		"account": {
+			"account": "Účet",
+			"password": {
+				"alerts": {
+					"error": "Heslo nebylo možné změnit.",
+					"no_match_old_password": "Heslo se neshoduje se starým heslem.  ",
+					"password_error": "Potvrďte heslo",
+					"success": "Heslo bylo úspěšně změněno"
+				},
+				"change_password": "Změňte heslo",
+				"fields": {
+					"new_password": {
+						"label": "Nové heslo",
+						"rules": {
+							"required": "Je vyžadováno nové heslo"
+						}
+					},
+					"password": {
+						"label": "Aktuální heslo",
+						"rules": {
+							"required": "Je vyžadováno aktuální heslo"
+						}
+					},
+					"password_confirmation": {
+						"password_confirmation": "Potvrzení hesla",
+						"rules": {
+							"no_match": "Hesla se neshodují",
+							"required": "Je vyžadováno potvrzení hesla"
+						}
+					}
+				},
+				"set_new_password": "Nastavte nové heslo"
+			},
+			"2fa": {
+				"title": "Dvoufázové ověření",
+				"enable": "Povolit 2FA",
+				"disable": "Zakázat 2FA",
+				"remember_device": "Důvěřovat tomuto zařízení po dobu 30 dnů",
+				"description": "Zapněte další vrstvu zabezpečení svého účtu pomocí kódu z mobilní autentizační aplikace.",
+				"hint": "Naskenujte QR kód pomocí autentizační aplikace (např. Google Authenticator nebo Microsoft Authenticator).",
+				"enabled": "Dvoufázové ověření je povoleno.",
+				"disabled": "Dvoufázové ověření je zakázáno.",
+				"warning_not_verified": "Dvoufázové ověření zatím nebylo potvrzeno. Dokončete ověření pro aktivaci.",
+				"enter_code": "Zadejte 2FA kód",
+				"or_enter_key": "Nebo zadejte tento tajný klíč ručně:",
+				"secret_description": "Tento klíč můžete zadat do autentizační aplikace ručně místo skenování QR kódu.",
+				"secret_copied": "Tajný klíč byl zkopírován do schránky.",
+				"verify": "Ověřit kód",
+				"verified_success": "Dvoufázové ověření bylo úspěšně ověřeno.",
+				"snackbar_verified": "2FA je nyní plně aktivováno a bude vyžadováno při příštím přihlášení.",
+				"recovery_code_hint": "Pokud ztratíte své mobilní zařízení nebo bezpečnostní klíč, můžete vygenerovat záložní kód pro přihlášení.",
+				"recovery_code_instruction": "Záložní kód si bezpečně uložte. Pomůže vám získat přístup k účtu.",
+				"generate_recovery_code": "Vygenerovat záložní kód",
+				"your_recovery_code": "Váš záložní kód",
+				"recovery_code_warning": "Uložte si tento kód bezpečně. Nebude znovu zobrazen.",
+				"copy_code": "Kopírovat kód",
+				"download_code": "Stáhnout jako .txt",
+				"download_started": "Stahování zahájeno.",
+				"close": "Zavřít",
+				"verified_error": "Neplatný kód. Zkuste to znovu.",
+				"error": "Při aktualizaci 2FA došlo k chybě."
+			}
+		},
+		"actions": {
+			"save": "Uložit"
+		},
+		"alert": {
+			"error": "Při ukládání nastavení došlo k chybě",
+			"success": "Nastavení byla uložena."
+		},
+		"application": {
+			"fields": {
+				"auto_launch": {
+					"description": "Automatické spuštění aplikace při spuštění OS",
+					"label": "Automatické spuštění aplikace"
+				},
+				"hardware_acceleration": {
+					"label": "Zakázat hardwarovou akceleraci GPU (vyžaduje restartování aplikace {app_name})"
+				},
+				"host": {
+					"label": "Zadejte hostitele, kde je nainstalována aplikace {app_name} (vyžaduje restartování aplikace {app_name})",
+					"placeholder": "vaše-pbx.com"
+				},
+				"keep_app_on_close": {
+					"label": "Při zavření nechte aplikaci spuštěnou"
+				},
+				"open_as_hidden": {
+					"description": "Při automatickém spuštění spusťte aplikaci jako skrytou.",
+					"label": "Otevřete aplikaci jako skrytou"
+				}
+			},
+			"tab_name": "Aplikace"
+		},
+		"audio": {
+			"audio": "Zvuk",
+			"echo_cancellation": {
+				"description": "Funkce, která se pokouší zabránit efektům ozvěny na obousměrném audio připojení",
+				"echo_cancellation": "Zrušení echa"
+			},
+			"noise_suppression": {
+				"description": "Automaticky filtruje zvuk, aby se odstranil šum na pozadí",
+				"noise_suppression": "Potlačení hluku"
+			},
+			"volume": {
+				"description": "Tato konfigurace se použije na vyzváněcí tóny hovorů a další zvuky aplikace.",
+				"label": "Hlasitost médií"
+			}
+		},
+		"call_center": {
+			"auto_open_crm_url": {
+				"call_direction": {
+					"label": "Směr volání",
+					"options": {
+						"all": "Vše",
+						"incoming": "Příchozí",
+						"outgoing": "Odchozí"
+					}
+				},
+				"description": "Adresa URL CRM se otevře automaticky po navázání hovoru.",
+				"label": "Automaticky otevřít adresu URL CRM"
+			},
+			"auto_open_crm_url_event": {
+				"answer-call": {
+					"label": "Odpovězeno"
+				},
+				"label": "Spouštěcí událost",
+				"ringing": {
+					"label": "Zvonění"
+				}
+			},
+			"call_center": "Call centrum",
+			"crm_url": "URL CRM",
+			"log_into_queues_on_startup": {
+				"description": "Automaticky se přihlásit do přiřazených front při spuštění aplikace",
+				"label": "Přihlášení do front při spuštění"
+			},
+			"log_out_from_queues_when_closing_the_app": {
+				"label": "Odhlášení z front při ukončení aplikace"
+			},
+			"open_crm_url": {
+				"description": "V případě, že má váš profil agenta nakonfigurovanou adresu URL CRM, zvolte, jak se má adresa URL otevřít ve vašem prohlížeči.",
+				"label": "Otevřete adresu URL CRM v:",
+				"options": {
+					"new_tab": {
+						"label": "Nová karta"
+					},
+					"new_window": {
+						"label": "Nové okno",
+						"support_alert": "Tato možnost podléhá oprávněním prohlížeče a operačního systému."
+					}
+				}
+			}
+		},
+		"calls": {
+			"auto_answer": {
+				"label": "Automaticky vyzvednout",
+				"modes": {
+					"after": "Automatická odpověď po (1–25 sekund)",
+					"instant": "Okamžitá automatická odpověď"
+				},
+				"rules": {
+					"timer": "Číslo musí být mezi 1 a 25"
+				}
+			},
+			"call": "hovory",
+			"call_history_limit": {
+				"call_history_limit": "Limit historie hovorů",
+				"description": "Nastavte limit záznamů pro zobrazení v historii hovorů"
+			},
+			"calls": "hovory",
+			"ringtone": {
+				"description": "vyzváněcí tón, který se přehraje při příchozích hovorech",
+				"ringtone": "vyzváněcí tón"
+			}
+		},
+		"devices": {
+			"audio": "audio",
+			"camera": "kamera",
+			"default": {
+				"camera": "výchozí kamera",
+				"microphone": "výchozí mikrofon",
+				"speaker": "výchozí reproduktor systému"
+			},
+			"device_placeholder": "vyberte zařízení",
+			"devices": "zařízení",
+			"devices_selection": {
+				"input_device": {
+					"label": "vstupní zařízení"
+				},
+				"input_speaker": {
+					"label": "vstupní reproduktor"
+				},
+				"output_device": {
+					"label": "výstupní zařízení"
+				},
+				"output_speaker": {
+					"label": "výstupní reproduktor"
+				},
+				"ringing_device": {
+					"label": "zvonící zařízení"
+				}
+			},
+			"microphone": "mikrofon",
+			"no_devices_available": "nebyla zjištěna žádná zařízení",
+			"speaker": "reproduktor"
+		},
+		"general": {
+			"appearance": {
+				"description": "Nastavení platí pouze pro tento prohlížeč.",
+				"label": "Vzhled",
+				"options": {
+					"dark_theme": "Tmavé téma",
+					"device_theme": "Téma zařízení",
+					"light_theme": "Světlé téma"
+				}
+			},
+			"general": "obecné",
+			"push_notifications": {
+				"description": "přijímat upozornění na plochu pro určité události ",
+				"push_notifications": "upozornění na ploše"
+			},
+			"timezone": {
+				"description": "místní čas regionu nebo země",
+				"timezone": "časové pásmo"
+			}
+		},
+		"hid_integration": {
+			"permission_request": "Abyste mohli používat náhlavní soupravu, musíte udělit potřebná oprávnění.",
+			"plantronics": {
+				"label": "Použijte Plantronics HID"
+			},
+			"subtitle": "integrace externí náhlavní soupravy/náhlavní soupravy",
+			"title": "integrace headsetu"
+		},
+		"presence": {
+			"additional_information": {
+				"additional_information": "další informace",
+				"description": "dodatečná zpráva pro váš stav přítomnosti",
+				"label": "zpráva o stavu přítomnosti"
+			},
+			"presence": "přítomnost",
+			"presence_status": {
+				"description": "vyberte stát podle své dostupnosti",
+				"presence_status": "stav přítomnosti"
+			}
+		},
+		"profile": {
+			"extension": {
+				"extension": "pobočka"
+			},
+			"full_name": {
+				"full_name": "celé jméno"
+			},
+			"profile": "profil",
+			"profile_picture": {
+				"actions": {
+					"add": "Přidat profilový obrázek",
+					"change": "Změna",
+					"remove": "Odstranit"
+				},
+				"crop": {
+					"label": "upravit fotografii",
+					"preview": "náhled"
+				},
+				"profile_picture": "profilový obrázek",
+				"tabs": {
+					"current_picture": "aktuální obrázek",
+					"take_photo": "vyfotit",
+					"upload_photo": "nahrát fotku"
+				},
+				"take_photo": {
+					"label": "vyfotit"
+				},
+				"upload_photo": {
+					"drag": "přetáhněte sem profilový obrázek",
+					"label": "přetáhněte soubor nebo kliknutím nahrajte",
+					"mobile_label": "klepnutím nahrajte",
+					"select": "vyberte fotografii z počítače"
+				}
+			},
+			"username": {
+				"username": "uživatelské jméno"
+			}
+		},
+		"settings": "nastavení",
+		"video": {
+			"frame_rate": {
+				"description": "snímkovací frekvence ve snímcích za sekundu",
+				"frame_rate": "snímkovací frekvence"
+			},
+			"max_aspect_ratio": {
+				"description": "nastavte proporční vztah mezi šířkou a výškou videa",
+				"max_aspect_ratio": "maximální poměr stran"
+			},
+			"resize_mode": {
+				"description": "určete režim rozlišení video stopy.",
+				"options": {
+					"crop_and_scale": "oříznutí a měřítko",
+					"none": "žádný"
+				},
+				"resize_mode": "režim změny velikosti"
+			},
+			"video": "video"
+		}
+	},
+	"shortcuts": {
+		"calls": {
+			"accept-audio-call": "Přijmout audio hovor",
+			"accept-video-call": "Přijmout videohovor",
+			"decline-call": "Odmítnout hovor",
+			"start-audio-call": "Spusťte audiohovor",
+			"start-video-call": "Zahajte videohovor",
+			"toggle-mute": "Přepnout ztlumení"
+		},
+		"general": {
+			"shortcuts": "Zobrazit klávesové zkratky"
+		},
+		"label": "Zkratky"
+	},
+	"users": {
+		"all_groups": "Všechny skupiny",
+		"email": "E-mail",
+		"extension": "Pobočka",
+		"groups": {
+			"members": "Člen | členové"
+		},
+		"has_no_extension": "Nemá žádnou pobočku",
+		"name": "Jméno",
+		"no_users": "Nejsou k dispozici žádní uživatelé",
+		"options": {
+			"sort_by": {
+				"label": "Seřadit podle uživatelů online"
+			}
+		},
+		"status": {
+			"available": "K dispozici",
+			"in_call": "V hovoru",
+			"on_the_phone": "Na telefonu",
+			"ringing": "Zvonění"
+		},
+		"users": "Uživatel | Uživatelé"
+	},
+	"voice_messages": {
+		"no_messages": "Nemáte žádné nové zprávy",
+		"not_found": "Nebyly nalezeny žádné zprávy",
+		"types": {
+			"inbox": "Nový",
+			"old": "Starý",
+			"urgent": "Naléhavé"
+		},
+		"voice_message": "Hlasová zpráva | hlasové zprávy",
+		"voicemail_count": "Nemáte hlasové zprávy | Máte {count} hlasovou zprávu | Máte {count} hlasových zpráv"
+	},
+	"wizard": {
+		"actions": {
+			"continue": "Pokračovat",
+			"finish": "Dokončit",
+			"next": "Další",
+			"previous": "Předchozí"
+		},
+		"steps": {
+			"database_setup": {
+				"error": "Připojení se nezdařilo. Zkontrolujte prosím svá nastavení.",
+				"fields": {
+					"password": {
+						"label": "Heslo databáze",
+						"placeholder": "Heslo"
+					},
+					"username": {
+						"label": "Uživatelské jméno databáze",
+						"placeholder": "Root"
+					}
+				},
+				"info": "Zadejte uživatele s oprávněními k instalaci databáze aplikace.",
+				"loading_message": "Instalace databáze, čekejte prosím...",
+				"step_name": "Nastavení databáze"
+			},
+			"pbx_settings": {
+				"fields": {
+					"host": {
+						"label": "Hostitel",
+						"placeholder": "Localhost"
+					},
+					"key": {
+						"hint": "Pokud instalujete na stejný server jako {company}, můžete toto pole ponechat prázdné. Automaticky se vygeneruje klíč.",
+						"label": "Aplikační klíč",
+						"placeholder": "Aplikační klíč"
+					},
+					"port": {
+						"label": "Port"
+					},
+					"secure": {
+						"hint": "Označuje zabezpečené připojení přes HTTPS. Obvykle tuto možnost zaškrtnete při použití portu 443.",
+						"label": "Zabezpečení"
+					}
+				},
+				"loading_message": "Kontrola připojení, čekejte prosím...",
+				"step_name": "nastavení PBX"
+			},
+			"user_setup": {
+				"error": "Nelze vytvořit uživatele, zkontrolujte prosím svá nastavení",
+				"fields": {
+					"name": {
+						"label": "Jméno",
+						"placeholder": "John Doe"
+					},
+					"password": {
+						"label": "Uživatelské heslo",
+						"placeholder": "Heslo"
+					},
+					"password_confirmation": {
+						"label": "Potvrzení hesla",
+						"placeholder": "Zopakujte své heslo"
+					},
+					"timezone": {
+						"label": "Časové pásmo"
+					},
+					"username": {
+						"label": "Uživatelské jméno",
+						"placeholder": "Admin"
+					}
+				},
+				"loading_message": "Vytváření...",
+				"step_name": "Uživatelské nastavení"
+			}
+		}
+	}
+}

@@ -1,0 +1,1996 @@
+{
+	"app": {
+		"title": "التطبيق مفتوح في علامة تبويب أخرى",
+		"explanation": "لتجنب الرنين المزدوج، وتضارب المكالمات، والسلوك غير المتوقع، يُسمح بعلامة تبويب نشطة واحدة فقط.",
+		"takeover": {
+			"can": "يمكنك التحكم في التطبيق من هذه العلامة الآن.",
+			"cannot": "يوجد مكالمة نشطة حاليًا في علامة تبويب أخرى. يمكنك الاستحواذ بعد انتهائها.",
+			"button": "استخدم هنا",
+			"close": "أغلق هذه العلامة"
+		}
+	},
+	"about": {
+		"app_name": "{app_name} نظام الاتصالات متعدد القنوات",
+		"features": {
+			"calls": "مكالمات صوتية وفيديو",
+			"chats": "تحدث مع أعضاء فريقك بالعمل",
+			"transfer_calls": "تحويل المكالمات الحاضرة والفائتة"
+		},
+		"information": "{app_name} هو نظام يشمل جميع الميزات التي تحتاجها"
+	},
+	"administration": {
+		"agent_profiles": {
+			"agent_pauses_reason": {
+				"description": "تستعمل أسباب الإيقاف المؤقت عندما يقوم العميل بإيقاف مؤقت لجلسة في قائمة الانتظار",
+				"fields": {
+					"name": "الاسم"
+				},
+				"label": "أسباب الإيقاف المؤقت",
+				"pause": "إيقاف مؤقت",
+				"rules": {
+					"name": "مطلوب اسم السبب"
+				}
+			},
+			"agent_profile": "الملف الشخصي للموظف",
+			"default_profile_alert": ".لا يمكن حذف ملف التعريف الافتراضي",
+			"description": "إنشاء ملفات تعريف الموظف حيث يمكنك تحديد أسباب الإيقاف المؤقت. يمكن تعيين الملفات الشخصية لأدوار المستخدم",
+			"fields": {
+				"crm_url": {
+					"actions": {
+						"add_parameter": "إضافة محدد",
+						"remove_parameter": "إزالة محدد"
+					},
+					"description": "قم بتجهيز نقطة نهاية لـ CRM لحفظ البيانات من مكالمة.",
+					"fields": {
+						"base_url": {
+							"invalid": "رابط غير صالح",
+							"label": "عنوان URL الأساسي"
+						},
+						"dynamic_call_values": {
+							"call_type": {
+								"label": "نوع الاتصال"
+							},
+							"callee_name": {
+								"label": "اسم المتصل"
+							},
+							"callee_number": {
+								"label": "رقم المتصل"
+							},
+							"caller_id_name": {
+								"label": "اسم المتصل"
+							},
+							"caller_id_number": {
+								"label": "رقم المتصل"
+							},
+							"hint": "استخدام المتغير الديناميكي",
+							"label": "المتغير الديناميكي",
+							"queue": {
+								"label": "قائمة الانتظار"
+							}
+						},
+						"parameter_name": {
+							"label": "اسم المحدد",
+							"placeholder": "https://your-crm.com"
+						},
+						"value": {
+							"label": "القيمة"
+						}
+					},
+					"label": "CRM URL (اختياري)",
+					"preview": "معاينة URL"
+				},
+				"is_global": {
+					"description": "إذا تم تحديده ، يمكن أن يشغل أي من المستأجرين الملف الشخصي.",
+					"label": "عالمي"
+				},
+				"website_tab": {
+					"hint": "إضافة علامة تبويب مخصصة إلى التطبيق مع موقع ويب مضمن",
+					"label": "علامة تبويب موقع الويب المخصص",
+					"preview": "معاينة",
+					"tab_name": {
+						"label": "اسم علامة التبويب"
+					},
+					"url": {
+						"hint": "أدخل موقع ويب آمنًا (https: //) يمكنك الوثوق به. هذا مهم للحفاظ على سلامة المستخدمين.",
+						"label": "رابط الويب"
+					}
+				}
+			},
+			"module_name": "ملفات الموظف",
+			"profile": "الملف الشخصي | الملفات"
+		},
+		"blf_settings": {
+			"contact_control": {
+				"description": "إدارة عدد جهات اتصال BLF المسموح بها لكل مستخدم لتجنب تحميل الخادم بشكل زائد وتحسين الأداء. قم بتعيين قيمة بين 1 و 100.",
+				"fields": {
+					"label": "الحدّ"
+				},
+				"label": "التحكم بجهة الاتصال BLF"
+			},
+			"module_name": "إعدادات BLF"
+		},
+		"event_logs": {
+			"datetime_picker": {
+				"placeholder": "حدد نطاق التاريخ والوقت",
+				"shortcuts": {
+					"last_month": "الشهر الماضي",
+					"last_week": "الأسبوع الماضي",
+					"select_date": "اختر التاريخ",
+					"select_time": "حدد الوقت",
+					"this_month": "هذا الشهر",
+					"this_week": "هذا الأسبوع",
+					"today": "اليوم",
+					"yesterday": "أمس"
+				}
+			},
+			"headers": {
+				"client_ip": "عنوان IP",
+				"date": "التاريخ",
+				"device": "جهاز/متصفح",
+				"event": "حدث",
+				"metadata": "بيانات التعريف",
+				"module": "وحدة",
+				"payload": "الحمولة",
+				"tenant": "المستأجر",
+				"user": "المستخدم"
+			},
+			"info": "عارض لأحداث التطبيق الرئيسية. متاح فقط عند تثبيت التطبيق على نفس الخادم كما بي بي إكس.",
+			"module_name": "سجلات الأحداث"
+		},
+        "global_setting": "الإعداد العام",
+        "global_setting_hint": "هذا إعداد عام ويطبق على جميع المستأجرين",
+		"groups": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "يرجى كتابة ${name} للتأكيد.",
+					"content": "هل أنت متأكد من أنك تريد حذف هذه المجموعة؟ سيتم حذف جميع صناديق البريد الوارد والمحادثات والبيانات ذات الصلة نهائيا."
+				}
+			},
+			"description": "من أجل أن يصبح مستخدمو {app_name} مرئيين فيما بينهم ، من الضروري أن يكون لكل مستخدم مجموعة مخصصة له ، وبعد ذلك ، نمنح حق الوصول للمستخدمين الآخرين لرؤية هذه المجموعة. بهذه الطريقة ، يمكنك إنشاء مجموعات متعددة من المستخدمين وتحديد المجموعات التي يمكنهم رؤيتها. لهذا ، نقوم أولاً بإنشاء اسم المجموعة.",
+			"errors": {
+				"groups": "لا يمكن تحميل المجموعات",
+				"tenants": "The tenants could not be loaded"
+			},
+			"fields": {
+				"description": "الوصف",
+				"name": "الاسم",
+				"tenant": "Tenant"
+			},
+			"group": "المجموعة | المجموعات",
+			"manage-users": "إضافة/إزالة المستخدمين",
+            "manage_members": "إدارة الأعضاء",
+            "members_disabled_until_save": "أنشئ المجموعة لإدارة الأعضاء.",
+			"module_name": "المجموعات",
+			"rules": {
+				"name": "مطلوب اسم المجموعة",
+                "name_min": "يجب أن يتكون اسم المجموعة من 3 أحرف على الأقل",
+				"tenant": "Tenant is required",
+			},
+            "sections": {
+              "basic_info": "معلومات أساسية",
+              "basic_info_hint": "قم بتسمية مجموعتك ووصف هدفها",
+              "members": "الأعضاء",
+              "members_hint": "عرض وإدارة أعضاء هذه المجموعة"
+            },
+			"settings": {
+				"member_limit": {
+					"confirm": {
+						"content": "⚠️ تحذير: ضبط الحد أعلى من 150 قد يؤدي إلى تحميل زائد على الخادم ويؤثر على الأداء. للحصول على إدارة أفضل، فكر في تنظيم المستخدمين في مجموعات مختلفة.",
+						"excessMembers": "الحد الأقصى الجديد للأعضاء الذي ترغب في تحديده أقل من الحد الحالي للأعضاء. سيتعين عليك مراجعة الأعضاء يدويًا وحذفهم للامتثال للحد الجديد."
+					},
+					"description": "إدارة عدد الأعضاء المسموح بهم لكل مجموعة لتجنب التحميل الزائد على الخادم وتحسين الأداء",
+					"fields": {
+						"label": "الحد"
+					},
+					"label": "حد الأعضاء"
+				},
+				"title": "إعدادات المجموعة"
+			},
+            "tooltips": {
+              "tenant_scope": "ستنتمي هذه المجموعة إلى المستأجر المحدد."
+            }
+		},
+		"inboxes": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "يرجى كتابة ${name} للتأكيد.",
+					"content": "هل أنت متأكد من أنك تريد حذف هذا البريد الوارد؟ ستتم إزالة جميع المحادثات والبيانات ذات الصلة نهائيا."
+				}
+			},
+			"channels": {
+				"sms": {
+					"label": "قناة الرسائل القصيرة",
+					"providers": {
+						"vitalpbx": {
+							"hint": "قم بتكوين مزود خدمة الرسائل القصيرة (SMS) لديك في: تثبيت PBX الخاص بك > PBX/SMS/Messaging Providers"
+						}
+					}
+				},
+				"whatsapp": {
+					"api_key": {
+						"label": "رمز واجهة برمجة التطبيقات",
+						"placeholder": "أدخل رمز الوصول لمستخدم الحساب التجاري"
+					},
+					"business_account_id": {
+						"label": "معرف الحساب التجاري",
+						"placeholder": "أدخل معرف حساب الأعمال من لوحة تحكم مطوري فيسبوك."
+					},
+					"label": "قناة واتساب",
+					"phone_number": {
+						"invalid": "أدخل رقم هاتف صالح يبدأ بعلامة + وبدون أي مسافات.",
+						"placeholder": "+1234567890 (بدون مسافات)"
+					},
+					"phone_number_id": {
+						"label": "رقم تعريف الهاتف",
+						"placeholder": "أدخل معرف رقم الهاتف من لوحة تحكم مطور Facebook."
+					},
+					"webhook_verification_token": {
+						"hint": "يتم استخدام هذه الرمز للتحقق من صحة نقطة نهاية الـWebhook.",
+						"label": "رمز التحقق للويبهوك"
+					},
+					"whatsapp_templates": {
+						"sync": {
+							"label": "تزامن قوالب الرسائل"
+						}
+					}
+				}
+			},
+			"confirm_navigation": "لم تكمل الإعداد. هل أنت متأكد أنك تريد مغادرة هذه الصفحة؟",
+			"description": "تتيح لك وحدة إدارة البريد الوارد إنشاء صناديق بريد وارد مختلفة وإدارتها. يسهل التنظيم الفعال للاتصالات الواردة.",
+			"form": {
+				"fields": {
+					"assignment_config": {
+						"auto_assignment_limit": {
+							"description": "حدد الحد الأقصى لعدد المحادثات من علبة الوارد هذه التي يمكن تعيينها تلقائيا إلى وكيل.",
+							"label": "حد التعيين التلقائي"
+						},
+						"label": "مهمة المحادثة",
+						"strategy": {
+							"label": "إستراتيجية",
+							"options": {
+								"round_robin": {
+									"hint": "يوزع المحادثات على الوكلاء عبر الإنترنت بترتيب دوري.",
+									"label": "التسلسل الدوري"
+								},
+								"self_assignment": {
+									"hint": "يسمح للوكلاء بتعيين المحادثات لأنفسهم.",
+									"label": "تعيين الوكيل لنفسه"
+								}
+							}
+						}
+					},
+					"channel_info": {
+						"sms": {
+							"phone_number": {
+								"label": "رقم الهاتف"
+							}
+						},
+						"whatsapp": {
+							"phone_number": {
+								"label": "رقم واتساب للأعمال"
+							}
+						}
+					},
+					"channel_type": {
+						"choose": "اختر القناة",
+						"label": "نوع القناة"
+					},
+					"greeting": {
+						"enable_channel_greeting": {
+							"description": "إرسال رسائل الترحيب تلقائيا إلى العملاء بمجرد بدء محادثة وإرسال رسالتهم الأولية.",
+							"label": "تمكين ترحيب القناة"
+						},
+						"greeting_message": {
+							"label": "رسالة ترحيب",
+							"limit": "الحد الأقصى {count} حرفا.",
+							"placeholder": "مرحبا! شكرا لك على الاتصال بنا. سيتم الاعتناء بك قريبا من قبل أحد وكلائنا."
+						},
+						"label": "سلام"
+					},
+					"group": {
+						"hint": "حدد المجموعة التي ستنتمي إليها صندوق الوارد."
+					},
+					"inbox": {
+						"create": "إنشاء صندوق الوارد"
+					},
+					"name": {
+						"placeholder": "مثال: الدعم، المبيعات، التسويق"
+					},
+					"provider": {
+						"options": {
+							"pbx": {
+								"hint": "متصل عبر واجهة برمجة تطبيقات PBX",
+								"label": "PBX"
+							}
+						}
+					},
+					"webhook": {
+						"label": "رابط الويب هوك",
+						"sms": {
+							"hint": "انسخ الرابط وألصقه في حقل \"رابط إشعار الأحداث\" في إعدادات مزود الرقم المختار: تثبيت الـ PBX الخاص بك > مزودي PBX/SMS/الرسائل."
+						},
+						"whatsapp": {
+							"hint": "يجب عليك تعيين هذا الرابط كـ Webhook في تطبيق مطوّر فيسبوك."
+						}
+					}
+				}
+			},
+			"inboxes": "صندوق الوارد | صناديق الوارد",
+			"module_name": "البريد الوارد",
+			"new_inbox": "علبة وارد جديدة",
+			"reports": {
+				"agents": {
+					"status": {
+						"busy": {
+							"label": "مشغول"
+						},
+						"offline": {
+							"label": "غير متصل"
+						},
+						"online": {
+							"label": "متصل"
+						},
+						"total": {
+							"label": "الإجمالي"
+						}
+					}
+				},
+				"conversations": {
+					"agent_productivity": "إنتاجية الوكيل",
+					"agents": {
+						"handled": "تمت معالجة المحادثات",
+						"title": "محادثات حسب الوكلاء"
+					},
+					"avg_first_response_minutes": "متوسط ​​دقائق الاستجابة الأول",
+					"avg_resolution_minutes": "متوسط ​​دقائق الحل",
+					"avg_resolution_time": "متوسط ​​وقت الحل",
+					"conversations_over_time": "المحادثات بمرور الوقت",
+					"first_response_time": "استجابة أولى",
+					"messages_by_channel": "الرسائل حسب القناة",
+					"messages_received": "الرسائل المستلمة",
+					"resolution_time": "زمن الحل",
+					"resolved": "حل",
+					"resolved_conversations": "المحادثات التي تم حلها",
+					"started": "بدأت",
+					"title": "المحادثات",
+					"total": "مجموع المحادثات",
+					"total_conversations": "مجموع المحادثات",
+					"total_messages_received": "الرسائل المستلمة",
+					"total_messages_sent": "الرسائل المرسلة",
+					"traffic": {
+						"title": "حركة المحادثات"
+					}
+				},
+				"overview": {
+					"title": "نظرة عامة"
+				},
+				"reports": "تقارير"
+			},
+			"setup_instructions": {
+				"label": "إرشادات الإعداد",
+				"short_description": "تم إعداد صندوق الوارد الخاص بك وجاهز للاستخدام! ابدأ في إدارة رسائلك ومحادثاتك بسهولة.",
+				"title": "تم إعداد صندوق الوارد الخاص بك وهو جاهز للاستخدام!"
+			},
+			"tabs": {
+				"general": {
+					"label": "عام"
+				},
+				"messaging_and_routing": {
+					"label": "المراسلة والتوجيه"
+				},
+				"phone_number_and_api": {
+					"label": "رقم الهاتف وواجهة برمجة التطبيقات"
+				}
+			}
+		},
+		"manage": "إدارة",
+		"module_name": "الإدارة",
+		"presence": {
+			"description": "هنا، يمكن للمسؤول إنشاء حالة التواجد المختلفة التي يمكن للموظفين استخدامها. بشكل افتراضي، هناك خمس (5) حالات وهي، متاح ، عدم الإزعاج، واستراحة الغداء، و في رحلة عمل، وأيضا، يمكنك إضافة المزيد.",
+			"info": {
+				"default_status": "لا يمكن تعديل أو حذف الحالات الافتراضية."
+			},
+			"module_name": "حالة التواجد",
+			"offline": "غير متصل",
+			"online": "متصل",
+			"select_icon": "اختر أيقونة",
+			"status": {
+				"available": "متاح",
+				"away": "مشغول",
+				"business_trip": "رحلة عمل",
+				"do_not_disturb": "عدم الازعاج",
+				"lunch_break": "استراحة عمل"
+			},
+			"status_color": "لون الحالة"
+		},
+		"role_manager": {
+			"agent_profile": {
+				"hint": "تعيين ملف موظف لاستخدامه في حال كان الدور المعين له تقييد من مركز الاتصال."
+			},
+			"default_roles": {
+				"admin": "tenant administrator",
+				"agent": "موظف",
+				"super-admin": "المسؤول الرئيسي",
+				"user": "مستخدم"
+			},
+			"description": "قم بتعديل أو إنشاء أدوار وتعيين الصلاحيات وفقًا للأدوار التي سيؤديها المستخدمون.",
+			"full_access": "الوصول الكامل",
+			"module_name": "مسؤول الأدوار",
+			"permissions": {
+				"label": "الصلاحيات ",
+				"permissions": {
+					"assigned-tenant": "Assigned tenant",
+					"call-center": {
+						"call-center-features": {
+							"description": " ميزات مركز الاتصال مثل تسجيل الدخول وتسجيل الخروج في القوائم مفعلة.",
+							"label": "ميزات مركز الاتصال"
+						},
+						"group_name": "مركز الاتصال",
+						"queue-selection": {
+							"description": "عند تحديد هذا الخيار ، سيتمكن العميل من تحديد قائمة (قوائم) الانتظار التي سيسجل الدخول إليها. إذا لم يتم اختيارهم ، فسيسجلون الدخول إلى جميع قوائم الانتظار التي ينتمون إليها.",
+							"label": "اختيار قائمة الانتظار"
+						}
+					},
+					"management": {
+						"agent-profiles": {
+							"description": "حدد هذا الخيار إذا كنت تريد السماح بالوصول إلى وحدة ملفات تعريف العميل",
+							"label": "الملفات الشخصية للعميل"
+						},
+						"events-log": {
+							"description": "إذن للوصول إلى مشاهد الأحداث في التطبيق (متاح فقط عندما يتم تثبيت التطبيق على نفس خادم PBX).",
+							"label": "سجلات الأحداث"
+						},
+						"group_name": "الإدارة",
+						"groups": {
+							"description": "تحقق من هذا الخيار إذا كنت ترغب في السماح بالوصول إلى وحدة الفرق.",
+							"label": "مجموعات"
+						},
+						"inboxes": {
+							"description": "تحقق من هذا الخيار إذا كنت ترغب في السماح بالوصول إلى وحدة البريد الوارد.",
+							"label": "البريد الوارد"
+						},
+						"roles": {
+							"description": "حدد هذا الخيار إذا كنت تريد السماح بالوصول إلى تحديد الأدوار.",
+							"label": "الأدوار"
+						},
+						"users": {
+							"description": "حدد هذا الخيار إذا كنت تريد السماح بالوصول إلى وحدة المستخدمين.",
+							"label": "المستخدمين"
+						}
+					},
+					"misc": {
+						"chat": {
+							"description": "سيتمكن المستخدمون من إرسال واستقبال الرسائل من وإلى أعضاء المجموعة الآخرين.",
+							"label": "الدردشه"
+						},
+						"conversation-assignment": {
+							"description": "يمنح هذا الإذن القدرة على تعيين المحادثات من صناديق البريد الوارد إلى وكلاء آخرين.",
+							"label": "مهمة المحادثة"
+						},
+						"group_name": "متنوعات",
+						"update_social_networks": {
+							"description": "إذن لربط الشبكات الاجتماعية التي ستظهر في أسفل الصفحة.",
+							"label": "تحديث الشبكات الاجتماعية"
+						},
+						"view-recordings": {
+							"description": "سيتمكن المستخدم من رؤية تسجيلات مكالماته التي تم إنشاؤها بواسطة الهاتف السحابي",
+							"label": "مشاهدة التسجيلات"
+						}
+					}
+				},
+				"select_all": "اختر الكل",
+				"unselect": "غير محدد"
+			},
+			"role": "الدور | الأدوار"
+		},
+		"social_networks": {
+			"description": "هنا، يمكنك تهيئة قنوات التواصل الاجتماعي التي ستظهر في أسفل الصفحة.",
+			"module_name": "الشبكات الاجتماعية",
+			"socials": {
+				"facebook": {
+					"hint_text": "قم بتعيين اسم المستخدم لصفحة الفيسبوك الخاصة بك",
+					"prefix": "https://facebook.com/"
+				},
+				"instagram": {
+					"hint_text": "قم بتعيين اسم المستخدم لحساب Instagram الخاص بك",
+					"prefix": "https://instagram.com/"
+				},
+				"twitter": {
+					"hint_text": "قم بتعيين اسم المستخدم لحساب تويتر الخاص بك",
+					"prefix": "https://twitter.com/"
+				},
+				"youtube": {
+					"hint_text": "قم بتعيين اسم مستخدم قناة youtube الخاصة بك",
+					"prefix": "https://youtube.com/"
+				}
+			}
+		},
+		"user_manager": {
+			"description": "إنشاء المستخدمين المختلفين لـ {app_name}. إدارة التحويلات والصلاحيات الخاصة بهم من هذه الوحدة.",
+			"error_on_delete": "لا يمكن حذف المستخدم الوحيد من التطبيق",
+			"module_name": "مدير المستخدم",
+			"sections": {
+				"details": {
+					"change_password": "(تغيير كلمة مرور المستخدم (اختياري",
+					"permissions": "الصلاحيات",
+					"role": "الدور",
+					"role_with_call_center_features": "الدور له ميزات مركز الاتصال.",
+					"section_name": "تفاصيل المستخدم",
+					"validations": {
+						"name": "الاسم مطلوب",
+						"password": "يجب ألا تقل كلمة المرور عن 8 أحرف",
+						"role": "دور المستخدم مطلوب",
+						"username": "اسم المستخدم مطلوب"
+					}
+				},
+				"device": {
+					"can_view_recordings": "يمكن للمستخدم عرض التسجيلات الخاصة بهم",
+					"device": "تحويلة",
+					"device_not_found": "الجهاز المعين {source}  ، لم يتم العثور عليه على الهاتف السحابي أو انه غير متوفر",
+					"group_module_info": "لم يتم الكشف عن مجموعات للمستأجر المحدد ، يمكنك إنشاء مجموعة هنا:",
+					"group_placeholder": "حدد مجموعة",
+					"groups": "المجموعات",
+					"groups_hint": "حدد المجموعات التي ينتمي إليها المستخدم",
+					"no_devices": "لا توجد أجهزة متاحة",
+					"no_phonebooks": "لا توجد دفاتر هاتف متاحة",
+					"phonebooks": "دليل الهاتف",
+					"phonebooks_hint": "اختر دليل الهاتف لتعيينه",
+					"remove_device": "قم بإزالة الجهاز المحدد",
+					"section_name": "بيانات المستخدم",
+					"tenant": "مستأجر",
+					"validations": {
+						"device": "الرجاء اختيار الجهاز المراد تعيينه",
+						"phonebooks": "اختر دليل الهاتف لتعيينه",
+						"tenant": "please select the tenant to assing"
+					}
+				}
+			},
+			"user": "المستخدم | المستخدمين",
+			"user_already_exists": "اسم المستخدم موجود بالفعل."
+		}
+	},
+	"app_setup": {
+		"alerts": {
+			"error": "{app_name} غير مثبت على المضيف المتاح",
+			"success": "تم اكتشاف التطبيق بنجاح"
+		},
+		"fields": {
+			"auto_launch": {
+				"label": "التشغيل التلقائي للتطبيق عند بدء تشغيل نظام التشغيل"
+			},
+			"host": {
+				"placeholder": "your-pbx.com"
+			}
+		},
+		"title": "{app_name} ادخل مضيف نظام الهاتف حيث يتم التثبيت "
+	},
+	"calls": {
+		"actions": {
+			"answer": "رد",
+			"audio_answer": "رد صوتي",
+			"call": "مكالمة",
+			"cancel_share_screen": "إلغاء مشاركة الشاشة",
+			"crm": {
+				"label": "CRM"
+			},
+			"direct_call": {
+				"label": "التواصل المباشر"
+			},
+			"disable_camera": "تعطيل الكاميرا",
+			"enable_camera": "تفعيل الكاميرا",
+			"forward": {
+				"forward": "إعادة توجيه المكالمة"
+			},
+			"hang_up": "إنهاء المكالمة",
+			"hold": {
+				"hold": "وضع حالة الانتظار",
+				"unhold": "استئناف المكالمة"
+			},
+			"keypad": "لوحة المفاتيح",
+			"make_call": "قم بإجراء مكالمة",
+			"mute_audio": "كتم الصوت",
+			"mute_video": "كتم الفيديو",
+			"reject": "رفض",
+			"share_screen": "مشاركة الشاشة",
+			"transfer": {
+				"alerts": {
+					"accepted": "مقبول",
+					"failed": "فشل ",
+					"progress": "يتم العمل عليه",
+					"request_failed": "فشل الطلب",
+					"request_succeeded": "نجح الطلب",
+					"success": "تم التحويل بنجاح",
+					"trying": "محاولة"
+				},
+				"complete_transfer": "اكتمال التحويل",
+				"label": "اكتب رقمًا لتحويله",
+				"transfer": "تحويل",
+				"type": {
+					"attended": "حضوري",
+					"blind": "مخفي"
+				}
+			},
+			"unmute_audio": "إعادة الصوت",
+			"video_answer": "رد مكالمة فيديو"
+		},
+		"call": "اتصال | المكالمات",
+		"conference": {
+			"actions": {
+				"end_conference": "إنهاء الاجتماع",
+				"end_conference_and_hang_up": "إنهاء الاجتماعات وإغلاق المكالمات",
+				"start_audio_conference": "بدأ اجتماع صوتي",
+				"start_conference": "بدأ الاجتماع"
+			},
+			"add_participant": "إضافة مشارك",
+			"audio_conferences": "الاجتماعات الصوتية",
+			"conference": "الاجتماع",
+			"join_call": "الانضمام إلى المكالمة الجماعية",
+			"participant_limit": "حتى {limit} مشاركين.",
+			"participants": "المشاركين",
+			"status": {
+				"in_audio_conference": "في اجتماع صوتي"
+			},
+			"type": {
+				"audio_conference": "اجتماع صوتي",
+				"video_conference": "اجتماع فيديو"
+			}
+		},
+		"current_call": "المكالمة الحالية",
+		"current_calls": "المكالمات الحالية",
+		"incoming": {
+			"auto_answer": {
+				"label": "تم تفعيل الرد التلقائي"
+			},
+			"incoming_from": "{uri} مكالمة واردة من",
+			"type": {
+				"audio_call": "مكالمة صوتية",
+				"video_call": "مكالمة فيديو"
+			}
+		},
+		"info": {
+			"answered": "رد",
+			"auto_answered": "رد آلي",
+			"busy": "مشغول",
+			"calling": "اتصال",
+			"call_forwarding_to": "يتم تحويل المكالمة إلى {target}...",
+			"unknown_destination": "وجهة غير معروفة",
+			"call_on_hold": "المكالمة قيد الانتظار",
+			"connected": "متصل",
+			"duration": "المدة",
+			"failed": "فشل الاتصال",
+			"history": "سجل المكالمات",
+			"in_progress": "يتم العمل عليه",
+			"incoming_call": "مكالمة واردة",
+			"info": "بيانات الاتصال",
+			"media_errors": {
+				"DevicesNotFoundError": "لم يتم اكتشاف أجهزة صوت أو فيديو لبدء المكالمة"
+			},
+			"no_answer": "لا يوجد رد",
+			"ringing": "يتصل",
+			"tenant": "tenant",
+			"type": "نوع الاتصال",
+			"types": {
+				"incoming": "واردة",
+				"internal": "داخلي",
+				"outgoing": "خارجي",
+				"transit": "تحويل",
+				"undefined": "غير معرف"
+			}
+		},
+		"line": "{line} خط ",
+		"loaders": {
+			"connecting": "اتصال"
+		},
+		"media_errors": {
+			"DevicesNotFoundError": "لم يتم اكتشاف أي أجهزة صوت أو فيديو لتهيئة المكالمة"
+		},
+		"search": {
+			"hint": "يجب عليك تحديد فلتر \"الكل\" لتتمكن من استخدام حقل البحث.",
+			"label": "ابحث عن المصدر أو الوجهة"
+		}
+	},
+	"chats": {
+		"add_contact_to_chat": "أضف جهة اتصال لبدء المحادثة",
+		"attachments": {
+			"attachment": "مرفق | المرفقات",
+			"types": {
+				"audio": "صوتي",
+				"file": "ملف",
+				"image": "الصوره",
+				"video": "فيديو"
+			}
+		},
+		"chat": "الدردشة | الدردشات",
+		"conversation": "محادثة | المحادثات",
+		"conversation_actions": {
+			"clear": "حذف سجل المحادثة",
+			"delete": "حذف",
+			"load_more": "تحميل المزيد"
+		},
+		"conversation_types": {
+			"sip": "محادثة SIP",
+			"vitxi": "محادثات اكساكول"
+		},
+		"draft": "مسودة",
+		"exceptions": {
+			"conversation": "هناك خطأ في الحصول على المحادثة.",
+			"messages": "لا يمكن الحصول على الرسائل"
+		},
+		"message": "الرسائل",
+		"message_actions": {
+			"copy": "نسخ",
+			"delete": "حذف",
+			"forward": "تحويل",
+			"reply": "رد"
+		},
+		"message_rules": {
+			"sip_message_character_limit": "يُسمح بـ 1023 حرفًا كحد أقصى"
+		},
+		"new": {
+			"placeholder": {
+				"description": "اختر المشارك واكتب رسالتك الأولى أدناه.",
+				"first_message": "اكتب رسالتك الأولى أدناه.",
+				"heading": "بدء محادثة جديدة"
+			}
+		},
+		"new_conversation": "محادثة جديدة",
+		"new_message": "رسالة جديدة",
+		"say_hello": "قل مرحبا",
+		"start_conversation": "ابدأ بالمحادثة",
+		"suggestions": {
+			"app": {
+				"description": "تطبيق الدردشة بين المستخدمين",
+				"label": "دردشة التطبيق",
+				"search_placeholder": "البحث عن المستخدم بالاسم أو البريد الإلكتروني أو الرقم التوضيحي"
+			},
+			"sip": {
+				"description": "الدردشة مع جهات الاتصال المحفوظة لديك",
+				"label": "دردشة",
+				"search_placeholder": "ابحث عن جهة اتصال أو اكتب رقم الداخلية"
+			}
+		},
+		"typing": "كتابه"
+	},
+	"contacts": {
+		"actions": {
+			"edit": {
+				"label": "تعديل جهة اتصال"
+			},
+			"favorites": {
+				"mark_as_favorite": "تعيين في المفضلة",
+				"unmark_as_favorite": "إزالة من المفضلة"
+			}
+		},
+		"contact_info": {
+			"company": "الشركة: {source}",
+			"email": "البريد الالكتروني",
+			"info": "بيانات العميل",
+			"job_title": "المسمى الوظيفي: {source}",
+			"type": "النوع : {source}",
+			"types": {
+				"external": "اتصال خارجي",
+				"internal": "اتصال داخلي"
+			}
+		},
+		"contacts": "الاتصال | جهات الاتصال",
+		"create": {
+			"add": "إضافة جهة اتصال",
+			"errors": {
+				"save": "خطأ في إضافة جهة اتصال"
+			},
+			"fields": {
+				"avatar": {
+					"label": "الصورة الرمزية",
+					"limit_size_alert": "يجب أن يكون حجم الصورة الرمزية أقل من 512 ميجا بايت!",
+					"placeholder": "اختر صورة رمزية"
+				},
+				"blf": {
+					"description": "تمكين لعرض حالات BLF",
+					"label": "BLF"
+				},
+				"company": "الشركة",
+				"contact_type": "نوع الاتصال",
+				"contact_types": {
+					"external": "خارجي",
+					"internal": "داخلي"
+				},
+				"email": "البريد الالكتروني",
+				"first_name": "الاسم الأول",
+				"job_title": "المسمى الوظيفي",
+				"last_name": "اسم العائلة",
+				"location": "الموقع",
+				"phone": {
+					"add_phone": "أضف الهاتف",
+					"country": "البلد",
+					"extension": "التحويلة",
+					"invalid_number": "رقم غير صالح",
+					"phone": "الهاتف | الهواتف",
+					"phone_number": "أرقام",
+					"prefix": "مقدمًا",
+					"required_phone": "يجب إضافة هاتف واحد على الأقل",
+					"type": "النوع",
+					"types": {
+						"alerts": {
+							"external": {
+								"content": "عندما تكون الهواتف خارجية ، سيتم إرسال الرسائل (SMS) من خلال قنوات SMS التي تم تكوينها وتعيينها من قبل المسؤول.",
+								"title": "هاتف خارجي"
+							},
+							"internal_sip": {
+								"content": "عندما تكون الهواتف من النوع \"Internal SIP\" ، سيتم إرسال الرسائل من خلال النجمة. نوع الرسائل هي النص فقط.",
+								"title": "داخلي (SIP)"
+							}
+						},
+						"external": "خارجي",
+						"internal_sip": "داخلي (SIP)"
+					}
+				}
+			},
+			"required_fields_alert": "يشير إلى الحقل المطلوب"
+		},
+		"favorites": {
+			"favorites": "المفضلة"
+		},
+		"my_contacts": "جهات الاتصال الخاصة بي",
+		"no_contacts": "لا توجد جهات اتصال متاحة",
+		"pagination_info": "عرض {startIndex}-{endIndex} من إجمالي {total} جهة اتصال",
+		"rules": {
+			"phone": {
+				"dial_code": {
+					"required": "يرجى اختيار رمز اتصال من القائمة"
+				},
+				"invalid": "يجب أن يكون رقم الهاتف في تنسيق E.164."
+			}
+		}
+	},
+	"device": {
+		"actions": {
+			"refresh": "تحديث"
+		},
+		"alerts": {
+			"not_found": "لا يمكن التسجيل ، الجهاز المرتبط بهذا الحساب غير موجود.\n  اتصل بالمسؤول لمزيد من التفاصيل."
+		},
+		"call_center": {
+			"active_queues": "قوائم الانتظار المفعلة",
+			"alerts": {
+				"failed": {
+					"login": "حدث خطأ غير متوقع أثناء محاولة تسجيل الدخول. يرجى مراجعة المسؤول الخاص بك إذا تم تعيين قوائم انتظار لك."
+				},
+				"no_active_queues": "لا توجد قوائم انتظار مفعلة",
+				"no_queues_paused": "لا توجد قوائم انتظار متوقفة مؤقتًا",
+				"success": {
+					"login": " لقد قمت بالدخول إلى قوائم الانتظار بنجاح.",
+					"logout": "لقد قمت بتسجيل الخروج بنجاح",
+					"pause": "تم الإيقاف المؤقت بنجاح",
+					"unpause": "تمت إعادة التشغيل بنجاح"
+				}
+			},
+			"default_reasons": {
+				"administrative": "إداري",
+				"break": "استراحة",
+				"lunch": "غداء",
+				"wc": "دورة المياه"
+			},
+			"manage": {
+				"tabs": {
+					"logged_in_queues": " الدخول إلى قوائم الانتظار",
+					"logged_out_queues": "الخروج من قوائم الانتظار",
+					"paused_queues": "قوائم الانتظار المتوقفة مؤقتًا"
+				}
+			},
+			"queue": "قائمة الانتظار | قوائم الانتظار",
+			"queue_actions": {
+				"login": "تسجيل الدخول",
+				"login_all": "تسجيل الدخول في الكل",
+				"logout": "تسجيل الخروج",
+				"logout_all": "تسجيل الخروج في الكل",
+				"manage": "إدارة",
+				"pause": "إيقاف مؤقت",
+				"pause_all": "إيقاف مؤقت للكل",
+				"pause_section_title": "اختر قوائم الانتظار التي تريد إيقافها مؤقتًا.",
+				"reload_queues": "إعادة تحميل قوائم الانتظار",
+				"select_queues": "اختر قوائم الانتظار",
+				"unpause": "إلغاء الإيقاف المؤقت",
+				"unpause_all": "إلغاء الإيقاف المؤقت للجميع",
+				"unpause_section_title": "اختر قوائم الانتظار التي تريد إلغاء إيقافها مؤقتًا."
+			},
+			"queues_paused": "إيقاف قوائم الانتظار مؤقتًا",
+			"reason": "السبب",
+			"tooltips": {
+				"is_active": "مفعل في {count} قوائم الانتظار",
+				"logged_out_queues": "{count} قوائم انتظار تم تسجيل خروجها",
+				"logged_queues": "تم تسجيل دخول {count} من قوائم الانتظار.",
+				"login": "تسجيل الدخول إلى قوائم الانتظار",
+				"paused_queues": "{count} قوائم الانتظار المتوقفة مؤقتًا."
+			}
+		},
+		"disconnected": {
+			"reconnect": "حاول الاتصال الآن",
+			"reconnection_attempt": "محاولة إعادة الاتصال في",
+			"seconds": "ثواني",
+			"ssl_error": "تحقق من أن المنفذ مفعل {Port}:",
+			"title": "تعذر إنشاء الاتصال بالهاتف السحابي الخاص بك"
+		},
+		"status": {
+			"registered": "مسجل",
+			"sending_registration": "إرسال التسجيل",
+			"unregistered": "غير مسجل"
+		},
+		"unregistered": {
+			"title": "جهازك غير مسجل. يرجى الاتصال بمسؤول الهاتف السحابي لتجنب فقد المكالمات.",
+			"try_register": "حاول التسجيل"
+		}
+	},
+	"directories": {
+		"directory": "الدليل | الدلائل",
+		"info": {
+			"actions": "اجراءات",
+			"email": "البريد الالكتروني",
+			"home_number": "رقم هاتف العمل",
+			"job_title": "المسمى الوظيفي",
+			"mobile_number": "رقم الجوال",
+			"name": "الاسم",
+			"organization": "التنظيم",
+			"telephone": "الهاتف"
+		},
+		"loading": "تحميل جهات الاتصال",
+		"no_assigned": "لم يتم تعيين دفاتر الهاتف لديك",
+		"no_contacts": "لا توجد بيانات للعرض",
+		"type": {
+			"external": "خارجي",
+			"internal": "داخلي"
+		}
+	},
+	"export": {
+		"alerts": {
+			"success": "تم تصدير البيانات بنجاح"
+		},
+		"delimiter": {
+			"label": "اختر محدد csv",
+			"options": {
+				"comma": "فاصلة (،)",
+				"semicolon": "فاصلة منقوطة (؛)"
+			}
+		}
+	},
+	"footer": {
+		"copyright": "{app_name} Omnichannel Communication System - {company} جميع الحقوق محفوظة © {year}",
+		"documentation": "الملفات والمعلومات الإضافية",
+		"slogan": "اتصالات موحدة"
+	},
+	"globals": {
+		"actions": {
+			"back": "العودة",
+			"cancel": "إلغاء",
+			"create": {
+				"create": "إنشاء",
+				"success": "تم إنشاء {source} بنجاح"
+			},
+			"delete": {
+				"delete": "حذف",
+				"success": "تم حذف {source} بنجاح"
+			},
+			"done": "تم",
+			"edit": "تعديل",
+			"export": "يصدّر",
+			"import": "يستورد",
+			"reset": "إعادة ضبط",
+			"restart": "إعادة تشغيل",
+			"save": "حفظ",
+			"update": {
+				"success": "تم تحديث {source} بنجاح",
+				"update": "تحديث"
+			}
+		},
+		"alerts": {
+			"actions": {
+				"close": "إغلاق",
+				"ok": "تم",
+				"view": "إظهار"
+			},
+			"avatar": {
+				"invalid_file_size": "ملفك كبير جدا! الرجاء تحديد صورة أقل من 2 ميغا بايت",
+				"invalid_file_type": "الرجاء اختيار صورة صالحة"
+			},
+			"confirm": {
+              "switch_tenant": {
+                "content": "لديك تغييرات غير محفوظة. قد يؤدي التبديل إلى مستأجر آخر إلى فقدانها. هل ترغب في المتابعة؟",
+                "title": "التبديل إلى المستأجر {name}؟"
+              },
+              "delete": {
+					"content": "هل أنت متأكد أنك تريد حذف هذا {source}؟",
+					"title": "حذف {name}"
+				}
+			},
+			"dev_console_alert_content": "ميزة المتصفح هذه مخصصة للمطورين. إذا طلب شخص ما بنسخ شيء ما ولصقه هنا لتفعيل ميزة ، فهذا يعد عملية احتيال. إذا قمت بذلك ، فسيتمكن هذا الشخص من الوصول إلى حسابك.",
+			"dev_console_alert_title": "توقف !",
+			"not_authorized": "أنت غير مخول بتنفيذ هذا الإجراء.",
+			"restart_app": {
+				"message": "تتطلب بعض التغييرات إعادة تشغيل {app_name} قبل أن يتم تطبيقها.",
+				"title": "{app_name}"
+			},
+			"success": "اكتمل الإجراء"
+		},
+		"bar_chart": "مخطط شريطي",
+		"created_at": "تم الإنشاء في",
+        "close_search_box": "إغلاق مربع البحث",
+		"daily_traffic": "الزيارات اليومية",
+        "display_search_box": "عرض مربع البحث",
+		"email": "البريد الالكتروني",
+		"hourly_traffic": "مرور كل ساعة",
+		"invalid_file": "اختر ملفًا صالحًا",
+		"last_7_days": "آخر 7 أيام",
+		"last_30_days": "آخر 30 يومًا",
+		"last_activity_at": "آخر نشاط عند",
+		"line_chart": "مخطط خطي",
+		"loaders": {
+			"creating": "إنشاء",
+			"deleting": "حذف",
+			"loading": "تحميل ",
+			"updating": "تحديث"
+		},
+		"max_file_size_exceeded": "ملفك كبير جدًا! الرجاء اختيار ملف أقل من {size} ميغابايت.",
+		"name": "الاسم",
+		"no_extension": "ليس لديك تحويلة معينة.",
+		"no_results": "لم يتم العثور على نتائج",
+		"not_available": "غير متاح",
+		"notifications": {
+			"info": {
+				"read": "الإشعارات المُعلمة بأنها قُرأت تُحذف تلقائيا كل ٢٤ ساعة."
+			},
+			"mention": {
+				"label": "تم ذكرك في المحادثة (#{id}).",
+				"type": "الإشارة"
+			},
+			"unread_notifications": {
+				"label": "الإشعارات غير المقروءة",
+				"mark_all_as_read": "قناع كل شيء أحمر"
+			}
+		},
+		"order_by": {
+			"options": {
+				"date": "التاريخ",
+				"name": "الاسم"
+			}
+		},
+		"pagination": {
+			"page": "صفحة"
+		},
+		"password": "كلمة المرور",
+		"peak_day": "يوم الذروة",
+		"received": "تم الاستلام",
+		"required": "مطلوب",
+		"rules": {
+			"email": "يجب أن يكون البريد الالكتروني صالحا",
+			"number": "يجب أن تكون القيمة رقمية",
+			"phone-number": {
+				"pattern": "يسمح فقط بالأرقام # و * و +",
+				"required": "رقم الهاتف مطلوب"
+			}
+		},
+		"search": "بحث",
+		"search_source": "بحث {source}",
+		"sent": "تم الإرسال",
+		"sort_by": {
+			"options": {
+				"asc": "تصاعدي",
+				"desc": "تنازلي"
+			}
+		},
+		"suggestions": "اقتراحات",
+        "timezone_used": "المنطقة الزمنية",
+        "timezone_context": {
+          "inbox": "صندوق",
+          "user": "مستخدم",
+          "system": "افتراضي النظام"
+        },
+		"unknown": "غير معرف",
+		"updated_at": "تم التحديث في",
+		"username": "اسم المستخدم",
+		"validation": {
+			"required": "الحقل {attribute} مطلوب."
+		}
+	},
+	"ice_servers": {
+		"actions": {
+			"add_server": {
+				"label": "إضافة خادم ثانوي"
+			},
+			"remove_server": {
+				"label": "إزالة الخادم الثانوي"
+			}
+		},
+		"alerts": {
+			"error": "تعذر تحديث الترتيبات. تحقق من البيانات التي تم إدخالها وحاول مرة أخرى.",
+			"success": "تم تحديث الإعدادات بنجاح."
+		},
+		"connectivity": {
+			"checking": "التحقق من الاتصال",
+			"failed": "الخادم لا يعمل",
+			"success": "الخادم يعمل"
+		},
+		"description": "يحدد هذا الربط عناوين URL للخوادم التي سيتم استخدامها في مفاوضات ICE. عادة ما تكون خوادم STUN و / أو TURN.\n\nهذا إعداد عام ويجب عليك تحديد عنواني URL.",
+		"fields": {
+			"credential": {
+				"label": "الاعتماد"
+			},
+			"url": {
+				"label": "STUN or TURN URI"
+			},
+			"username": {
+				"label": "اسم المستخدم"
+			}
+		},
+		"module_name": "ICE servers",
+		"servers": "خادم | خوادم"
+	},
+	"import": {
+		"actions": {
+			"download_template": "Download import format",
+			"remove_file": "حذف الملف",
+			"replace": "استبدل السجلات الموجودة",
+			"skip": "تخطي السجلات الموجودة"
+		},
+		"alerts": {
+			"failed": "حدث خطأ أثناء الاستيراد"
+		}
+	},
+	"inboxes": {
+		"contacts": {
+			"phone_number": {
+				"duplicate": "هذا الرقم الهاتفي مستخدم لجهة اتصال أخرى."
+			},
+			"title": "جهات الاتصال المحفوظة"
+		},
+		"conversations": {
+			"actions": {
+				"accept": {
+					"description": "قبول المحادثة",
+					"label": "قبول"
+				},
+				"status": {
+					"label": "حاله",
+					"open": "وضع علامة \"مفتوح\"",
+					"resolve": "وضع علامة على أنه تم حله",
+					"success": {
+						"label": "تم تغيير حالة المحادثة"
+					}
+				},
+				"watch": {
+					"description": "ستتم إضافتك كمشارك في المحادثة",
+					"label": "مشاهدة المحادثة"
+				}
+			},
+			"assignee": {
+				"agent": "عامل"
+			},
+			"messages": {
+				"location": {
+					"google_map_url": {
+						"label": "عرض على خرائط Google"
+					}
+				},
+				"media": {
+					"not_found": {
+						"label": "الوسائط المرفقة غير متوفرة. يرجى التواصل مع الدعم إذا كان هذا غير متوقع."
+					}
+				},
+				"status": {
+					"failed": {
+						"generic_message": "فشل في إرسال الرسالة",
+						"label": "فشل"
+					}
+				},
+				"whatsapp_templates": {
+					"form_error_message": "يرجى ملء جميع المتغيرات قبل الإرسال",
+					"go_back_label": "العودة للخلف",
+					"labels": {
+						"category": "الفئة",
+						"language": "اللغة",
+						"template_body": "نص القالب"
+					},
+					"message": "رسالة قالب",
+					"no_templates_found": "لم يتم العثور على قوالب",
+					"search_placeholder": "نماذج البحث",
+					"selected": {
+						"subtitle": "لقد تم اختيار {template}"
+					},
+					"send_message_label": "إرسال الرسالة",
+					"subtitle": "اختر قالب واتساب الذي ترغب في إرساله",
+					"title": "قوالب واتساب",
+					"variable_placeholder": "أدخل قيمة {variable}",
+					"variables": {
+						"body": {
+							"label": "الجسم"
+						},
+						"buttons": {
+							"label": "زر | أزرار",
+							"types": {
+								"copy_code": {
+									"label": "نسخ الكود"
+								},
+								"phone_number": {
+									"label": "اتصل برقم الهاتف"
+								},
+								"quick_reply": {
+									"label": "إجابة سريعة"
+								},
+								"url": {
+									"label": "URL"
+								}
+							}
+						},
+						"footer": {
+							"label": "قدم"
+						},
+						"header": {
+							"label": "رأس الصفحة"
+						},
+						"placeholder": "أدخل قيمة لـ {variable}"
+					},
+					"variables_label": "المتغيرات"
+				}
+			},
+			"panels": {
+				"contact_information": {
+					"header": {
+						"title": "معلومات الاتصال"
+					}
+				},
+				"conversation_actions": {
+					"assigned_agent": {
+						"alert": "يجب أن ينتمي الوكيل إلى المجموعة المقترنة بالبريد الوارد.",
+						"assign_to_me": "تعيين لي",
+						"hint": "انقر فوق المستخدم الذي تريد تعيين المحادثة إليه.",
+						"label": "الوكيل المعين",
+						"placeholder": "ابحث بالاسم أو اسم المستخدم أو الإضافة أو البريد الإلكتروني."
+					},
+					"header": {
+						"title": "إجراءات المحادثة"
+					},
+					"priority": {
+						"high": "مرتفع",
+						"label": "الأولوية",
+						"low": "منخفض",
+						"medium": "متوسط",
+						"none": "لا أحد",
+						"urgent": "عاجل"
+					}
+				},
+				"conversation_information": {
+					"header": {
+						"title": "معلومات المحادثة"
+					},
+					"items": {
+						"channel": "قناة",
+						"group": "مجموعه",
+						"initiated_from": "تم إنشاؤه في",
+						"participants": "{count} مشارك | {count} مشاركا",
+						"status": {
+							"open": {
+								"label": "فتح"
+							},
+							"resolved": {
+								"label": "حل"
+							}
+						}
+					}
+				}
+			},
+			"placeholder": {
+				"titles": {
+					"variation_1": "اختر محادثة للبدء",
+					"variation_2": "حدد محادثتك ، ابدأ التحدث",
+					"variation_3": "حدد دردشة للحصول على اتصالات ذات مغزى",
+					"variation_4": "إشراك عملائك - ابدأ بالتحديد",
+					"variation_5": "صندوق الوارد الخاص بك - التحديد والاتصال"
+				}
+			},
+			"private": {
+				"placeholder": "هذه الرسالة للوكلاء فقط.",
+				"send": "إرسال ملاحظة خاصة"
+			},
+			"reply": {
+				"characters": "الاحرف",
+				"placeholder": "اكتب رسالتك هنا...",
+				"send": "ارسال",
+				"whatsapp_reply_alert": "يمكنك الرد فقط على هذه المحادثة باستخدام رسالة نموذجية بسبب قيود نافذة الرسائل لمدة 24 ساعة.",
+				"words": "كلام",
+				"assigned_user_alert": "لا يمكنك الرد على هذه المحادثة لأنها مخصصة لوكيل آخر."
+			},
+			"sort_options": {
+				"created_at_asc": {
+					"text": "تاريخ الإنشاء: الأقدم أولاً"
+				},
+				"created_at_desc": {
+					"text": "تم الإنشاء: الأحدث أولاً"
+				},
+				"last_activity_at_asc": {
+					"text": "آخر نشاط: الأقدم أولا"
+				},
+				"last_activity_at_desc": {
+					"text": "آخر نشاط: الأحدث أولاً"
+				},
+				"priority_asc": {
+					"text": "الأولوية: الأقل أولاً"
+				},
+				"priority_desc": {
+					"text": "الأولوية: الأعلى أولًا"
+				},
+				"waiting_since_asc": {
+					"text": "الرد المعلق: الأطول أولاً  "
+				},
+				"waiting_since_desc": {
+					"text": "قيد الردالاستجابة المعلقة: الأقصر أولاً"
+				}
+			},
+			"tabs": {
+				"private_note": "ملاحظة خاصة",
+				"reply": "الرد"
+			}
+		},
+		"filters": {
+			"assignee": {
+				"all": "جميع",
+				"assigned": "تعيين",
+				"mine": "الخاص بي",
+				"unassigned": "غير معين"
+			}
+		},
+		"list": {
+			"all_conversations": "جميع المحادثات",
+			"conversations": "المحادثة | المحادثات",
+			"sort": {
+				"label": "فرز المحادثات"
+			},
+			"unassigned": "غير معين",
+			"unattended": "مراقب"
+		},
+		"status": {
+			"label": "حاله",
+			"options": {
+				"all": "جميع",
+				"open": "فتح",
+				"resolved": "حل",
+				"unassigned": "غير معين",
+				"unattended": "غير مراقب",
+				"unattendedTooltip": "في انتظار الرد لأكثر من {minutes} دقيقة"
+			},
+			"tooltips": {
+				"unattended": "في انتظار الرد لأكثر من {minutes} دقيقة"
+			}
+		}
+	},
+	"login": {
+		"copyright": "مشغل بواسطة {company} © {year} . جميع الحقوق محفوظة",
+		"loginButton": "تسجيل الدخول",
+		"loginError": "اسم المستخدم أو كلمة المرور خاطئة",
+		"password_reset": {
+			"change": "غير كلمة المرور الخاصة بك",
+			"forgot_password": "نسيت كلمة المرور؟",
+			"reset": "إعادة تعيين كلمة المرور"
+		},
+		"username_or_email": "اسم المستخدم أو البريد الالكتروني"
+	},
+	"2fa": {
+		"title": "التحقق بخطوتين",
+		"code": "أدخل رمز التحقق الثنائي",
+		"verify": "تحقق",
+		"remember_device": "ثق بهذا الجهاز لمدة 30 يومًا",
+		"error": "رمز غير صالح أو فشل التحقق"
+	},
+	"mail_settings": {
+		"alerts": {
+			"error": "تعذر تحديث المتطلبات. تحقق من البيانات التي تم إدخالها وحاول مرة أخرى.",
+			"success": "تم تحديث البيانات بنجاح."
+		},
+		"description": "تهيئة خادم البريد الخاص بك بحيث يمكن للتطبيق إرسال رسائل البريد الإلكتروني.",
+		"fields": {
+			"authentication": {
+				"label": "المصادقة"
+			},
+			"bcc_mail": {
+				"label": "بريد مخفي الوجهة"
+			},
+			"encryption": {
+				"label": "التشفير"
+			},
+			"from_address": {
+				"label": "من العنوان"
+			},
+			"from_name": {
+				"label": "من الاسم"
+			},
+			"host": {
+				"host": "المضيف"
+			},
+			"password": {
+				"label": "كلمة المرور"
+			},
+			"port": {
+				"port": "المنفذ"
+			},
+			"test": {
+				"label": "إرسال بريد الكتروني للتجربة"
+			},
+			"type": {
+				"label": "النوع",
+				"options": {
+					"default": {
+						"label": "الافتراضي (استخدام خادم البريد المدمج)"
+					},
+					"smtp": "SMTP"
+				}
+			},
+			"username": {
+				"label": "اسم المستخدم"
+			}
+		},
+		"module_name": "إعدادات البريد الالكتروني",
+		"pbx_status": {
+			"checking_connection": "التحقق من الاتصال",
+			"connected": "متصل",
+			"disconnected": "غير متصل"
+		},
+		"test": {
+			"alerts": {
+				"failed": "لم نتمكن من إرسال البريد",
+				"success": "تم ارسال البريد الالكتروني بنجاح"
+			}
+		}
+	},
+	"main_menu": {
+		"about": "عن",
+		"administration": {
+			"groups": "المجموعات",
+			"menu_name": "الإدارة",
+			"presence_status": "حالة التواجد",
+			"sms_provider": "مزود الرسائل القصيرة",
+			"users_manager": "المستخدمين"
+		},
+		"logout": "تسجيل الخروج",
+		"settings": "الإعدادات"
+	},
+	"misc": {
+		"active": "متاح",
+		"add": "إضافة",
+		"advanced": "متقدم",
+		"agents": "وكلاء",
+		"all": "الكل",
+		"all-tenants": {
+			"label": "جميع المستأجرين"
+		},
+		"cause": "السبب",
+		"copied": "تم النسخ",
+		"default": "إفتراضي",
+		"dial": "اتصل",
+		"error_title": "حدث خطأ",
+		"filter_by_name": "الفلترة حسب الاسم",
+		"finish": "إنهاء",
+		"generate": "انشاء",
+		"global": "عالمي",
+		"hello": "مرحبا , {user_name}",
+		"info": "معلومات",
+		"invalid_value": "قيمة غير صالحة",
+		"live_data": "يعيش",
+		"main_tenant": "Main tenant",
+		"more": "أكثر",
+		"next": "التالي",
+		"no_data": "لا توجد بيانات للعرض",
+		"no_tenant_change": "* لا يجوز تغيير المستأجر.",
+		"not_found": "لم يتم العثور عليه",
+		"offline_ready": "التطبيق جاهز للعمل في وضع عدم الاتصال",
+		"order_by": "ترتيب حسب",
+		"paused": "إيقاف مؤقت",
+		"percentage": "النسبة المئوية",
+		"preferences": "المفضلات",
+		"pwa": {
+			"actions": {
+				"install": "تنزيل",
+				"not_now": "ليس الآن"
+			},
+			"promote_install": "اعثر على ما تحتاجه بشكل أسرع مع تطبيقنا!"
+		},
+		"realtime": "وقت حقيقي",
+		"reload": "إعادة تحميل",
+		"send-message": "إرسال رسالة",
+		"server_connection": {
+			"connection_error": {
+				"suggestion": "من فضلك ، اتصل بالمسؤول.",
+				"title": "تعذر إنشاء الاتصال بالخادم الخاص بك."
+			}
+		},
+		"text": "نص",
+		"try_again": "حاول مرة أخرى",
+		"type": "نوع",
+		"unsupported_feature": "هذه الميزة غير مدعومة من قبل هذا المتصفح.",
+		"update": "يتوفر محتوى جديد ، انقر فوق زر إعادة التحميل للتحديث!",
+		"value": "القيمة",
+		"welcome": "مرحبًا بك في {app_name}",
+		"welcome_features_section_title": "ابق على اتصال مع {app_name}",
+		"yesterday": "البارحة",
+		"you": "انت"
+	},
+	"no_extension": "بدون تمديد",
+	"pbx_settings": {
+		"alerts": {
+			"error": "لم يتم تحديث الإعدادات بسبب تعذر إنشاء اتصال. يرجى التحقق من البيانات التي تم إدخالها وحاول مرة أخرى.",
+			"success": "تم تحديث البيانات بنجاح."
+		},
+		"description": "قم بإعداد البيانات ذات الصلة للاتصال بـ الهاتف السحابي الخاص بك. هذه المعلومات ضرورية لتسجيل التحويلات من مستخدميها ، والبريد الصوتي ، وسجل المكالمات ، من بين خصائص أخرى.",
+		"fields": {
+			"api_port": {
+				"hint": "حدد المنفذ المستخدم بواسطة واجهة برمجة التطبيقات.",
+				"label": "منفذ API"
+			},
+			"host": {
+				"host": "المضيف"
+			},
+			"https_port": {
+				"hint": "منفذ VitalPBX HTTPS (مفيد للحصول على الأصول من وحدة العلامة التجارية).",
+				"label": "منفذ HTTPS"
+			},
+			"key": {
+				"edit": "تعديل الرمز",
+				"hint": "الفهرس",
+				"key": "الرمز"
+			},
+			"pjsip_port": {
+				"hint": "قم بتكوين المنفذ الذي سيتم استخدامه لتسجيل التحويلة",
+				"pjsip_port": "PJSIP منفذ"
+			},
+			"wss_port": {
+				"hint": "إذا كان لديك جدار حماية ، فلا تنس السماح لمنفذ TCP بالمرور حتى يتمكن عميلك من الاتصال.",
+				"wss_port": "WSS منفذ"
+			}
+		},
+		"module_name": "إعدادات الهاتف السحابي",
+		"pbx_status": {
+			"checking_connection": "التحقق من الاتصال",
+			"connected": "متصل",
+			"disconnected": "غير متصل"
+		}
+	},
+	"recordings": {
+		"not_allowed": "ليس لديك صلاحيات للوصول إلى هذه الوحدة",
+		"recording": "تسجيل | التسجيلات"
+	},
+	"right_menu": {
+		"check_updates": "تحقق من وجود تحديثات",
+		"logout": "تسجيل الخروج",
+		"reset_app_data": "إعادة ضبط بيانات التطبيق",
+		"settings": "الإعدادات",
+		"toggle_desktop_app_size": {
+			"desktop": "الواجهة الافتراضية",
+			"mobile": "واجهة الموبايل"
+		},
+		"troubleshooting": "استكشاف الأخطاء وإصلاحها"
+	},
+	"settings": {
+		"account": {
+			"account": "الحساب",
+			"password": {
+				"alerts": {
+					"error": "لا يمكن تغيير كلمة المرور.",
+					"no_match_old_password": "كلمة المرور لا تتطابق مع كلمة المرور القديمة.",
+					"password_error": "تأكيد كلمة المرور",
+					"success": "تم تغيير كلمة المرور بنجاح"
+				},
+				"change_password": "تغيير كلمة المرور",
+				"fields": {
+					"new_password": {
+						"label": "كلمة مرور جديدة",
+						"rules": {
+							"required": "مطلوب كلمة مرور جديدة"
+						}
+					},
+					"password": {
+						"label": "كلمة المرور الحالية",
+						"rules": {
+							"required": "مطلوب كلمة المرور الحالية"
+						}
+					},
+					"password_confirmation": {
+						"password_confirmation": "Uتأكيد كلمة المرور",
+						"rules": {
+							"no_match": "كلمة المرور غير مطابقة",
+							"required": "مطلوب تأكيد كلمة المرور"
+						}
+					}
+				},
+				"set_new_password": "تعيين كلمة مرور جديدة"
+			},
+			"2fa": {
+				"title": "المصادقة الثنائية",
+				"enable": "تفعيل المصادقة الثنائية",
+				"disable": "تعطيل المصادقة الثنائية",
+				"remember_device": "وثق هذا الجهاز لمدة 30 يومًا",
+				"description": "قم بتمكين طبقة أمان إضافية لحسابك من خلال طلب رمز من تطبيق المصادقة على الهاتف.",
+				"hint": "امسح رمز QR باستخدام تطبيق المصادقة (مثل Google Authenticator أو Microsoft Authenticator).",
+				"enabled": "تم تفعيل المصادقة الثنائية.",
+				"disabled": "تم تعطيل المصادقة الثنائية.",
+				"warning_not_verified": "لم يتم تأكيد المصادقة الثنائية بعد. يرجى إكمال التحقق لتفعيلها.",
+				"enter_code": "أدخل رمز 2FA",
+				"or_enter_key": "أو أدخل هذا المفتاح السري يدويًا:",
+				"secret_description": "يمكنك إدخال هذا المفتاح يدويًا في تطبيق المصادقة بدلاً من مسح رمز QR.",
+				"secret_copied": "تم نسخ المفتاح السري إلى الحافظة.",
+				"verify": "تحقق من الرمز",
+				"verified_success": "تم التحقق من المصادقة الثنائية بنجاح.",
+				"snackbar_verified": "تم تفعيل 2FA بالكامل الآن وسيُطلب في تسجيل الدخول القادم.",
+				"recovery_code_hint": "إذا فقدت جهازك المحمول أو مفتاح الأمان، يمكنك إنشاء رمز استرداد لتسجيل الدخول.",
+				"recovery_code_instruction": "يجب حفظ رمز الاسترداد في مكان آمن. يمكن أن يساعدك في الوصول إلى حسابك إذا لزم الأمر.",
+				"generate_recovery_code": "إنشاء رمز استرداد",
+				"your_recovery_code": "رمز الاسترداد الخاص بك",
+				"recovery_code_warning": "احفظ هذا الرمز بأمان. لن يتم عرضه مرة أخرى.",
+				"copy_code": "نسخ الرمز",
+				"download_code": "تحميل كملف .txt",
+				"download_started": "بدأ التحميل.",
+				"close": "إغلاق",
+				"verified_error": "رمز غير صالح. حاول مرة أخرى.",
+				"error": "حدث خطأ أثناء تحديث حالة المصادقة الثنائية."
+			}
+		},
+		"actions": {
+			"save": "حفظ"
+		},
+		"alert": {
+			"error": "حدث خطأ أثناء حفظ الإعدادات",
+			"success": "تم حفظ الإعدادات."
+		},
+		"application": {
+			"fields": {
+				"auto_launch": {
+					"description": "التشغيل التلقائي للتطبيق عند بدء تشغيل نظام التشغيل",
+					"label": "التشغيل التلقائي للتطبيق"
+				},
+				"hardware_acceleration": {
+					"label": "تعطيل تسريع أجهزة GPU (يتطلب إعادة تشغيل {app_name})"
+				},
+				"host": {
+					"label": "أدخل المضيف حيث تم تثبيت {app_name} (يتطلب إعادة تشغيل {app_name})",
+					"placeholder": "your-pbx.com"
+				},
+				"keep_app_on_close": {
+					"label": "عند الإغلاق، اترك التطبيق يعمل"
+				},
+				"open_as_hidden": {
+					"description": "عند التشغيل التلقائي ، قم بتشغيل التطبيق باعتباره مخفيًا.",
+					"label": "افتح التطبيق كمخفي"
+				}
+			},
+			"tab_name": "التطبيق"
+		},
+		"audio": {
+			"audio": "الصوت",
+			"echo_cancellation": {
+				"description": "ميزة تعمل على منع تأثيرات الصدى على الاتصال الصوتي ثنائي الاتجاه",
+				"echo_cancellation": "إلغاء الصدى"
+			},
+			"noise_suppression": {
+				"description": "يقوم تلقائيًا بتصفية الصوت لإزالة ضوضاء الخلفية",
+				"noise_suppression": "قمع الضوضاء"
+			},
+			"volume": {
+				"description": "سيتم تطبيق هذه المتطلبات على نغمات رنين المكالمات والأصوات الأخرى للتطبيق.",
+				"label": "نغمة وسائل التواصل"
+			}
+		},
+		"call_center": {
+			"auto_open_crm_url": {
+				"call_direction": {
+					"label": "اتجاه المكالمة",
+					"options": {
+						"all": "جميع",
+						"incoming": "الوارده",
+						"outgoing": "الصادره"
+					}
+				},
+				"description": "سيتم فتح عنوان URL لإدارة علاقات العملاء (CRM) تلقائيا عند إنشاء المكالمة.",
+				"label": "افتح عنوان URL لإدارة علاقات العملاء تلقائيا"
+			},
+			"auto_open_crm_url_event": {
+				"answer-call": {
+					"label": "رد"
+				},
+				"label": "حدث الزناد",
+				"ringing": {
+					"label": "يتصل"
+				}
+			},
+			"call_center": "مركز الاتصال",
+			"crm_url": "عنوان URL لإدارة علاقات العملاء",
+			"log_into_queues_on_startup": {
+				"description": "تسجيل الدخول تلقائيًا إلى قوائم الانتظار المخصصة عند بدء التطبيق",
+				"label": " الدخول إلى قوائم الانتظار عند بدء التشغيل"
+			},
+			"log_out_from_queues_when_closing_the_app": {
+				"label": " الخروج من قوائم الانتظار عند إغلاق التطبيق"
+			},
+			"open_crm_url": {
+				"description": "في حالة احتواء ملف تعريف الموظف الخاص بك على عنوان URL لـ CRM تم تكوينه ، فاختر كيفية فتح عنوان URL في متصفحك.",
+				"label": "افتح رابط CRM في:",
+				"options": {
+					"new_tab": {
+						"label": "علامة تبويب جديدة"
+					},
+					"new_window": {
+						"label": "نافذة جديدة",
+						"support_alert": "يخضع هذا الخيار لصلاحيات المتصفح ونظام التشغيل."
+					}
+				}
+			}
+		},
+		"calls": {
+			"auto_answer": {
+				"label": "رد آلي",
+				"modes": {
+					"after": "الرد التلقائي بعد (1 - 25 ثانية)",
+					"instant": "رد آلي فوري"
+				},
+				"rules": {
+					"timer": "يجب أن يكون الرقم بين 1 و 25"
+				}
+			},
+			"call": "المكالمات",
+			"call_history_limit": {
+				"call_history_limit": "الحد الأقصى لسجل المكالمات",
+				"description": "وضع الحد الأقصى للتسجيلات لتظهر في سجل المكالمات"
+			},
+			"calls": "المكالمات",
+			"ringtone": {
+				"description": "نغمة الرنين المراد تشغيلها على المكالمات الواردة",
+				"ringtone": "نغمة"
+			}
+		},
+		"devices": {
+			"audio": "الصوت",
+			"camera": "الكاميرا",
+			"default": {
+				"camera": "الكاميرا التلقائية",
+				"microphone": "الميكروفون التلقائي",
+				"speaker": "مكبر الصوت الافتراضي للنظام"
+			},
+			"device_placeholder": "اختر جهازا",
+			"devices": "الأجهزة",
+			"devices_selection": {
+				"input_device": {
+					"label": "جهاز الإدخال"
+				},
+				"input_speaker": {
+					"label": "متحدث داخلي"
+				},
+				"output_device": {
+					"label": "جهاز خارجي"
+				},
+				"output_speaker": {
+					"label": "مكبر صوت خارجي"
+				},
+				"ringing_device": {
+					"label": "جهاز الرنين"
+				}
+			},
+			"microphone": "ميكروفون",
+			"no_devices_available": "لم يتم الكشف عن أي أجهزة",
+			"speaker": "مكبر الصوت"
+		},
+		"general": {
+			"appearance": {
+				"description": "الإعداد ينطبق على هذا المتصفح فقط.",
+				"label": "المظهر",
+				"options": {
+					"dark_theme": "النمط الداكن",
+					"device_theme": "موضوع الجهاز",
+					"light_theme": "السمة الفاتحة"
+				}
+			},
+			"general": "عام",
+			"push_notifications": {
+				"description": "تلقي إشعارات سطح المكتب لأحداث معينة",
+				"push_notifications": "إشعارات سطح المكتب"
+			},
+			"timezone": {
+				"description": "التوقيت المحلي للمنطقة أو البلد",
+				"timezone": "منطقة زمنية"
+			}
+		},
+		"hid_integration": {
+			"permission_request": "لتتمكن من استخدام سماعة الرأس ، يجب منح الأذونات اللازمة.",
+			"plantronics": {
+				"label": "استخدم Plantronics HID"
+			},
+			"subtitle": "سماعة خارجية / تكامل سماعة رأس",
+			"title": "تكامل سماعة الرأس"
+		},
+		"presence": {
+			"additional_information": {
+				"additional_information": "معلومات إضافية",
+				"description": "رسالة إضافية لحالة تواجدك",
+				"label": "رسالة حالة الحضور"
+			},
+			"presence": "حضور",
+			"presence_status": {
+				"description": "حدد ولاية حسب تواجدك",
+				"presence_status": "حالة الحضور"
+			}
+		},
+		"profile": {
+			"extension": {
+				"extension": "التحويلة"
+			},
+			"full_name": {
+				"full_name": "الاسم الكامل"
+			},
+			"profile": "الملف الشخصي",
+			"profile_picture": {
+				"actions": {
+					"add": "إضافة صورة للملف الشخصي",
+					"change": "تغيير",
+					"remove": "إزالة"
+				},
+				"crop": {
+					"label": "ضبط الصورة",
+					"preview": "معاينة"
+				},
+				"profile_picture": "الصورة الشخصية",
+				"tabs": {
+					"current_picture": "الصورة الحالية",
+					"take_photo": "تصوير",
+					"upload_photo": "حمّل الصورة"
+				},
+				"take_photo": {
+					"label": "التصوير"
+				},
+				"upload_photo": {
+					"drag": "اسحب صورة الملف الشخصي هنا",
+					"label": "قم بإسقاط الملف أو انقر للتحميل",
+					"mobile_label": "اضغط للتحميل",
+					"select": "اختر صورة من جهاز الكمبيوتر الخاص بك"
+				}
+			},
+			"username": {
+				"username": "اسم المستخدم"
+			}
+		},
+		"settings": "الإعدادات",
+		"video": {
+			"frame_rate": {
+				"description": "يشير إلى معدل الإطارات ، في إطارات في الثانية",
+				"frame_rate": "معدل الإطار"
+			},
+			"max_aspect_ratio": {
+				"description": "وضع العلاقة التناسبية بين عرض الفيديو وارتفاعه",
+				"max_aspect_ratio": "نسبة العرض إلى الارتفاع القصوى"
+			},
+			"resize_mode": {
+				"description": "تحديد وضع دقة مسار الفيديو.",
+				"options": {
+					"crop_and_scale": "قص وقياس",
+					"none": "لا شيء"
+				},
+				"resize_mode": "وضع تغيير الحجم"
+			},
+			"video": "فيديو"
+		}
+	},
+	"shortcuts": {
+		"calls": {
+			"accept-audio-call": "قبول مكالمة صوتية",
+			"accept-video-call": "قبول مكالمة فيديو",
+			"decline-call": "رفض المكالمة",
+			"start-audio-call": "بدء مكالمة صوتية",
+			"start-video-call": "بدء مكالمة فيديو",
+			"toggle-mute": "تبديل كتم الصوت"
+		},
+		"general": {
+			"shortcuts": "إظهار اختصارات لوحة المفاتيح"
+		},
+		"label": "الاختصارات"
+	},
+	"users": {
+		"all_groups": "كل المجموعات",
+		"email": "البريد الالكتروني",
+		"extension": "امتداد",
+		"groups": {
+			"members": "عضو | أعضاء"
+		},
+		"has_no_extension": "لا يوجد له تحويلة",
+		"name": "اسم",
+		"no_users": "لا يوجد مستخدمين متاحين",
+		"options": {
+			"sort_by": {
+				"label": "الترتيب حسب المستخدمين المتاحيين"
+			}
+		},
+		"status": {
+			"available": "متاح",
+			"in_call": "يجري مكالمة",
+			"on_the_phone": "على الهاتف",
+			"ringing": "رنين"
+		},
+		"users": "المستخدم | المستخدمون"
+	},
+	"voice_messages": {
+		"no_messages": "ليس لديك رسائل جديدة",
+		"not_found": "لا توجد رسائل",
+		"types": {
+			"inbox": "جديد",
+			"old": "قديم",
+			"urgent": "عاجل"
+		},
+		"voice_message": "رسالة صوتية | رسائل صوتية",
+		"voicemail_count": "ليس لديك رسائل صوتية | لديك {count} رسالة صوتية | لديك {count} رسائل صوتية"
+	},
+	"wizard": {
+		"actions": {
+			"continue": "استمر",
+			"finish": "انتهى",
+			"next": "التالي",
+			"previous": "السابق"
+		},
+		"steps": {
+			"database_setup": {
+				"error": "تعذر الاتصال. يرجى التحقق من الإعدادات الخاصة بك.",
+				"fields": {
+					"password": {
+						"label": "كلمة مرور قاعدة البيانات",
+						"placeholder": "كلمة المرور"
+					},
+					"username": {
+						"label": "اسم مستخدم قاعدة البيانات",
+						"placeholder": "Root"
+					}
+				},
+				"info": "أدخل مستخدمًا لديه الصلاحيات لتثبيت قاعدة بيانات التطبيق.",
+				"loading_message": "جاري تثبيت قاعدة البيانات ، الرجاء الانتظار ...",
+				"step_name": "إعداد قاعدة البيانات"
+			},
+			"pbx_settings": {
+				"fields": {
+					"host": {
+						"label": "المضيف",
+						"placeholder": "المضيف المحلي"
+					},
+					"key": {
+						"hint": "إذا كنت تقوم بالتثبيت على نفس الخادم مثل {company} ، يمكنك ترك هذا الحقل فارغًا. سيتم إنشاء مفتاح تلقائيًا.",
+						"label": "مفتاح التطبيق",
+						"placeholder": "مفتاح التطبيق"
+					},
+					"port": {
+						"label": "المنفذ"
+					},
+					"secure": {
+						"hint": "يشير إلى اتصال آمن من خلال HTTPS. عادة ، تقوم بتحديد هذا الخيار عند استخدام المنفذ 443.",
+						"label": "آمن"
+					}
+				},
+				"loading_message": "جاري التحقق من الاتصال ، الرجاء الانتظار ...",
+				"step_name": "إعدادات الهاتف السحابي"
+			},
+			"user_setup": {
+				"error": "لا يمكن إنشاء مستخدم يرجى التحقق من الإعدادات الخاصة بك",
+				"fields": {
+					"name": {
+						"label": "الاسم",
+						"placeholder": "Example"
+					},
+					"password": {
+						"label": "كلمة مرور المستخدم",
+						"placeholder": "كلمة المرور"
+					},
+					"password_confirmation": {
+						"label": "تأكيد كلمة المرور",
+						"placeholder": "إعادة كلمة المرور الخاصة بك"
+					},
+					"timezone": {
+						"label": "وحدة زمنية"
+					},
+					"username": {
+						"label": "اسم المستخدم",
+						"placeholder": "مشرف"
+					}
+				},
+				"loading_message": "يتم الإنشاء ..",
+				"step_name": "إعداد المستخدم"
+			}
+		}
+	}
+}

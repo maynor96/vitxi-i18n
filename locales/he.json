@@ -1,0 +1,1996 @@
+{
+	"app": {
+		"title": "האפליקציה פתוחה בלשונית אחרת",
+		"explanation": "כדי למנוע צלצולים כפולים, התנגשויות שיחה והתנהגות לא צפויה, מותרת לשונית פעילה אחת בלבד.",
+		"takeover": {
+			"can": "כעת תוכל להשתלט על האפליקציה בלשונית זו.",
+			"cannot": "שיחה פעילה כעת בלשונית אחרת. תוכל להשתלט לאחר שתסתיים.",
+			"button": "השתמש כאן",
+			"close": "סגור לשונית זו"
+		}
+	},
+	"about": {
+		"app_name": "{app_name} מערכת תקשורת רב ערוצים",
+		"features": {
+			"calls": "שיחות אודיו ווידאו",
+			"chats": "לשוחח עם חברי הצוות שלך",
+			"transfer_calls": "העברה עיוורת ונוכחת"
+		},
+		"information": "הוא  WebRTC מלא עם כל התכונות שאתה צריך."
+	},
+	"administration": {
+		"agent_profiles": {
+			"agent_pauses_reason": {
+				"description": "Pause reasons used when an agent pauses a session in queues",
+				"fields": {
+					"name": "שֵׁם"
+				},
+				"label": "סיבות ההפסקה",
+				"pause": "הפסקה | הפסקות",
+				"rules": {
+					"name": "The name of the reason is required"
+				}
+			},
+			"agent_profile": "פרופיל משתמש",
+			"default_profile_alert": "לא ניתן למחוק את פרופיל ברירת המחדל.",
+			"description": "Create agent profiles in which you can set reasons for pauses. Profiles can be assigned to user roles",
+			"fields": {
+				"crm_url": {
+					"actions": {
+						"add_parameter": "הוסף פרמטר",
+						"remove_parameter": "הסר פרמטר"
+					},
+					"description": "הגדר נקודת קצה של CRM שלך כדי לשמור נתונים משיחה.",
+					"fields": {
+						"base_url": {
+							"invalid": "URL אינו חוקי ",
+							"label": "Base URL"
+						},
+						"dynamic_call_values": {
+							"call_type": {
+								"label": "סוג שיחה"
+							},
+							"callee_name": {
+								"label": "שם הקורא"
+							},
+							"callee_number": {
+								"label": "מספר מתקשר"
+							},
+							"caller_id_name": {
+								"label": "שם המתקשר"
+							},
+							"caller_id_number": {
+								"label": "מספר המתקשר"
+							},
+							"hint": "השתמש במשתנה דינמי",
+							"label": "משתנה דינמי",
+							"queue": {
+								"label": "תור"
+							}
+						},
+						"parameter_name": {
+							"label": "שם פמטר",
+							"placeholder": "https://your-crm.com"
+						},
+						"value": {
+							"label": "ערך"
+						}
+					},
+					"label": "CRM URL (אופציונאלי)",
+					"preview": "הצג URL"
+				},
+				"is_global": {
+					"description": "אם מסומן, הפרופיל יכול להיות מאוכלס על ידי כל אחד מהדיירים.",
+					"label": "ציבורי"
+				},
+				"website_tab": {
+					"hint": "הוסף כרטיסייה מותאמת אישית לאפליקציה עם אתר ",
+					"label": "לשונית אתר מותאם אישית",
+					"preview": "תצוגה מקדימה",
+					"tab_name": {
+						"label": "שם הכרטיסייה"
+					},
+					"url": {
+						"hint": "היכנס לאתר אינטרנט מאובטח (https://) שאתה יכול לסמוך עליו. זה חשוב כדי לשמור על בטיחות המשתמשים שלך.",
+						"label": "Web url"
+					}
+				}
+			},
+			"module_name": "פרופיל סוכן",
+			"profile": "פרופיל | פרופילים"
+		},
+		"blf_settings": {
+			"contact_control": {
+				"description": "ניהול מספר אנשי קשר BLF מרבי למשתמש על מנת למנוע עומס בשרת ולמקסם את הביצועים. הגדר ערך בין 1 ל-100.",
+				"fields": {
+					"label": "הגבלה"
+				},
+				"label": "בקרת איש קשר BLF"
+			},
+			"module_name": "הגדרות BLF"
+		},
+		"event_logs": {
+			"datetime_picker": {
+				"placeholder": "בחר טווח תאריך ושעה",
+				"shortcuts": {
+					"last_month": "בחודש שעבר",
+					"last_week": "בשבוע שעבר",
+					"select_date": "בחר תאריך",
+					"select_time": "בחר זמן",
+					"this_month": "החודש",
+					"this_week": "השבוע",
+					"today": "היום",
+					"yesterday": "אתמול"
+				}
+			},
+			"headers": {
+				"client_ip": "כתובת IP",
+				"date": "תאריך",
+				"device": "דפדפן/מכשיר",
+				"event": "אירוע",
+				"metadata": "מידע על נתונים",
+				"module": "מודול",
+				"payload": "מטען",
+				"tenant": "דייר",
+				"user": "משתמש"
+			},
+			"info": "מציג את האירועים העיקריים של היישום. זמין רק כאשר היישום מותקן על אותו השרת כמו ה-PBX.",
+			"module_name": "יומני אירועים"
+		},
+        "global_setting": "הגדרה כללית",
+        "global_setting_hint": "זוהי הגדרה כללית והיא חלה על כל הדיירים",
+		"groups": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "אנא הקלד {name} כדי לאשר.",
+					"content": "האם אתה בטוח שברצונך למחוק קבוצה זו? כל תיבות הדואר הנכנס, השיחות והנתונים הקשורים יימחקו לצמיתות."
+				}
+			},
+			"description": "במטרה שמשתמשי {app_name} יהיו גלויים זה לזה, יש צורך שלכל משתמש תוקצה להם קבוצה, ולאחר מכן, אנו נותנים גישה למשתמשים אחרים כדי לראות את הקבוצה הזו. בדרך זו, אתה יכול ליצור מספר קבוצות של משתמשים ולהגביל אותם באילו קבוצות הם יכולים לראות. לשם כך, אנו יוצרים תחילה את שם הקבוצה.",
+			"errors": {
+				"groups": "לא ניתן היה לטעון את הקבוצות",
+				"tenants": "לא ניתן היה לטעון את הדיירים"
+			},
+			"fields": {
+				"description": "תיאור",
+				"name": "שֵׁם",
+				"tenant": "דייר"
+			},
+			"group": "קבוצה | קבוצות",
+			"manage-users": "הוסף/הסר משתמשים",
+            "manage_members": "נהל חברים",
+            "members_disabled_until_save": "צור את הקבוצה כדי לנהל חברים.",
+			"module_name": "קבוצות",
+			"rules": {
+              "name": "נדרש שם הקבוצה",
+              "name_min": "שם הקבוצה חייב להכיל לפחות 3 תווים",
+              "tenant": "נדרש דייר"
+			},
+            "sections": {
+              "basic_info": "מידע בסיסי",
+              "basic_info_hint": "תן שם לקבוצה שלך ותאר את מטרתה",
+              "members": "חברים",
+              "members_hint": "הצג ונהל את חברי הקבוצה"
+            },
+			"settings": {
+				"member_limit": {
+					"confirm": {
+						"content": "⚠️ אזהרה: הגדרת מגבלה מעל 150 עלולה להעמיס על השרת ולהשפיע על הביצועים. לניהול טוב יותר, שקול לארגן משתמשים בקבוצות שונות.",
+						"excessMembers": "מגבלת החברים החדשה שברצונך להגדיר נמוכה מהמגבלה הנוכחית. תצטרך לעיין ולמחוק חברים באופן ידני על מנת לעמוד במגבלה החדשה."
+					},
+					"description": "נהל את מספר החברים המותרים בכל קבוצה כדי להימנע מעומס יתר בשרת ולייעל את הביצועים.",
+					"fields": {
+						"label": "גבול"
+					},
+					"label": "מגבלת חברים"
+				},
+				"title": "הגדרות הקבוצה"
+			},
+            "tooltips": {
+              "tenant_scope": "קבוצה זו תשתייך לשוכר שנבחר."
+            }
+		},
+		"inboxes": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "אנא הקלד {name} כדי לאשר.",
+					"content": "האם אתה בטוח שברצונך למחוק תיבת דואר נכנס זו? כל השיחות והנתונים הקשורים יוסרו לצמיתות."
+				}
+			},
+			"channels": {
+				"sms": {
+					"label": "ערוץ SMS",
+					"providers": {
+						"vitalpbx": {
+							"hint": "הגדר את ספק ה-SMS שלך ב: התקנת ה-PBX שלך > PBX/SMS/Messaging Providers"
+						}
+					}
+				},
+				"whatsapp": {
+					"api_key": {
+						"label": "אסימון API",
+						"placeholder": "הזן את טוקן הגישה של משתמש חשבון העסק"
+					},
+					"business_account_id": {
+						"label": "מזהה חשבון עסקי",
+						"placeholder": "הזן את מזהה חשבון העסקים מלוח הבקרה של מפתחי פייסבוק."
+					},
+					"label": "ערוץ וואטסאפ",
+					"phone_number": {
+						"invalid": "הזן מספר טלפון חוקי שמתחיל בסימן + וללא רווחים.",
+						"placeholder": "+1234567890 (ללא רווחים)"
+					},
+					"phone_number_id": {
+						"label": "מזהה מספר טלפון",
+						"placeholder": "הזן את מזהה מספר הטלפון מלוח המחוונים של מפתחי פייסבוק."
+					},
+					"webhook_verification_token": {
+						"hint": "אסימון זה משמש לאימות האותנטיות של נקודת הקצה של ה-Webhook.",
+						"label": "אסימון אימות וובהוק"
+					},
+					"whatsapp_templates": {
+						"sync": {
+							"label": "סנכרן הודעות תבנית"
+						}
+					}
+				}
+			},
+			"confirm_navigation": "לא השלמת את ההגדרה. אתה בטוח שברצונך לעזוב את הדף הזה?",
+			"description": "מודול ניהול תיבת הדואר הנכנס מאפשר לך ליצור ולנהל תיבות דואר נכנס שונות. זה מקל על הארגון היעיל של תקשורת נכנסת.",
+			"form": {
+				"fields": {
+					"assignment_config": {
+						"auto_assignment_limit": {
+							"description": "הגבל את המספר המרבי של שיחות מתיבת דואר נכנס זו שניתן להקצות באופן אוטומטי לסוכן.",
+							"label": "מגבלת הקצאה אוטומטית"
+						},
+						"label": "הקצאת שיחה",
+						"strategy": {
+							"label": "אסטרטגיה",
+							"options": {
+								"round_robin": {
+									"hint": "הפצת שיחות לסוכנים מקוונים בסדר מחזורי.",
+									"label": "סיור רובין"
+								},
+								"self_assignment": {
+									"hint": "מאפשר לסוכנים להקצות שיחות לעצמם.",
+									"label": "השיוך על-ידי הסוכן עצמו"
+								}
+							}
+						}
+					},
+					"channel_info": {
+						"sms": {
+							"phone_number": {
+								"label": "מספר טלפון"
+							}
+						},
+						"whatsapp": {
+							"phone_number": {
+								"label": "מספר WhatsApp Business"
+							}
+						}
+					},
+					"channel_type": {
+						"choose": "בחר ערוץ",
+						"label": "סוג ערוץ"
+					},
+					"greeting": {
+						"enable_channel_greeting": {
+							"description": "שלח באופן אוטומטי הודעות ברכה ללקוחות ברגע שהם יוזמים שיחה ושולחים את ההודעה הראשונית שלהם.",
+							"label": "הפיכת ברכת ערוץ לזמינה"
+						},
+						"greeting_message": {
+							"label": "הודעת ברכה",
+							"limit": "מקסימום {count} תווים.",
+							"placeholder": "שלום! תודה שפנית אלינו. אחד הסוכנים שלנו יטפל בך בקרוב."
+						},
+						"label": "ברכה"
+					},
+					"group": {
+						"hint": "בחר בקבוצה שבה ישויך התיקיון."
+					},
+					"inbox": {
+						"create": "צור תיבת דואר נכנס"
+					},
+					"name": {
+						"placeholder": "למשל, תמיכה, מכירות, שיווק"
+					},
+					"provider": {
+						"options": {
+							"pbx": {
+								"hint": "מחובר דרך ממשק ה-API של PBX",
+								"label": "PBX"
+							}
+						}
+					},
+					"webhook": {
+						"label": "כתובת URL של הוובהוק",
+						"sms": {
+							"hint": "העתק את ה-URL והדבק אותו בשדה 'URL של התראה על אירועים' בהגדרות ספק המספר שנבחר: ההתקנה של PBX שלך > ספקי PBX/SMS/הודעות."
+						},
+						"whatsapp": {
+							"hint": "עליך להגדיר את כתובת ה-URL הזו כ-Webhook באפליקציית המפתחים של פייסבוק."
+						}
+					}
+				}
+			},
+			"inboxes": "תיק נכנס | תיקי נכנס",
+			"module_name": "תיקיות דואר נכנס",
+			"new_inbox": "תיבת דואר נכנס חדשה",
+			"reports": {
+				"agents": {
+					"status": {
+						"busy": {
+							"label": "עסוק"
+						},
+						"offline": {
+							"label": "לא מקוון"
+						},
+						"online": {
+							"label": "מחובר"
+						},
+						"total": {
+							"label": "סך הכל"
+						}
+					}
+				},
+				"conversations": {
+					"agent_productivity": "פרודוקטיביות סוכן",
+					"agents": {
+						"handled": "שיחות שטופלו",
+						"title": "שיחות לפי סוכנים"
+					},
+					"avg_first_response_minutes": "ממוצע דקות התגובה הראשונה",
+					"avg_resolution_minutes": "ממוצע דקות פתרון",
+					"avg_resolution_time": "זמן פתרון ממוצע",
+					"conversations_over_time": "שיחות לאורך זמן",
+					"first_response_time": "זמן תגובה ראשון",
+					"messages_by_channel": "הודעות לפי ערוץ",
+					"messages_received": "הודעות שהתקבלו",
+					"resolution_time": "זמן החלטה",
+					"resolved": "נפתרה",
+					"resolved_conversations": "שיחות שנפתרו",
+					"started": "התחיל",
+					"title": "שיחות",
+					"total": "סך כל השיחות",
+					"total_conversations": "סך כל השיחות",
+					"total_messages_received": "הודעות שהתקבלו",
+					"total_messages_sent": "הודעות נשלחו",
+					"traffic": {
+						"title": "תעבורת שיחות"
+					}
+				},
+				"overview": {
+					"title": "סקירה כללית"
+				},
+				"reports": "דוחות"
+			},
+			"setup_instructions": {
+				"label": "הוראות התקנה",
+				"short_description": "תיבת הדואר שלך הוגדרה ומוכנה לשימוש! התחל לנהל את ההודעות והשיחות שלך בקלות.",
+				"title": "תיבת הדואר שלך הוגדרה ומוכנה לשימוש!"
+			},
+			"tabs": {
+				"general": {
+					"label": "כללי"
+				},
+				"messaging_and_routing": {
+					"label": "הודעות וניתוב"
+				},
+				"phone_number_and_api": {
+					"label": "מספר טלפון ו-API"
+				}
+			}
+		},
+		"manage": "הודעה",
+		"module_name": "מִנהָל",
+		"presence": {
+			"description": "כאן, מנהל המערכת יכול ליצור את מצב הנוכחות השונה שבו משתמשים יכולים להשתמש. כברירת מחדל, ישנם חמישה (5) סטטוסים שהם, זמין, נא לא להפריע, הפסקת צהריים ונסיעת עסקים, עם זאת, אתה יכול להוסיף עוד.",
+			"info": {
+				"default_status": "לא ניתן לערוך או למחוק סטטוסי ברירת מחדל."
+			},
+			"module_name": "מצב נוכחות",
+			"offline": "במצב לא מקוון",
+			"online": "במצב מקוון",
+			"select_icon": "בחר איקון",
+			"status": {
+				"available": "זמין",
+				"away": "רָחוֹק",
+				"business_trip": "נסיעת עסקים",
+				"do_not_disturb": "נא לא  להפריע",
+				"lunch_break": "הפסקת צהריים"
+			},
+			"status_color": "צבע סטטוס"
+		},
+		"role_manager": {
+			"agent_profile": {
+				"hint": "הקצה פרופיל סוכן לשימוש במקרה שלתפקיד שהוקצה יש הרשאות מוקד טלפוני."
+			},
+			"default_roles": {
+				"admin": "מנהל דיירים",
+				"agent": "סוכן",
+				"super-admin": "מנהל על",
+				"user": "משתמש"
+			},
+			"description": "לערוך או ליצור תפקידים מותאמים אישית ולהקצות הרשאות בהתאם לתפקידים שהמשתמשים יבצעו.",
+			"full_access": "הרשאות מלאות",
+			"module_name": "מנהל תפקיד",
+			"permissions": {
+				"label": "רשות | הרשאות",
+				"permissions": {
+					"assigned-tenant": "דייר מוקצה",
+					"call-center": {
+						"call-center-features": {
+							"description": "תכונות מוקד טלפוניות כגון כניסה והתנתקות בתורים מופעלות.",
+							"label": "תכונות מוקד טלפוני"
+						},
+						"group_name": "מוקד טלפוני",
+						"queue-selection": {
+							"description": "כאשר אפשרות זו מסומנת, הסוכן יוכל לבחור את התורים שאליהם יתחברו. אם לא נבחר, הם יתחברו לכל התורים שהם שייכים אליהם.",
+							"label": "בחירת תור"
+						}
+					},
+					"management": {
+						"agent-profiles": {
+							"description": "סמן אפשרות זו אם ברצונך לאפשר גישה למודול פרופילי הסוכן",
+							"label": "פרופיל סוכן"
+						},
+						"events-log": {
+							"description": "הרשאה לגשת לצופה האירועים של היישום (זמין רק כאשר היישום מותקן על אותו שרת כמו ה-PBX).",
+							"label": "יומני אירועים"
+						},
+						"group_name": "ניהול",
+						"groups": {
+							"description": "בדוק את האפשרות הזו אם ברצונך לאפשר גישה למודול הקבוצות.",
+							"label": "קבוצות"
+						},
+						"inboxes": {
+							"description": "בדוק את האפשרות הזו אם ברצונך להרשות גישה למודול הדואר הנכנס.",
+							"label": "תיקיות דואר נכנס"
+						},
+						"roles": {
+							"description": "סמן אפשרות זו אם ברצונך לאפשר גישה למודול התפקידים.",
+							"label": "תפקידים"
+						},
+						"users": {
+							"description": "סמן אפשרות זו אם ברצונך לאפשר גישה למודול המשתמשים.",
+							"label": "משתמשים"
+						}
+					},
+					"misc": {
+						"chat": {
+							"description": "משתמשים יוכלו לשלוח ולקבל הודעות אל חברי קבוצה אחרים ומהם.",
+							"label": "צ׳אט"
+						},
+						"conversation-assignment": {
+							"description": "הרשאה זו מעניקה את היכולת להקצות שיחות מתיבות דואר נכנס לסוכנים אחרים.",
+							"label": "הקצאת שיחה"
+						},
+						"group_name": "שונות",
+						"update_social_networks": {
+							"description": "הרשאה להגדיר את הרשתות החברתיות שיופיעו בכותרת התחתונה.",
+							"label": "לעדכן רשתות חברתיות"
+						},
+						"view-recordings": {
+							"description": "המשתמש יוכל לראות את הקלטות השיחה שלו שנוצרו על ידי המרכזיה",
+							"label": "לצפות בהקלטות"
+						}
+					}
+				},
+				"select_all": "בחר הכל",
+				"unselect": "בטל בחירה"
+			},
+			"role": "תפקיד | תפקידים"
+		},
+		"social_networks": {
+			"description": "כאן תוכל להגדיר את המדיה החברתית שיופיע בכותרת התחתונה.",
+			"module_name": "רשתות חברתיות",
+			"socials": {
+				"facebook": {
+					"hint_text": "הגדר את שם המשתמש של דף הפייסבוק שלך",
+					"prefix": "https://facebook.com/"
+				},
+				"instagram": {
+					"hint_text": "הגדר את שם המשתמש לחשבון האינסטגרם שלך",
+					"prefix": "https://instagram.com/"
+				},
+				"twitter": {
+					"hint_text": "הגדר את שם המשתמש עבור חשבון הטוויטר שלך",
+					"prefix": "https://twitter.com/"
+				},
+				"youtube": {
+					"hint_text": "הגדר את שם המשתמש של ערוץ היוטיוב שלך",
+					"prefix": "https://youtube.com/"
+				}
+			}
+		},
+		"user_manager": {
+			"description": "צור את המשתמשים השונים עבור {app_name}. נהל את ההרחבות וההרשאות שלהם ממודול זה.",
+			"error_on_delete": "אסור למחוק את המשתמש היחיד מהאפליקציה",
+			"module_name": "מנהל משתמשים",
+			"sections": {
+				"details": {
+					"change_password": "שינוי סיסמת משתמש (אופציונלי)",
+					"permissions": "הרשאות",
+					"role": "תַפְקִיד",
+					"role_with_call_center_features": "לתפקיד יש תכונות של מוקד טלפוני.",
+					"section_name": "פרטי המשתמש",
+					"validations": {
+						"name": "נדרש שם",
+						"password": "הסיסמה חייבת להיות לפחות 8 תווים",
+						"role": "נדרש תפקיד משתמש",
+						"username": "נדרש שם משתמש"
+					}
+				},
+				"device": {
+					"can_view_recordings": "המשתמש יכול לצפות בהקלטות שלו",
+					"device": "שלוחה",
+					"device_not_found": "המכשיר שהוקצה, {source}, לא נמצא במרכזיה או שאינו זמין.",
+					"group_module_info": "לא זוהו קבוצות עבור הדייר הנבחר, ניתן ליצור קבוצה כאן:",
+					"group_placeholder": "בחר קבוצה",
+					"groups": "קבוצות",
+					"groups_hint": "קבע לאילו קבוצות שייך המשתמש",
+					"no_devices": "אין מכשירים זמינים",
+					"no_phonebooks": "אין ספרי טלפונים זמינים",
+					"phonebooks": "ספרי טלפונים",
+					"phonebooks_hint": "בחר את ספרי הטלפונים להקצאה",
+					"remove_device": "הסר את המכשיר שהוקצה",
+					"section_name": "מידע משתמש",
+					"tenant": "דייר",
+					"validations": {
+						"device": "אנא בחר את המכשיר להקצאה",
+						"phonebooks": "אנא בחר את ספרי הטלפונים להקצאה",
+						"tenant": "אנא בחר את הדייר להקצאה"
+					}
+				}
+			},
+			"user": "משתמש | משתמשים",
+			"user_already_exists": "שם המשתמש כבר קיים."
+		}
+	},
+	"app_setup": {
+		"alerts": {
+			"error": "{app_name} אינו מותקן על המארח שסופק",
+			"success": "האפליקציה זוהתה בהצלחה"
+		},
+		"fields": {
+			"auto_launch": {
+				"label": "הפעלה אוטומטית של האפליקציה בעת ההפעלה של מערכת ההפעלה"
+			},
+			"host": {
+				"placeholder": "your-pbx.com"
+			}
+		},
+		"title": "הזן את מארח המרכזיה שבו מותקן {app_name}"
+	},
+	"calls": {
+		"actions": {
+			"answer": "ענה",
+			"audio_answer": "תשובת אודיו",
+			"call": "שיחה",
+			"cancel_share_screen": "ביטול שיתוף מסך ",
+			"crm": {
+				"label": "CRM"
+			},
+			"direct_call": {
+				"label": "שיחה ישירה"
+			},
+			"disable_camera": "להשבית את המצלמה",
+			"enable_camera": "אפשר מצלמה",
+			"forward": {
+				"forward": "העברת שיחה"
+			},
+			"hang_up": "לנתק",
+			"hold": {
+				"hold": "מוגדר בהמתנה",
+				"unhold": "לחדש את השיחה"
+			},
+			"keypad": "לוח מקשים",
+			"make_call": "לבצע שיחה",
+			"mute_audio": "השתקת אודיו",
+			"mute_video": "השתקת וידאו",
+			"reject": "לִדחוֹת",
+			"share_screen": "שתף מסך",
+			"transfer": {
+				"alerts": {
+					"accepted": "מְקוּבָּל",
+					"failed": "נִכשָׁל",
+					"progress": "בתהליך",
+					"request_failed": "בקשה נכשלה",
+					"request_succeeded": "הבקשה הצליחה",
+					"success": "העברה מוצלחת",
+					"trying": "מנסה"
+				},
+				"complete_transfer": "העברה הושלמה",
+				"label": "הקלד מספר להעברה",
+				"transfer": "לְהַעֲבִיר",
+				"type": {
+					"attended": "השתתפו",
+					"blind": "סומא"
+				}
+			},
+			"unmute_audio": "בטל השתקת אודיו",
+			"video_answer": "תשובת וידאו"
+		},
+		"call": "שיחה | שיחות",
+		"conference": {
+			"actions": {
+				"end_conference": "לסיים שיחת ועידה",
+				"end_conference_and_hang_up": "לסיים  שיחת ועידה ולנתק את השיחות",
+				"start_audio_conference": "התחל ועידת אודיו",
+				"start_conference": "התחל שיחת ועידה"
+			},
+			"add_participant": "הוסף משתתף",
+			"audio_conferences": "ועידות שמע",
+			"conference": "שיחת ועידה",
+			"join_call": "הצטרף לשיחת ועידה",
+			"participant_limit": "עד {limit} משתתפים.",
+			"participants": "משתתפים",
+			"status": {
+				"in_audio_conference": "בכנס שמע"
+			},
+			"type": {
+				"audio_conference": "ועידת שמע",
+				"video_conference": "Video conference"
+			}
+		},
+		"current_call": "שיחה נוכחית",
+		"current_calls": "שיחות נוכחיות",
+		"incoming": {
+			"auto_answer": {
+				"label": "תשובה אוטומטית מופעלת"
+			},
+			"incoming_from": "שיחה נכנסת מ-{uri}",
+			"type": {
+				"audio_call": "שיחת שמע",
+				"video_call": "שיחת וידאו"
+			}
+		},
+		"info": {
+			"answered": "נענתה",
+			"auto_answered": "השיחה נענתה אוטומטית",
+			"busy": "עסוק",
+			"calling": "מתקשר",
+			"call_forwarding_to": "השיחה מועברת אל {target}...",
+			"unknown_destination": "יעד לא ידוע",
+			"call_on_hold": "שיחה בהמתנה",
+			"connected": "מתחבר",
+			"duration": "משך זמן",
+			"failed": "נכשל",
+			"history": "היסטורית שיחות",
+			"in_progress": "מתבצע",
+			"incoming_call": "שיחה נכנסת",
+			"info": "פרטי שיחה",
+			"media_errors": {
+				"DevicesNotFoundError": "לא זוהו התקני אודיו או וידאו כדי לאתחל את השיחה"
+			},
+			"no_answer": "אין מענה",
+			"ringing": "מצלצל",
+			"tenant": "דייר",
+			"type": "סוג שיחה",
+			"types": {
+				"incoming": "נכנס",
+				"internal": "פנימי",
+				"outgoing": "יוצא",
+				"transit": "מַעֲבָר",
+				"undefined": "לא מוגדר"
+			}
+		},
+		"line": "שורה",
+		"loaders": {
+			"connecting": "מתחבר"
+		},
+		"media_errors": {
+			"DevicesNotFoundError": "לא זוהו התקני אודיו או וידאו כדי לאתחל את השיחה"
+		},
+		"search": {
+			"hint": "עליך לבחור את סנן \"כולם\" כדי שתוכל להשתמש בשדה החיפוש.",
+			"label": "חפש לפי מקור או יעד"
+		}
+	},
+	"chats": {
+		"add_contact_to_chat": "הוסף איש קשר כדי להתחיל בצ'אט",
+		"attachments": {
+			"attachment": "קובץ מצורף | קבצים מצורפים",
+			"types": {
+				"audio": "שֶׁמַע",
+				"file": "קובץ",
+				"image": "תמונה",
+				"video": "וידאו"
+			}
+		},
+		"chat": "צ'אט | צ'אטים",
+		"conversation": "שיחה | שיחות",
+		"conversation_actions": {
+			"clear": "נקה היסטוריית שיחות",
+			"delete": "מחק",
+			"load_more": "טען עוד"
+		},
+		"conversation_types": {
+			"sip": "שיחת SIP",
+			"vitxi": "שיחת VitXi"
+		},
+		"draft": "טיוטה",
+		"exceptions": {
+			"conversation": "הייתה שגיאה בקבלת השיחה.",
+			"messages": "לא הצליח לקבל הודעות"
+		},
+		"message": "הודעה",
+		"message_actions": {
+			"copy": "העתק",
+			"delete": "מחק",
+			"forward": "העבר",
+			"reply": "החזר תשובה"
+		},
+		"message_rules": {
+			"sip_message_character_limit": "מותר לכל היותר 1023 תווים"
+		},
+		"new": {
+			"placeholder": {
+				"description": "בחר את המשתתף וכתוב למטה את ההודעה הראשונה שלך.",
+				"first_message": "כתוב את ההודעה הראשונה שלך למטה.",
+				"heading": "התחל שיחה חדשה"
+			}
+		},
+		"new_conversation": "שיחה הבאה",
+		"new_message": "הודעה חדשה",
+		"say_hello": "תגיד שלום",
+		"start_conversation": "התחל שיחה ",
+		"suggestions": {
+			"app": {
+				"description": "צ'אט בתוך האפליקציה",
+				"label": "צ'אט באפליקציה",
+				"search_placeholder": "חפש משתמש לפי שם, דוא\"ל או סיומת"
+			},
+			"sip": {
+				"description": "צ'אט עם אנשי הקשר השמורים שלך",
+				"label": "SIP Chat",
+				"search_placeholder": "חפש איש קשר או הזן מספר שלוחה"
+			}
+		},
+		"typing": "מקליד"
+	},
+	"contacts": {
+		"actions": {
+			"edit": {
+				"label": "ערוך איש קשר"
+			},
+			"favorites": {
+				"mark_as_favorite": "סמן כמועדף",
+				"unmark_as_favorite": "בטל את הסימון כמועדף"
+			}
+		},
+		"contact_info": {
+			"company": "חברה  {source}",
+			"email": "איממיל",
+			"info": "פרטי התקשרות",
+			"job_title": "תפקיד: {מקור}",
+			"type": "סוג",
+			"types": {
+				"external": "מגע חיצוני",
+				"internal": "מגע פנימי"
+			}
+		},
+		"contacts": "צור קשר | אנשי קשר",
+		"create": {
+			"add": "הוסף איש קשר",
+			"errors": {
+				"save": "שגיאה בהוספת איש קשר"
+			},
+			"fields": {
+				"avatar": {
+					"label": "גִלגוּל",
+					"limit_size_alert": "גודל הדמות צריך להיות פחות מ-512 kb!",
+					"placeholder": "לבחור אווטאר"
+				},
+				"blf": {
+					"description": "הפעל לצפייה במצבי BLF.",
+					"label": "BLF"
+				},
+				"company": "חברה",
+				"contact_type": "סוג איש קשר",
+				"contact_types": {
+					"external": "חיצוני",
+					"internal": "פנימי"
+				},
+				"email": "אימייל",
+				"first_name": "שם פרטי",
+				"job_title": "הגדרת תפקיד",
+				"last_name": "שם משפחה",
+				"location": "מיקום",
+				"phone": {
+					"add_phone": "להוסיף טלפון",
+					"country": "מדינה",
+					"extension": "סיומת",
+					"invalid_number": "מספר לא תקין",
+					"phone": "טלפון | טלפונים",
+					"phone_number": "מספר",
+					"prefix": "קידומת",
+					"required_phone": "חייב להוסיף טלפון אחד לפחות",
+					"type": "סוּג",
+					"types": {
+						"alerts": {
+							"external": {
+								"content": "כאשר הטלפונים הם חיצוניים, ההודעות (SMS) יישלחו דרך מקורות ה-SMS שהוגדרו והוקצו על ידי המנהל.",
+								"title": "טלפון חיצוני"
+							},
+							"internal_sip": {
+								"content": "כאשר הטלפונים הם מסוג \"SIP פנימי\", ההודעות יישלחו דרך כוכבית. ההודעות הן רק מסוג טקסט.",
+								"title": "פנימי (SIP)"
+							}
+						},
+						"external": "חיצוני",
+						"internal_sip": "פנימי (SIP)"
+					}
+				}
+			},
+			"required_fields_alert": "מציין שדה נדרש"
+		},
+		"favorites": {
+			"favorites": "מועדפים"
+		},
+		"my_contacts": "אנשי הקשר שלי",
+		"no_contacts": "אין אנשי קשר זמינים",
+		"pagination_info": "מציג {startIndex}-{endIndex} מתוך {total} אנשי קשר",
+		"rules": {
+			"phone": {
+				"dial_code": {
+					"required": "בבקשה בחר קוד טלפון מהרשימה"
+				},
+				"invalid": "מספר הטלפון חייב להיות בפורמט E.164."
+			}
+		}
+	},
+	"device": {
+		"actions": {
+			"refresh": "רענון"
+		},
+		"alerts": {
+			"not_found": "לא ניתן להירשם, המכשיר הקשור לחשבון זה אינו קיים.\n  צור קשר עם המנהל לפרטים נוספים."
+		},
+		"call_center": {
+			"active_queues": "תורים פעילים",
+			"alerts": {
+				"failed": {
+					"login": "אירעה שגיאה בלתי צפויה בעת ניסיון להתחבר. אנא בדוק עם מנהל המערכת שלך אם הוקצו לך תורים."
+				},
+				"no_active_queues": "אין תורים פעילים",
+				"no_queues_paused": "לא הושהו תורים",
+				"success": {
+					"login": "נכנסת בהצלחה לתורים.",
+					"logout": "התנתקת בהצלחה",
+					"pause": "הושהה בהצלחה",
+					"unpause": "הושהה בהצלחה"
+				}
+			},
+			"default_reasons": {
+				"administrative": "מנהלי",
+				"break": "לשבור",
+				"lunch": "ארוחת צהריים",
+				"wc": "חדר אמבטיה"
+			},
+			"manage": {
+				"tabs": {
+					"logged_in_queues": "מחובר בתורים",
+					"logged_out_queues": "מחוברים בתורים",
+					"paused_queues": "תורים מושהים"
+				}
+			},
+			"queue": "תור | תורים",
+			"queue_actions": {
+				"login": "התחברות",
+				"login_all": "התחבר בכל",
+				"logout": "התנתק",
+				"logout_all": "להתנתק מכולם",
+				"manage": "לנהל",
+				"pause": "עצור",
+				"pause_all": "עצור הכל",
+				"pause_section_title": "בחר את התורים שברצונך להשהות.",
+				"reload_queues": "תורים לטעון מחדש",
+				"select_queues": "בחר תורים",
+				"unpause": "לבטל הפסקה",
+				"unpause_all": "לבטל את ההשהיה של הכל",
+				"unpause_section_title": "בחר את התורים שברצונך לבטל את ההשהיה."
+			},
+			"queues_paused": "התורים מושהים",
+			"reason": "סיבה",
+			"tooltips": {
+				"is_active": "פעיל ב-{count} תורים",
+				"logged_out_queues": "{count} תורים מנותקים",
+				"logged_queues": "מחובר ל-{count} תורים.",
+				"login": "כניסה לתורים",
+				"paused_queues": "{count} תורים מושהים."
+			}
+		},
+		"disconnected": {
+			"reconnect": "נסה להתחבר עכשיו",
+			"reconnection_attempt": "ניסיון חיבור מחדש פנימה",
+			"seconds": "שניות",
+			"ssl_error": "בדוק שהיציאה {port} מופעלת:",
+			"title": "בדוק שהיציאה {port} מופעלת: "
+		},
+		"status": {
+			"registered": "רשום",
+			"sending_registration": "שליחת הרשמה",
+			"unregistered": "לא רשום"
+		},
+		"unregistered": {
+			"title": "המכשיר שלך לא רשום. אנא צור קשר עם מנהל ה-PBX שלך כדי למנוע שיחות חסרות.",
+			"try_register": "נסה להרשם"
+		}
+	},
+	"directories": {
+		"directory": "מדריך | ספריות",
+		"info": {
+			"actions": "פעולות",
+			"email": "אימייל",
+			"home_number": "מספר בית",
+			"job_title": "הגדרת תפקיד",
+			"mobile_number": "מספר טלפון נייד",
+			"name": "שם",
+			"organization": "יחידה ארגונית",
+			"telephone": "טלפון"
+		},
+		"loading": "טעינת אנשי קשר",
+		"no_assigned": "לא הוקצו לך ספרי טלפונים",
+		"no_contacts": "אין נתונים להציג",
+		"type": {
+			"external": "חיצוני",
+			"internal": "פנימי"
+		}
+	},
+	"export": {
+		"alerts": {
+			"success": "הנתונים יוצאו בהצלחההנתונים יוצאו בהצלחה"
+		},
+		"delimiter": {
+			"label": "בחר במפריד csv",
+			"options": {
+				"comma": "פסיק (,)",
+				"semicolon": "נקודה-פסיק (;)"
+			}
+		}
+	},
+	"footer": {
+		"copyright": "{app_name} Omnichannel Communication System -  {company} כל הזכויות שמרות  ©  {year}",
+		"documentation": "תיעוד ומידע נוסף",
+		"slogan": "תקשורת מאוחדת"
+	},
+	"globals": {
+		"actions": {
+			"back": "חזור",
+			"cancel": "לְבַטֵל",
+			"create": {
+				"create": "לִיצוֹר",
+				"success": "ה-{source} נוצר בהצלחה"
+			},
+			"delete": {
+				"delete": "לִמְחוֹק",
+				"success": "ה-{source} נמחק בהצלחה"
+			},
+			"done": "בוצע",
+			"edit": "לַעֲרוֹך",
+			"export": "יְצוּא",
+			"import": "יְבוּא",
+			"reset": "אִתחוּל",
+			"restart": "Uהפעלה מחדש",
+			"save": "שמירה",
+			"update": {
+				"success": "ה-{source} עודכן בהצלחה",
+				"update": "עדכון"
+			}
+		},
+		"alerts": {
+			"actions": {
+				"close": "סגור",
+				"ok": "Uאישור",
+				"view": "הצג"
+			},
+			"avatar": {
+				"invalid_file_size": "הקובץ שלך גדול מדי! אנא בחר תמונה מתחת ל-2MB",
+				"invalid_file_type": "אנא בחר תמונה חוקית"
+			},
+			"confirm": {
+              "switch_tenant": {
+                "content": "יש לך שינויים שלא נשמרו. מעבר לדייר אחר עשוי למחוק אותם. להמשיך?",
+                "title": "לעבור לדייר {name}?"
+              },
+              "delete": {
+					"content": "האם אתה בטוח שברצונך למחוק את ה{source} הזה?",
+					"title": "מחק את {name}"
+				}
+			},
+			"dev_console_alert_content": "תכונת דפדפן זו מיועדת למפתחים. אם מישהו הורה לך להעתיק ולהדביק משהו כאן כדי לאפשר תכונה, זו הונאה. אם תעשה זאת, אדם זה יוכל לגשת לחשבון שלך.",
+			"dev_console_alert_title": "עצור!",
+			"not_authorized": "אינך מורשה לבצע פעולה זו.",
+			"restart_app": {
+				"message": "שינויים מסוימים דורשים הפעלה מחדש של {app_name} לפני שניתן יהיה ליישם אותם.",
+				"title": "{app_name}"
+			},
+			"success": "הפעולה הושלמה"
+		},
+		"bar_chart": "תרשים עמודות",
+		"created_at": "נוצר ב",
+        "close_search_box": "סגור את תיבת החיפוש",
+		"daily_traffic": "תנועה יומית",
+        "display_search_box": "הצג תיבת חיפוש",
+		"email": "דואל",
+		"hourly_traffic": "תנועה לפי שעה",
+		"invalid_file": "בחר קובץ חוקי",
+		"last_7_days": "7 הימים האחרונים",
+		"last_30_days": "30 הימים האחרונים",
+		"last_activity_at": "פעילות אחרונה ב",
+		"line_chart": "תרשים קוויתרשים קווי",
+		"loaders": {
+			"creating": "יצירה",
+			"deleting": "מחיקה",
+			"loading": "טוען",
+			"updating": "מעדכן"
+		},
+		"max_file_size_exceeded": "הקובץ שלך גדול מדי! אנא בחר קובץ בגודל מתחת ל-{size}MB.",
+		"name": "שם",
+		"no_extension": "לא הוקצה לך שלוחה.",
+		"no_results": "לא נמצאו תוצאות",
+		"not_available": "לא זמין",
+		"notifications": {
+			"info": {
+				"read": "הודעות שסומנו כנקראו נמחקות אוטומטית כל 24 שעות."
+			},
+			"mention": {
+				"label": "נזכרת בשיחה (#{id}).",
+				"type": "הזכרה"
+			},
+			"unread_notifications": {
+				"label": "הודעות לא נקראו",
+				"mark_all_as_read": "מסכה כמו הכל נקרא"
+			}
+		},
+		"order_by": {
+			"options": {
+				"date": "תַאֲרִיך",
+				"name": "שם"
+			}
+		},
+		"pagination": {
+			"page": "עמוד"
+		},
+		"password": "סיסמה",
+		"peak_day": "יום שיא",
+		"received": "התקבל",
+		"required": "נדרש",
+		"rules": {
+			"email": "הדואר האלקטרוני חייב להיות תקף",
+			"number": "הערך חייב להיות מספרי",
+			"phone-number": {
+				"pattern": "רק מספרים, #, * ו- + מותרים",
+				"required": "נדרש מספר טלפון"
+			}
+		},
+		"search": "חפש",
+		"search_source": "חפש {מקור}",
+		"sent": "נשלח",
+		"sort_by": {
+			"options": {
+				"asc": "עולה",
+				"desc": "desc"
+			}
+		},
+		"suggestions": "הצעות",
+        "timezone_used": "אזור זמן",
+        "timezone_context": {
+          "inbox": "תיבה",
+          "user": "משתמש",
+          "system": "ברירת מחדל של המערכת"
+        },
+		"unknown": "לא ידוע",
+		"updated_at": "עודכן ב",
+		"username": "שם משתמש",
+		"validation": {
+			"required": "השדה {attribute} הוא חובה."
+		}
+	},
+	"ice_servers": {
+		"actions": {
+			"add_server": {
+				"label": "הוסף שרת משני"
+			},
+			"remove_server": {
+				"label": "הסר שרת משני"
+			}
+		},
+		"alerts": {
+			"error": "לא ניתן היה לעדכן הגדרות. בדוק את הנתונים שהוזנו ונסה שוב.",
+			"success": "ההגדרות עודכנו בהצלחה."
+		},
+		"connectivity": {
+			"checking": "בדיקת קישוריות",
+			"failed": "השרת לא עובד",
+			"success": "השרת עובד"
+		},
+		"description": "תצורה זו ציין את כתובות ה-URL של השרתים שישמשו עבור משא ומתן ICE. הם בדרך כלל שרתי STUN ו/או TURN.\n\nזוהי הגדרה גלובלית ועליך לציין שתי כתובות אתרים.",
+		"fields": {
+			"credential": {
+				"label": "אישורים"
+			},
+			"url": {
+				"label": "STUN או TURN URI"
+			},
+			"username": {
+				"label": "שם משתמש"
+			}
+		},
+		"module_name": "שרתי ICE",
+		"servers": "שרת | שרתים"
+	},
+	"import": {
+		"actions": {
+			"download_template": "הורדת פורמט ייבוא",
+			"remove_file": "הסר קובץ",
+			"replace": "החלף רשומות קיימות",
+			"skip": "דלג על רשומות קיימות"
+		},
+		"alerts": {
+			"failed": "אירעה שגיאה במהלך הייבוא"
+		}
+	},
+	"inboxes": {
+		"contacts": {
+			"phone_number": {
+				"duplicate": "מספר הטלפון הזה כבר בשימוש עבור איש קשר אחר."
+			},
+			"title": "אנשי קשר שמורים"
+		},
+		"conversations": {
+			"actions": {
+				"accept": {
+					"description": "לקבל שיחה",
+					"label": "לקבל"
+				},
+				"status": {
+					"label": "מצב",
+					"open": "סמן כפתוח",
+					"resolve": "סמן כפתרון",
+					"success": {
+						"label": "סטטוס השיחה השתנה"
+					}
+				},
+				"watch": {
+					"description": "תתווסף כמשתתף בשיחה",
+					"label": "צפה בשיחה"
+				}
+			},
+			"assignee": {
+				"agent": "סוכן"
+			},
+			"messages": {
+				"location": {
+					"google_map_url": {
+						"label": "ראה ב-Google Maps"
+					}
+				},
+				"media": {
+					"not_found": {
+						"label": "הקובץ המצורף למדיה אינו זמין. אנא צור קשר עם התמיכה אם זה לא צפוי."
+					}
+				},
+				"status": {
+					"failed": {
+						"generic_message": "נכשל בשליחת ההודעה",
+						"label": "נִכשָׁל"
+					}
+				},
+				"whatsapp_templates": {
+					"form_error_message": "נא למלא את כל המשתנים לפני השליחה",
+					"go_back_label": "חזור",
+					"labels": {
+						"category": "קטגוריה",
+						"language": "שפה",
+						"template_body": "גוף התבנית"
+					},
+					"message": "הודעת תבנית",
+					"no_templates_found": "לא נמצאו תבניות עבור",
+					"search_placeholder": "חפש תבניות",
+					"selected": {
+						"subtitle": "נבחר {template}"
+					},
+					"send_message_label": "לשלוח הודעה",
+					"subtitle": "בחר את תבנית ה-WhatsApp שברצונך לשלוח",
+					"title": "תבניות ווטסאפ=",
+					"variable_placeholder": "הזן ערך {variable}",
+					"variables": {
+						"body": {
+							"label": "גוף"
+						},
+						"buttons": {
+							"label": "כפתור | כפתורים",
+							"types": {
+								"copy_code": {
+									"label": "העתק קוד"
+								},
+								"phone_number": {
+									"label": "התקשר למספר הטלפון"
+								},
+								"quick_reply": {
+									"label": "תגובה מהירה"
+								},
+								"url": {
+									"label": "URL"
+								}
+							}
+						},
+						"footer": {
+							"label": "כותרת תחתונה"
+						},
+						"header": {
+							"label": "כותרת עליונה"
+						},
+						"placeholder": "הזן ערך עבור {variable}"
+					},
+					"variables_label": "משתנים"
+				}
+			},
+			"panels": {
+				"contact_information": {
+					"header": {
+						"title": "פרטי התקשרות"
+					}
+				},
+				"conversation_actions": {
+					"assigned_agent": {
+						"alert": "על הסוכן להשתייך לקבוצה המשויכת לתיבת הדואר הנכנס.",
+						"assign_to_me": "הקצו לי",
+						"hint": "לחץ על המשתמש שברצונך להקצות לו את השיחה.",
+						"label": "סוכן מוקצה",
+						"placeholder": "חפש לפי שם, שם משתמש, סיומת או דוא\"ל."
+					},
+					"header": {
+						"title": "פעולות שיחה"
+					},
+					"priority": {
+						"high": "גבוה",
+						"label": "עדיפות",
+						"low": "נמוך",
+						"medium": "בינוני",
+						"none": "אף אחד",
+						"urgent": "דחוף"
+					}
+				},
+				"conversation_information": {
+					"header": {
+						"title": "פרטי שיחה"
+					},
+					"items": {
+						"channel": "ערוץ",
+						"group": "קבוצה",
+						"initiated_from": "נוצר ב",
+						"participants": "{count} משתתף | {count} משתתפים",
+						"status": {
+							"open": {
+								"label": "פתח את הדלת"
+							},
+							"resolved": {
+								"label": "נפתרה"
+							}
+						}
+					}
+				}
+			},
+			"placeholder": {
+				"titles": {
+					"variation_1": "בחר שיחה כדי להתחיל",
+					"variation_2": "בחר את השיחה שלך, התחל לדבר",
+					"variation_3": "בחר צ'אט עבור חיבורים משמעותיים",
+					"variation_4": "צור מעורבות בקרב הלקוחות שלך – התחל בבחירה",
+					"variation_5": "תיבת הדואר הנכנס של המעורבות שלך – בחר והתחבר"
+				}
+			},
+			"private": {
+				"placeholder": "הודעה זו מיועדת לסוכנים בלבד.",
+				"send": "שלח הערה פרטית"
+			},
+			"reply": {
+				"characters": "תווים",
+				"placeholder": "הקלד את ההודעה שלך כאן...",
+				"send": "שלוח",
+				"whatsapp_reply_alert": "ניתן להשיב לשיחה זו רק באמצעות הודעת תבנית בשל מגבלת חלון ההודעות של 24 שעות.",
+				"words": "מילים",
+				"assigned_user_alert": "אינך יכול להשיב לשיחה זו כי היא מוקצת לסוכן אחר."
+			},
+			"sort_options": {
+				"created_at_asc": {
+					"text": "נוצר בתאריך: מהישן לחדש"
+				},
+				"created_at_desc": {
+					"text": "נוצר ב: החדש ביותר ראשון"
+				},
+				"last_activity_at_asc": {
+					"text": "הפעילות האחרונה: הכי ישן קודם"
+				},
+				"last_activity_at_desc": {
+					"text": "פעילות אחרונה: החדש ביותר ראשון"
+				},
+				"priority_asc": {
+					"text": "עדיפות: הנמוכה ביותר תחילה"
+				},
+				"priority_desc": {
+					"text": "עדיפות: הגבוהה ביותר תחילה"
+				},
+				"waiting_since_asc": {
+					"text": "תגובה ממתינה: הארוכה תחילה"
+				},
+				"waiting_since_desc": {
+					"text": "תגובה ממתינה: הקצרה ביותר ראשונה"
+				}
+			},
+			"tabs": {
+				"private_note": "הערה פרטית",
+				"reply": "ענה"
+			}
+		},
+		"filters": {
+			"assignee": {
+				"all": "כל",
+				"assigned": "שהוקצו",
+				"mine": "שלי",
+				"unassigned": "לא הוקצה"
+			}
+		},
+		"list": {
+			"all_conversations": "כל השיחות",
+			"conversations": "שיחה | שיחות",
+			"sort": {
+				"label": "מיין שיחות"
+			},
+			"unassigned": "לא הוקצה",
+			"unattended": "ללא התערבות"
+		},
+		"status": {
+			"label": "מצב",
+			"options": {
+				"all": "כל",
+				"open": "פתח את הדלת",
+				"resolved": "נפתרה",
+				"unassigned": "לא הוקצה",
+				"unattended": "ללא השגחה",
+				"unattendedTooltip": "ממתין לתגובה במשך יותר מ־{minutes} דקות"
+			},
+			"tooltips": {
+				"unattended": "ממתין לתגובה במשך יותר מ־{minutes} דקות"
+			}
+		}
+	},
+	"login": {
+		"copyright": "מופעל על ידי {company} © {year} . כל הזכויות שמורות.",
+		"loginButton": "התחברות",
+		"loginError": "שם משתמש או סיסמא אינם נכונים",
+		"password_reset": {
+			"change": "שנה את סיסמתך",
+			"forgot_password": "שכחת ססמה?",
+			"reset": "לאפס את הסיסמה"
+		},
+		"username_or_email": "שם משתמש או דוא\"ל"
+	},
+	"2fa": {
+		"title": "אימות דו-שלבי",
+		"code": "הזן קוד 2FA",
+		"verify": "אמת",
+		"remember_device": "תן אמון במכשיר זה למשך 30 ימים",
+		"error": "קוד שגוי או האימות נכשל"
+	},
+	"mail_settings": {
+		"alerts": {
+			"error": "לא ניתן היה לעדכן הגדרות. בדוק את הנתונים שהוזנו ונסה שוב.",
+			"success": "הנתונים עודכנו בהצלחה."
+		},
+		"description": "הגדר את שרת הדואר שלך כך שהיישום יוכל לשלוח מיילים.",
+		"fields": {
+			"authentication": {
+				"label": "אימות"
+			},
+			"bcc_mail": {
+				"label": "דואר מוסתר"
+			},
+			"encryption": {
+				"label": "הצפנה"
+			},
+			"from_address": {
+				"label": "מכתובת"
+			},
+			"from_name": {
+				"label": "מאת"
+			},
+			"host": {
+				"host": "מנחה"
+			},
+			"password": {
+				"label": "סיסמה"
+			},
+			"port": {
+				"port": "נמל"
+			},
+			"test": {
+				"label": "שלח מייל לבדיקה"
+			},
+			"type": {
+				"label": "סוּג",
+				"options": {
+					"default": {
+						"label": "ברירת מחדל (השתמש בשרת דואר מובנה)"
+					},
+					"smtp": "SMTP"
+				}
+			},
+			"username": {
+				"label": "שם משתמש"
+			}
+		},
+		"module_name": "הגדרות דואר",
+		"pbx_status": {
+			"checking_connection": "בודק חיבור",
+			"connected": "מחובר",
+			"disconnected": "מנותק"
+		},
+		"test": {
+			"alerts": {
+				"failed": "לא ניתן היה לשלוח את הדואר",
+				"success": "האימייל נשלח בהצלחה"
+			}
+		}
+	},
+	"main_menu": {
+		"about": "אודות",
+		"administration": {
+			"groups": "קבוצות",
+			"menu_name": "ניהול",
+			"presence_status": "מצב נוכחות",
+			"sms_provider": "ספק SMS",
+			"users_manager": "משתשמים"
+		},
+		"logout": "ניתוק מהמערכת",
+		"settings": "הגדרות"
+	},
+	"misc": {
+		"active": "פָּעִיל",
+		"add": "לְהוֹסִיף",
+		"advanced": "מתקדם",
+		"agents": "סוכנים",
+		"all": "הכל",
+		"all-tenants": {
+			"label": "כל הדיירים"
+		},
+		"cause": "גורם",
+		"copied": "הועתק",
+		"default": "בְּרִירַת מֶחדָל",
+		"dial": "חייג",
+		"error_title": "אירעה שגיאה",
+		"filter_by_name": "סנן לפי שם",
+		"finish": "סיום",
+		"generate": "לִיצוֹר",
+		"global": "גלובלי",
+		"hello": "שלום, {user_name}",
+		"info": "מידע",
+		"invalid_value": "ערך לא חוקי",
+		"live_data": "חי",
+		"main_tenant": "דייר ראשי",
+		"more": "עוד",
+		"next": "הבא",
+		"no_data": "אין נתונים להצגה",
+		"no_tenant_change": "* אסור להחליף דייר.",
+		"not_found": "לא נמצא",
+		"offline_ready": "אפליקציה מוכנה לעבוד במצב לא מקוון",
+		"order_by": "מיין לפי",
+		"paused": "הושהה",
+		"percentage": "אחוז",
+		"preferences": "העדפות",
+		"pwa": {
+			"actions": {
+				"install": "התקנה",
+				"not_now": "לא עכשיו"
+			},
+			"promote_install": "מצא את מה שאתה צריך מהר יותר עם האפליקציה שלנו!"
+		},
+		"realtime": "זמן אמת",
+		"reload": "לִטעוֹן מִחָדָשׁ",
+		"send-message": "לשלוח הודעה",
+		"server_connection": {
+			"connection_error": {
+				"suggestion": "אנא פנה למנהל המערכת.",
+				"title": "לא ניתן היה ליצור את החיבור לשרת שלך."
+			}
+		},
+		"text": "טקסט",
+		"try_again": "נסה שוב",
+		"type": "סוג",
+		"unsupported_feature": "תכונה זו אינה נתמכת על ידי דפדפן זה.",
+		"update": "תוכן חדש זמין, לחץ על כפתור טען מחדש כדי לעדכן!",
+		"value": "ערך",
+		"welcome": "ברוכים הבאים אל {app_name}",
+		"welcome_features_section_title": "הישאר מחובר עם {app_name}",
+		"yesterday": "אתמול",
+		"you": "אתה"
+	},
+	"no_extension": "ללא הרחבה",
+	"pbx_settings": {
+		"alerts": {
+			"error": "ההגדרות לא עודכנו מכיוון שלא ניתן היה ליצור חיבור. אנא אמת את הנתונים שהוזנו ונסה שוב.",
+			"success": "הנתונים עודכנו בהצלחה."
+		},
+		"description": "הגדר נתונים רלוונטיים לחיבור למרכזייה שלך. מידע זה נחוץ לרישום התוספות מהמשתמשים שלו, תא קולי, היסטוריית שיחות ומאפיינים נוספים.",
+		"fields": {
+			"api_port": {
+				"hint": "ציין את היציאה המשמשת את ה-API.",
+				"label": "יציאת API"
+			},
+			"host": {
+				"host": "מארח"
+			},
+			"https_port": {
+				"hint": "יציאת VitalPBX HTTPS (שימושי להשגת נכסים ממודול המיתוג).",
+				"label": "יציאת HTTPS"
+			},
+			"key": {
+				"edit": "ערוך מפתח",
+				"hint": "אתה יכול ליצור מפתחות במרכזייה שלך: Admin/Admin/Application Keys",
+				"key": "מפתח"
+			},
+			"pjsip_port": {
+				"hint": "הגדר את היציאה שתשמש לרישום השלוחה",
+				"pjsip_port": "יציאת PJSIP"
+			},
+			"wss_port": {
+				"hint": "אם יש לך חומת אש, אל תשכח לאפשר יציאת TCP  כדי שהלקוח שלך יוכל להתחבר.",
+				"wss_port": "יציאת WSS"
+			}
+		},
+		"module_name": "הגדרות PBX",
+		"pbx_status": {
+			"checking_connection": "בודק חיבור",
+			"connected": "מְחוּבָּר",
+			"disconnected": "מְנוּתָק"
+		}
+	},
+	"recordings": {
+		"not_allowed": "אין לך הרשאות לגשת למודול זה",
+		"recording": "הקלטה | הקלטות"
+	},
+	"right_menu": {
+		"check_updates": "בדוק עדכונים",
+		"logout": "התנתק",
+		"reset_app_data": "לאפס את נתוני האפליקציה",
+		"settings": "הגדרות",
+		"toggle_desktop_app_size": {
+			"desktop": "תצוגת בררית מחדל",
+			"mobile": "תצוגת נייד"
+		},
+		"troubleshooting": "פתרון תקלות"
+	},
+	"settings": {
+		"account": {
+			"account": "Uמשתמש",
+			"password": {
+				"alerts": {
+					"error": "לא ניתן היה לשנות את הסיסמה.",
+					"no_match_old_password": "הסיסמה אינה תואמת לסיסמה הישנה.",
+					"password_error": "אשר סיסמה",
+					"success": "הסיסמה שונתה בהצלחה"
+				},
+				"change_password": "שנה סיסמא",
+				"fields": {
+					"new_password": {
+						"label": "סיסמא חדשה",
+						"rules": {
+							"required": "נדרשת סיסמה חדשה"
+						}
+					},
+					"password": {
+						"label": "סיסמה נוכחית",
+						"rules": {
+							"required": "נדרשת סיסמה נוכחית"
+						}
+					},
+					"password_confirmation": {
+						"password_confirmation": "אימות סיסמה",
+						"rules": {
+							"no_match": "סיסמאות לא תואמות",
+							"required": "נדרש אישור סיסמה"
+						}
+					}
+				},
+				"set_new_password": "להגדיר סיסמה חדשה"
+			},
+			"2fa": {
+				"title": "אימות דו-שלבי",
+				"enable": "הפעל 2FA",
+				"disable": "השבת 2FA",
+				"remember_device": "תן אמון במכשיר זה ל-30 ימים",
+				"description": "הפעל שכבת אבטחה נוספת לחשבון שלך באמצעות קוד מאפליקציית אימות בטלפון הנייד.",
+				"hint": "סרוק את קוד ה-QR באמצעות אפליקציית אימות (כגון Google Authenticator או Microsoft Authenticator).",
+				"enabled": "אימות דו-שלבי הופעל.",
+				"disabled": "אימות דו-שלבי הושבת.",
+				"warning_not_verified": "האימות הדו-שלבי עדיין לא אושר. אנא השלם את תהליך האימות.",
+				"enter_code": "הזן קוד 2FA",
+				"or_enter_key": "או הזן מפתח סודי זה באופן ידני:",
+				"secret_description": "באפשרותך להזין את המפתח הזה ידנית באפליקציית האימות במקום לסרוק את הקוד.",
+				"secret_copied": "המפתח הסודי הועתק ללוח.",
+				"verify": "אמת קוד",
+				"verified_success": "האימות הדו-שלבי אומת בהצלחה.",
+				"snackbar_verified": "2FA מופעל כעת באופן מלא ויידרש בהתחברות הבאה.",
+				"recovery_code_hint": "אם תאבד את המכשיר או מפתח האבטחה שלך, תוכל ליצור קוד שחזור.",
+				"recovery_code_instruction": "יש לשמור את קוד השחזור במקום בטוח. הוא יכול לעזור לך לגשת לחשבון.",
+				"generate_recovery_code": "צור קוד שחזור",
+				"your_recovery_code": "קוד השחזור שלך",
+				"recovery_code_warning": "שמור את הקוד הזה במקום בטוח. הוא לא יוצג שוב.",
+				"copy_code": "העתק קוד",
+				"download_code": "הורד כ-‎.txt",
+				"download_started": "ההורדה התחילה.",
+				"close": "סגור",
+				"verified_error": "קוד שגוי. נסה שוב.",
+				"error": "אירעה שגיאה בעדכון מצב 2FA."
+			}
+		},
+		"actions": {
+			"save": "להציל"
+		},
+		"alert": {
+			"error": "אירעה שגיאה במהלך שמירת ההגדרות",
+			"success": "ההגדרות נשמרו."
+		},
+		"application": {
+			"fields": {
+				"auto_launch": {
+					"description": "הפעלה אוטומטית של האפליקציה בעת הפעלה של מערכת ההפעלה",
+					"label": "הפעלה אוטומטית של האפליקציה"
+				},
+				"hardware_acceleration": {
+					"label": "השבת האצת חומרה של GPU (דורש הפעלה מחדש של {app_name})"
+				},
+				"host": {
+					"label": "השבת את האצת החומרה של GPU (דורש הפעלה מחדש של {app_name})",
+					"placeholder": "your-pbx.com"
+				},
+				"keep_app_on_close": {
+					"label": "בסגירה, השאר את היישום פועל"
+				},
+				"open_as_hidden": {
+					"description": "בהפעלה אוטומטית, הפעל את האפליקציה כמוסתרת.",
+					"label": "פתח את האפליקציה כמוסתרת"
+				}
+			},
+			"tab_name": "יישום"
+		},
+		"audio": {
+			"audio": "שמע",
+			"echo_cancellation": {
+				"description": "תכונה המנסה למנוע אפקטי הד בחיבור שמע דו-כיווני",
+				"echo_cancellation": "ביטול הד"
+			},
+			"noise_suppression": {
+				"description": "מסנן אוטומטית את האודיו כדי להסיר רעשי רקע",
+				"noise_suppression": "סינון רעשים"
+			},
+			"volume": {
+				"description": "תצורה זו תוחל על רינגטונים של שיחות וצלילים אחרים של האפליקציה.",
+				"label": "נפח מדיה"
+			}
+		},
+		"call_center": {
+			"auto_open_crm_url": {
+				"call_direction": {
+					"label": "כיוון שיחה",
+					"options": {
+						"all": "את כל",
+						"incoming": "נִכנָס",
+						"outgoing": "יוֹצֵא"
+					}
+				},
+				"description": "כתובת ה-CRM תיפתח אוטומטית כאשר השיחה תתבצע.",
+				"label": "פתח את כתובת ה-CRM באופן אוטומטי"
+			},
+			"auto_open_crm_url_event": {
+				"answer-call": {
+					"label": "ענה"
+				},
+				"label": "אירוע טריגר",
+				"ringing": {
+					"label": "צִלצוּל"
+				}
+			},
+			"call_center": "מרכז שירות",
+			"crm_url": "כתובת אתר של CRM",
+			"log_into_queues_on_startup": {
+				"description": "התחבר אוטומטית לתורים שהוקצו בעת הפעלת היישום",
+				"label": "היכנס לתורים בעת ההפעלה"
+			},
+			"log_out_from_queues_when_closing_the_app": {
+				"label": "התנתק מתורים בעת סגירת האפליקציה"
+			},
+			"open_crm_url": {
+				"description": "במקרה של פרופיל הסוכן שלך מוגדרת כתובת URL של CRM, בחר כיצד יש לפתוח את כתובת האתר בדפדפן שלך.",
+				"label": "פתח את כתובת ה-CRM ב:",
+				"options": {
+					"new_tab": {
+						"label": "כרטיסיה חדשה"
+					},
+					"new_window": {
+						"label": "חלון חדש",
+						"support_alert": "אפשרות זו כפופה להרשאות הדפדפן ומערכת ההפעלה."
+					}
+				}
+			}
+		},
+		"calls": {
+			"auto_answer": {
+				"label": "תשובה אוטומטית",
+				"modes": {
+					"after": "מענה אוטומטי לאחר (1 - 25 שניות)",
+					"instant": "מענה אוטומטי מיידי"
+				},
+				"rules": {
+					"timer": "המספר חייב להיות בין 1 ל-25"
+				}
+			},
+			"call": "שיחות",
+			"call_history_limit": {
+				"call_history_limit": "מגבלת היסטוריית שיחות",
+				"description": "הגדר את מגבלת הרשומות להצגה בהיסטוריית השיחות"
+			},
+			"calls": "שיחות",
+			"ringtone": {
+				"description": "רינגטון שיושמע בשיחות נכנסות",
+				"ringtone": "רינגטון"
+			}
+		},
+		"devices": {
+			"audio": "שמע",
+			"camera": "מצלמה",
+			"default": {
+				"camera": "מצלמת ברירת מחדל",
+				"microphone": "מיקרופון ברירת מחדל",
+				"speaker": "רמקול ברירת המחדל של המערכת"
+			},
+			"device_placeholder": "בחר מכשיר",
+			"devices": "מכשיר",
+			"devices_selection": {
+				"input_device": {
+					"label": "מכשיר קלט"
+				},
+				"input_speaker": {
+					"label": "רמקול קלט"
+				},
+				"output_device": {
+					"label": "התקן פלט"
+				},
+				"output_speaker": {
+					"label": "רמקול פלט"
+				},
+				"ringing_device": {
+					"label": "מכשיר מצלצל"
+				}
+			},
+			"microphone": "מִיקרוֹפוֹן",
+			"no_devices_available": "לא זוהו מכשירים",
+			"speaker": "רַמקוֹל"
+		},
+		"general": {
+			"appearance": {
+				"description": "ההגדרה חלה רק על דפדפן זה.",
+				"label": "מראה",
+				"options": {
+					"dark_theme": "ערכת נושא כהה",
+					"device_theme": "ערכת הנושא של המכשיר",
+					"light_theme": "ערכת נושא בהירה"
+				}
+			},
+			"general": "כללי",
+			"push_notifications": {
+				"description": "לקבל התראות על שולחן העבודה עבור אירועים מסוימים",
+				"push_notifications": "הודעות על שולחן העבודה"
+			},
+			"timezone": {
+				"description": "הזמן המקומי של אזור או מדינה",
+				"timezone": "אזור זמן"
+			}
+		},
+		"hid_integration": {
+			"permission_request": "כדי שתוכל להשתמש באוזניות שלך, עליך להעניק את ההרשאות הנדרשות.",
+			"plantronics": {
+				"label": "השתמש ב-Plantronics HID"
+			},
+			"subtitle": "שילוב אוזניות/אוזניות חיצוניות",
+			"title": "שילוב אוזניות"
+		},
+		"presence": {
+			"additional_information": {
+				"additional_information": "מידע נוסף",
+				"description": "הודעה נוספת עבור מצב הנוכחות שלך",
+				"label": "הודעת מצב נוכחות"
+			},
+			"presence": "נוכחות",
+			"presence_status": {
+				"description": "בחר מדינה בהתאם לזמינותך",
+				"presence_status": "מצב נוכחות"
+			}
+		},
+		"profile": {
+			"extension": {
+				"extension": "סיומת"
+			},
+			"full_name": {
+				"full_name": "שם מלא"
+			},
+			"profile": "פרופיל",
+			"profile_picture": {
+				"actions": {
+					"add": "הוסף תמונת פרופיל",
+					"change": "לשנות",
+					"remove": "להסיר"
+				},
+				"crop": {
+					"label": "התאם תמונה",
+					"preview": "תצוגה מקדימה"
+				},
+				"profile_picture": "תמונת פרופיל",
+				"tabs": {
+					"current_picture": "תמונה נוכחית",
+					"take_photo": "צלם תמונה",
+					"upload_photo": "העלה תמונה"
+				},
+				"take_photo": {
+					"label": "צלם תמונה"
+				},
+				"upload_photo": {
+					"drag": "גרור תמונת פרופיל לכאן",
+					"label": "שחרר את הקובץ או לחץ כדי להעלות",
+					"mobile_label": "הקש כדי להעלות",
+					"select": "בחר תמונה מהמחשב שלך"
+				}
+			},
+			"username": {
+				"username": "שם משתמש"
+			}
+		},
+		"settings": "הגדרות",
+		"video": {
+			"frame_rate": {
+				"description": "מציין את קצב הפריימים, במסגרות לשנייה",
+				"frame_rate": "קצב פריימים"
+			},
+			"max_aspect_ratio": {
+				"description": "הגדר את היחס הפרופורציונלי בין רוחב וגובה הסרטון",
+				"max_aspect_ratio": "יחס רוחב-גובה מקסימלי"
+			},
+			"resize_mode": {
+				"description": "ציין את מצב הרזולוציה של רצועת הווידאו.",
+				"options": {
+					"crop_and_scale": "יבול וקנה מידה",
+					"none": "אף אחד"
+				},
+				"resize_mode": "שינוי גודל"
+			},
+			"video": "וִידֵאוֹ"
+		}
+	},
+	"shortcuts": {
+		"calls": {
+			"accept-audio-call": "קבל שיחת שמע",
+			"accept-video-call": "קבלת שיחת וידאו",
+			"decline-call": "דחיית שיחה",
+			"start-audio-call": "התחל שיחת שמע",
+			"start-video-call": "התחל שיחת וידאו",
+			"toggle-mute": "החלפת מצב השתקה"
+		},
+		"general": {
+			"shortcuts": "הצגת קיצורי מקשים"
+		},
+		"label": "קיצורי דרך"
+	},
+	"users": {
+		"all_groups": "כל הקבוצות",
+		"email": "אימייל",
+		"extension": "סיומת",
+		"groups": {
+			"members": "חבר | חברים"
+		},
+		"has_no_extension": "אין שלוחה זמינה",
+		"name": "שֵׁם",
+		"no_users": "אין משתמשים זמינים",
+		"options": {
+			"sort_by": {
+				"label": "מיון לפי משתמשים זמינים"
+			}
+		},
+		"status": {
+			"available": "זמין",
+			"in_call": "בשיחה",
+			"on_the_phone": "בטלפון",
+			"ringing": "צִלצוּל"
+		},
+		"users": "משתמש | משתמשים"
+	},
+	"voice_messages": {
+		"no_messages": "אין לך הודעות חדשות.",
+		"not_found": "לא נמצאו הודעות.",
+		"types": {
+			"inbox": "חדש",
+			"old": "ישן",
+			"urgent": "דחוף"
+		},
+		"voice_message": "הודעת קול | הודעות קול",
+		"voicemail_count": "אין לך הודעות קוליות | יש לך {count} הודעה קולית | יש לך {count} הודעות קוליות"
+	},
+	"wizard": {
+		"actions": {
+			"continue": "המשך",
+			"finish": "הסתיים",
+			"next": "הבא",
+			"previous": "הקודם"
+		},
+		"steps": {
+			"database_setup": {
+				"error": "לא הצליח להתחבר. אנא בדוק את ההגדרות שלך.",
+				"fields": {
+					"password": {
+						"label": "סיסמת מסד הנתונים",
+						"placeholder": "סיסמה"
+					},
+					"username": {
+						"label": "שם משתמש במסד הנתונים",
+						"placeholder": "Root"
+					}
+				},
+				"info": "הזן משתמש עם הרשאות להתקנת מסד הנתונים של היישום.",
+				"loading_message": "מתקין מסד נתונים, אנא המתן...",
+				"step_name": "הגדרת מסד נתונים"
+			},
+			"pbx_settings": {
+				"fields": {
+					"host": {
+						"label": "מארח",
+						"placeholder": "Localhost"
+					},
+					"key": {
+						"hint": "אם אתה מתקין באותו שרת כמו {company}, אתה יכול להשאיר שדה זה ריק. מפתח ייווצר אוטומטית.",
+						"label": "Application key",
+						"placeholder": "Application key"
+					},
+					"port": {
+						"label": "Port"
+					},
+					"secure": {
+						"hint": "מציין חיבור מאובטח באמצעות HTTPS. בדרך כלל, אתה מסמן אפשרות זו בעת שימוש ביציאה 443.",
+						"label": "מְאוּבטָח"
+					}
+				},
+				"loading_message": "בודק חיבור, אנא המתן...",
+				"step_name": "הגדרות PBX"
+			},
+			"user_setup": {
+				"error": "לא הצליח ליצור משתמש אנא בדוק את ההגדרות שלך",
+				"fields": {
+					"name": {
+						"label": "שם",
+						"placeholder": "John doe"
+					},
+					"password": {
+						"label": "סיסמת משתמש",
+						"placeholder": "סיסמה"
+					},
+					"password_confirmation": {
+						"label": "אימות סיסמה",
+						"placeholder": "חזור על הסיסמה שנית"
+					},
+					"timezone": {
+						"label": "אזור זמן "
+					},
+					"username": {
+						"label": "שם משתמש",
+						"placeholder": "מנהל"
+					}
+				},
+				"loading_message": "יוצר...",
+				"step_name": "הגדרת משתמש"
+			}
+		}
+	}
+}

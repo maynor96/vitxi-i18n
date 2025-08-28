@@ -1,1261 +1,1996 @@
 {
-  "about": {
-    "app_name": "{app_name} 옴니 채널 통신 시스템",
-    "information": "{app_name}은 필요한 모든 기능을 갖춘 완전한 WebRTC 클라이언트입니다",
-    "features": {
-      "calls": "음성 및 영상 통화",
-      "chats": "팀원과 채팅",
-      "transfer_calls": "맹인 및 유인 전송"
-    }
-  },
-  "administration": {
-    "agent_profiles": {
-      "agent_pauses_reason": {
-        "description": "상담원이 대기열에서 세션을 일시 중지 할 때 사용되는 일시 중지 이유",
-        "fields": {
-          "name": "이름"
-        },
-        "label": "일시 정지 이유",
-        "pause": "일시정지 | 일시정지",
-        "rules": {
-          "name": "이유의 이름이 필요합니다"
-        }
-      },
-      "agent_profile": "상담원 프로파일",
-      "default_profile_alert": "기본 프로필은 삭제할 수 없습니다",
-      "description": "일시 중지 이유를 설정할 수있는 상담원 프로필을 만듭니다. 사용자 역할에 프로필을 할당 할 수 있습니다",
-      "module_name": "상담원 프로필",
-      "profile": "프로파일 | 프로파일",
-      "fields": {
-        "is_global": {
-          "label": "글로벌",
-          "description": "선택하면 테넌트가 프로필을 점유 할 수 있습니다."
-        },
-        "crm_url": {
-          "label": "CRM URL (선택 사항)",
-          "description": "통화 데이터를 저장하도록 CRM의 끝점을 구성합니다.",
-          "actions": {
-            "add_parameter": "매개변수 추가",
-            "remove_parameter": "매개변수 제거"
-          },
-          "fields": {
-            "base_url": {
-              "label": "기본 URL",
-              "invalid": "URL이 잘못되었습니다."
+	"app": {
+		"title": "앱이 다른 탭에서 열려 있습니다",
+		"explanation": "중복 벨소리, 통화 충돌 및 예기치 않은 동작을 방지하려면 하나의 활성 탭만 허용됩니다.",
+		"takeover": {
+			"can": "이 탭에서 앱을 제어할 수 있습니다.",
+			"cannot": "다른 탭에서 통화가 진행 중입니다. 통화가 끝난 후에 제어할 수 있습니다.",
+			"button": "여기서 사용",
+			"close": "이 탭 닫기"
+		}
+	},
+	"about": {
+		"app_name": "{app_name} 옴니채널 커뮤니케이션 시스템",
+		"features": {
+			"calls": "음성 및 영상 통화",
+			"chats": "팀원과 채팅",
+			"transfer_calls": "맹인 및 유인 전송"
+		},
+		"information": "{app_name}은 필요한 모든 기능을 갖춘 완전한 WebRTC 클라이언트입니다"
+	},
+	"administration": {
+		"agent_profiles": {
+			"agent_pauses_reason": {
+				"description": "상담원이 대기열에서 세션을 일시 중지 할 때 사용되는 일시 중지 이유",
+				"fields": {
+					"name": "이름"
+				},
+				"label": "일시 정지 이유",
+				"pause": "일시 중지 | 일시 중지",
+				"rules": {
+					"name": "이유의 이름이 필요합니다"
+				}
+			},
+			"agent_profile": "상담원 프로파일",
+			"default_profile_alert": "기본 프로필은 삭제할 수 없습니다",
+			"description": "일시 중지 이유를 설정할 수있는 상담원 프로필을 만듭니다. 사용자 역할에 프로필을 할당 할 수 있습니다",
+			"fields": {
+				"crm_url": {
+					"actions": {
+						"add_parameter": "매개변수 추가",
+						"remove_parameter": "매개변수 제거"
+					},
+					"description": "통화 데이터를 저장하도록 CRM의 끝점을 구성합니다.",
+					"fields": {
+						"base_url": {
+							"invalid": "URL이 잘못되었습니다.",
+							"label": "기본 URL"
+						},
+						"dynamic_call_values": {
+							"call_type": {
+								"label": "통화 유형"
+							},
+							"callee_name": {
+								"label": "목적지 이름"
+							},
+							"callee_number": {
+								"label": "목적지 번호"
+							},
+							"caller_id_name": {
+								"label": "발신자 이름"
+							},
+							"caller_id_number": {
+								"label": "발신자 번호"
+							},
+							"hint": "동적 변수 사용",
+							"label": "동적 변수",
+							"queue": {
+								"label": "대기열"
+							}
+						},
+						"parameter_name": {
+							"label": "매개변수 이름",
+							"placeholder": "https://당신의-crm.com"
+						},
+						"value": {
+							"label": "값"
+						}
+					},
+					"label": "CRM URL (선택 사항)",
+					"preview": "URL 미리보기"
+				},
+				"is_global": {
+					"description": "선택하면 테넌트가 프로필을 점유 할 수 있습니다.",
+					"label": "글로벌"
+				},
+				"website_tab": {
+					"hint": "웹 사이트가 포함된 앱에 사용자 정의 탭 추가",
+					"label": "사용자 정의 웹 사이트 탭",
+					"preview": "시사",
+					"tab_name": {
+						"label": "탭 이름"
+					},
+					"url": {
+						"hint": "신뢰할 수 있는 보안 웹사이트(https://)를 입력하세요. 이는 사용자를 안전하게 유지하는 데 중요합니다.",
+						"label": "웹 URL"
+					}
+				}
+			},
+			"module_name": "상담원 프로필",
+			"profile": "프로파일 | 프로파일"
+		},
+		"blf_settings": {
+			"contact_control": {
+				"description": "사용자 당 허용되는 BLF 연락처 수를 관리하여 서버 과부하를 방지하고 성능을 최적화합니다. 1과 100 사이의 값을 설정하세요.",
+				"fields": {
+					"label": "제한"
+				},
+				"label": "BLF 연락처 제어"
+			},
+			"module_name": "BLF 설정"
+		},
+		"event_logs": {
+			"datetime_picker": {
+				"placeholder": "날짜 및 시간 범위 선택",
+				"shortcuts": {
+					"last_month": "지난달",
+					"last_week": "지난주",
+					"select_date": "날짜 선택",
+					"select_time": "시간을 선택하세요",
+					"this_month": "이번 달",
+					"this_week": "이번 주",
+					"today": "오늘",
+					"yesterday": "어제"
+				}
+			},
+			"headers": {
+				"client_ip": "IP 주소",
+				"date": "날짜",
+				"device": "브라우저/장치",
+				"event": "이벤트",
+				"metadata": "메타데이터",
+				"module": "모듈",
+				"payload": "페이로드",
+				"tenant": "세입자",
+				"user": "사용자"
+			},
+			"info": "애플리케이션의 주요 이벤트 뷰어. PBX와 같은 서버에 설치된 경우에만 사용할 수 있습니다.",
+			"module_name": "이벤트 로그"
+		},
+        "global_setting": "전역 설정",
+        "global_setting_hint": "이것은 전역 설정이며 모든 테넌트에 적용됩니다",
+		"groups": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "확인하려면 {name} 를 입력하십시오.",
+					"content": "이 그룹을 삭제하시겠습니까? 모든 받은편지함, 대화 및 관련 데이터가 영구적으로 삭제됩니다."
+				}
+			},
+			"description": "{app_name} 사용자가 서로간에 표시되도록하기 위해 각 사용자에게 할당 된 그룹이 있어야하며 이후에 다른 사용자에게이 그룹을 볼 수있는 액세스 권한을 부여합니다. 이렇게하면 볼 수있는 그룹을 제한하는 여러 사용자 그룹을 만들 수 있습니다. 이를 위해 먼저 그룹 이름을 만듭니다",
+			"errors": {
+				"groups": "그룹을 불러올 수 없습니다",
+				"tenants": "테넌트를 불러올 수 없습니다"
+			},
+			"fields": {
+				"description": "설명",
+				"name": "이름",
+				"tenant": "테넌트"
+			},
+			"group": "그룹 | 그룹",
+			"manage-users": "사용자 추가/제거",
+            "manage_members": "구성원 관리",
+            "members_disabled_until_save": "구성원을 관리하려면 그룹을 생성하세요.",
+			"module_name": "그룹",
+			"rules": {
+              "name": "그룹 이름이 필요합니다",
+              "name_min": "그룹 이름은 최소 3자 이상이어야 합니다",
+              "tenant": "테넌트가 필요합니다"
+			},
+            "sections": {
+              "basic_info": "기본 정보",
+              "basic_info_hint": "그룹의 이름을 정하고 목적을 설명하세요",
+              "members": "구성원",
+              "members_hint": "이 그룹의 구성원을 보고 관리하세요"
             },
-            "parameter_name": {
-              "label": "매개변수 이름",
-              "placeholder": "https://당신의-crm.com"
-            },
-            "value": {
-              "label": "값"
-            },
-            "dynamic_call_values": {
-              "call_type": {
-                "label": "통화 유형"
+			"settings": {
+				"member_limit": {
+					"confirm": {
+						"content": "⚠️ 경고: 제한을 150 이상으로 설정하면 서버가 과부하되어 성능에 영향을 미칠 수 있습니다. 보다 나은 관리를 위해 사용자들을 다른 그룹으로 나누는 것을 고려하십시오.",
+						"excessMembers": "설정하려는 새로운 멤버 제한이 현재 멤버 제한보다 낮습니다. 새 제한에 맞추기 위해 회원을 수동으로 검토하고 삭제해야 합니다."
+					},
+					"description": "그룹당 허용되는 구성원 수를 관리하여 서버 과부하를 방지하고 성능을 최적화하세요.",
+					"fields": {
+						"label": "한계"
+					},
+					"label": "회원 제한"
+				},
+				"title": "그룹 설정"
+			},
+            "tooltips": {
+              "tenant_scope": "이 그룹은 선택된 테넌트에 속하게 됩니다."
+            }
+		},
+		"inboxes": {
+			"alert": {
+				"delete": {
+					"confirm_placeholder_text": "확인하려면 {name} 를 입력하십시오.",
+					"content": "이 받은 편지함을 삭제하시겠습니까? 모든 대화 및 관련 데이터가 영구적으로 삭제됩니다."
+				}
+			},
+			"channels": {
+				"sms": {
+					"label": "SMS 채널",
+					"providers": {
+						"vitalpbx": {
+							"hint": "SMS 제공업체를 구성하세요: PBX 설치 > PBX/SMS/Messaging Providers"
+						}
+					}
+				},
+				"whatsapp": {
+					"api_key": {
+						"label": "API 토큰",
+						"placeholder": "비즈니스 계정 사용자의 액세스 토큰을 입력하세요"
+					},
+					"business_account_id": {
+						"label": "비즈니스 계좌 ID",
+						"placeholder": "Facebook 개발자 대시보드에서 비즈니스 계정 ID를 입력하세요."
+					},
+					"label": "왓츠앱 채널",
+					"phone_number": {
+						"invalid": "+ 기호로 시작하고 공백 없이 유효한 전화번호를 입력하세요.",
+						"placeholder": "+1234567890 (공백 없이)"
+					},
+					"phone_number_id": {
+						"label": "전화번호 ID",
+						"placeholder": "Facebook 개발자 대시보드에서 전화번호 ID를 입력하세요."
+					},
+					"webhook_verification_token": {
+						"hint": "이 토큰은 Webhook 엔드포인트의 진위 여부를 확인하는 데 사용됩니다.",
+						"label": "웹훅 검증 토큰"
+					},
+					"whatsapp_templates": {
+						"sync": {
+							"label": "템플릿 메시지 동기화"
+						}
+					}
+				}
+			},
+			"confirm_navigation": "설정을 완료하지 않았습니다. 이 페이지를 떠나시겠습니까?",
+			"description": "받은 편지함 관리 모듈을 사용하면 다양한 받은 편지함을 만들고 관리할 수 있습니다. 들어오는 통신의 효율적인 구성을 용이하게 합니다.",
+			"form": {
+				"fields": {
+					"assignment_config": {
+						"auto_assignment_limit": {
+							"description": "이 받은 편지함에서 상담원에게 자동으로 배정할 수 있는 최대 대화 수를 제한합니다.",
+							"label": "자동 할당 제한"
+						},
+						"label": "대화 할당",
+						"strategy": {
+							"label": "전략",
+							"options": {
+								"round_robin": {
+									"hint": "온라인 상담원에게 대화를 주기적인 순서로 배포합니다.",
+									"label": "라운드 로빈"
+								},
+								"self_assignment": {
+									"hint": "상담원이 자신에게 대화를 할당할 수 있습니다.",
+									"label": "에이전트 자체 할당"
+								}
+							}
+						}
+					},
+					"channel_info": {
+						"sms": {
+							"phone_number": {
+								"label": "전화 번호"
+							}
+						},
+						"whatsapp": {
+							"phone_number": {
+								"label": "WhatsApp 비즈니스 번호"
+							}
+						}
+					},
+					"channel_type": {
+						"choose": "채널 선택",
+						"label": "채널 유형"
+					},
+					"greeting": {
+						"enable_channel_greeting": {
+							"description": "고객이 대화를 시작하고 초기 메시지를 보내는 즉시 자동으로 인사말 메시지를 보냅니다.",
+							"label": "채널 인사말 사용"
+						},
+						"greeting_message": {
+							"label": "인사말 메시지",
+							"limit": "최대 {count} 자.",
+							"placeholder": "안녕하세요! 연락해 주셔서 감사합니다. 곧 저희 직원 중 한 명이 방문하실 것입니다."
+						},
+						"label": "인사"
+					},
+					"group": {
+						"hint": "받은 편지함이 속할 그룹을 선택하십시오."
+					},
+					"inbox": {
+						"create": "받은 편지함 생성"
+					},
+					"name": {
+						"placeholder": "예: 지원, 영업, 마케팅"
+					},
+					"provider": {
+						"options": {
+							"pbx": {
+								"hint": "PBX API를 통해 연결됨",
+								"label": "PBX"
+							}
+						}
+					},
+					"webhook": {
+						"label": "웹훅 URL",
+						"sms": {
+							"hint": "URL을 복사하여 선택한 번호 제공자의 설정에서 '이벤트 알림 URL' 필드에 붙여넣기: PBX 설치 > PBX/SMS/메시징 제공업체."
+						},
+						"whatsapp": {
+							"hint": "Facebook Developer 앱에서 이 URL을 Webhook으로 설정해야 합니다."
+						}
+					}
+				}
+			},
+			"inboxes": "받은 편지함 | 받은 편지함들",
+			"module_name": "받은 편지함",
+			"new_inbox": "",
+			"reports": {
+				"agents": {
+					"status": {
+						"busy": {
+							"label": "바쁨"
+						},
+						"offline": {
+							"label": "오프라인"
+						},
+						"online": {
+							"label": "온라인"
+						},
+						"total": {
+							"label": "합계"
+						}
+					}
+				},
+				"conversations": {
+					"agent_productivity": "상담원 생산성",
+					"agents": {
+						"handled": "처리된 대화",
+						"title": "에이전트별 대화"
+					},
+					"avg_first_response_minutes": "평균 첫 응답 시간 (분)",
+					"avg_resolution_minutes": "평균 해결 시간 (pyeong-gyun hae-gyeol sigan)",
+					"avg_resolution_time": "평균 해결 시간",
+					"conversations_over_time": "시간이 지남에 따른 대화",
+					"first_response_time": "첫 응답 시간",
+					"messages_by_channel": "채널별 메시지",
+					"messages_received": "메시지 받음",
+					"resolution_time": "해결 시간",
+					"resolved": "해결",
+					"resolved_conversations": "해결된 대화",
+					"started": "시작됨",
+					"title": "대화",
+					"total": "총 대화",
+					"total_conversations": "총 대화",
+					"total_messages_received": "메시지 받음",
+					"total_messages_sent": "메시지 보냄",
+					"traffic": {
+						"title": "대화 트래픽"
+					}
+				},
+				"overview": {
+					"title": "개요"
+				},
+				"reports": "보고서"
+			},
+			"setup_instructions": {
+				"label": "설정 지침",
+				"short_description": "귀하의 받은 편지함이 설정되어 사용 준비가 완료되었습니다! 메시지 및 대화를 손쉽게 관리하기 시작하세요.",
+				"title": "귀하의 수신함이 설정되었으며 사용할 준비가 되었습니다!"
+			},
+			"tabs": {
+				"general": {
+					"label": "일반"
+				},
+				"messaging_and_routing": {
+					"label": "메시징 및 라우팅"
+				},
+				"phone_number_and_api": {
+					"label": "전화번호 및 API"
+				}
+			}
+		},
+		"manage": "꾸리다",
+		"module_name": "관리",
+		"presence": {
+			"description": "여기서 시스템 관리자는 사용자가 사용할 수있는 다양한 현재 상태를 만들 수 있습니다. 기본적으로 사용 가능, 방해 금지, 점심 시간, 출장의 5 가지 상태가 있지만 더 추가 할 수 있습니다",
+			"info": {
+				"default_status": "기본 상태는 편집하거나 삭제할 수 없습니다"
+			},
+			"module_name": "현재 상태",
+			"offline": "오프라인",
+			"online": "온라인",
+			"select_icon": "아이콘 선택",
+			"status": {
+				"available": "대기",
+				"away": "부재",
+				"business_trip": "출장",
+				"do_not_disturb": "방해금지",
+				"lunch_break": "점심"
+			},
+			"status_color": "상태 색상"
+		},
+		"role_manager": {
+			"agent_profile": {
+				"hint": "할당 된 역할에 콜 센터 권한이있는 경우 사용할 상담원 프로필을 할당합니다."
+			},
+			"default_roles": {
+				"admin": "테넌트 관리자",
+				"agent": "에이전트",
+				"super-admin": "최고 관리자",
+				"user": "사용자"
+			},
+			"description": "사용자 지정 역할을 편집 또는 생성하고 사용자가 수행 할 역할에 따라 권한을 할당합니다",
+			"full_access": "전체 권한",
+			"module_name": "역활 관리",
+			"permissions": {
+				"label": "권한 | 권한",
+				"permissions": {
+					"assigned-tenant": "할당 된 테넌트",
+					"call-center": {
+						"call-center-features": {
+							"description": "로그인 및  로그 아웃과 같은 콜센터 기능이 활성화됩니다",
+							"label": "콜센터 기능"
+						},
+						"group_name": "콜센터",
+						"queue-selection": {
+							"description": "이 옵션을 선택하면 상담원은 로그인 할 대기열을 선택할 수 있습니다. 선택하지 않으면 자신이 속한 모든 대기열에 로그인합니다",
+							"label": "대기열 선택"
+						}
+					},
+					"management": {
+						"agent-profiles": {
+							"description": "상담원 프로필 모듈에 대한 액세스를 허용하려면 이 옵션을 선택하십시오",
+							"label": "상담원 프로파일"
+						},
+						"events-log": {
+							"description": "응용 프로그램 이벤트 뷰어에 액세스하는 권한 (앱이 PBX와 같은 서버에 설치된 경우에만 사용 가능).",
+							"label": "이벤트 로그"
+						},
+						"group_name": "관리",
+						"groups": {
+							"description": "그룹 모듈에 액세스를 허용하려면이 옵션을 선택하십시오.",
+							"label": "그룹"
+						},
+						"inboxes": {
+							"description": "이 옵션을 선택하면 받은 편지함 모듈에 대한 액세스를 허용하고 싶습니다.",
+							"label": "받은 편지함"
+						},
+						"roles": {
+							"description": "역할 모듈에 대한 액세스를 허용하려면 이 옵션을 선택하십시오",
+							"label": "역활"
+						},
+						"users": {
+							"description": "사용자 모듈에 대한 액세스를 허용하려면 이 옵션을 선택하십시오.",
+							"label": "사용자"
+						}
+					},
+					"misc": {
+						"chat": {
+							"description": "사용자는 다른 그룹 구성원과 메시지를 주고받을 수 있습니다.",
+							"label": "채팅"
+						},
+						"conversation-assignment": {
+							"description": "이 권한은 받은편지함의 대화를 다른 상담원에게 배정할 수 있는 권한을 부여합니다.",
+							"label": "대화 할당"
+						},
+						"group_name": "여러 가지 잡다한",
+						"update_social_networks": {
+							"description": "바닥 글에 표시 될 소셜 네트워크를 구성 할 수있는 권한",
+							"label": "소셜 네트워크 업데이트"
+						},
+						"view-recordings": {
+							"description": "사용자는 PBX에서 생성 된 통화 녹음을 볼 수 있습니다",
+							"label": "녹음보기"
+						}
+					}
+				},
+				"select_all": "전체 선택",
+				"unselect": "선택 해제"
+			},
+			"role": "역활 | 역활"
+		},
+		"social_networks": {
+			"description": "여기에서 바닥 글에 표시 될 소셜 미디어를 구성 할 수 있습니다",
+			"module_name": "소셜 네트워크",
+			"socials": {
+				"facebook": {
+					"hint_text": "페이스 북 페이지의 사용자 이름 설정",
+					"prefix": "https://facebook.com/"
+				},
+				"instagram": {
+					"hint_text": "인스타그램 계정의 사용자 이름 설정",
+					"prefix": "https://instagram.com/"
+				},
+				"twitter": {
+					"hint_text": "트위터 계정의 사용자 이름 설정",
+					"prefix": "https://twitter.com/"
+				},
+				"youtube": {
+					"hint_text": "YouTube 채널의 사용자 이름 설정",
+					"prefix": "https://youtube.com/"
+				}
+			}
+		},
+		"user_manager": {
+			"description": "{app_name} 에 대해 다른 사용자를 만듭니다. 이 모듈에서 확장 및 권한을 관리합니다",
+			"error_on_delete": "응용 프로그램에서 유일한 사용자를 삭제할 수 없습니다",
+			"module_name": "사용자 관리자",
+			"sections": {
+				"details": {
+					"change_password": "사용자 암호 변경 (선택 사항)",
+					"permissions": "권한",
+					"role": "역활",
+					"role_with_call_center_features": "역할에는 콜 센터 기능이 있습니다",
+					"section_name": "사용자 상세",
+					"validations": {
+						"name": "이름이 필요합니다",
+						"password": "비밀번호는 8 자 이상이어야합니다.",
+						"role": "사용자 역할이 필요합니다.",
+						"username": "사용자 이름이 필요합니다"
+					}
+				},
+				"device": {
+					"can_view_recordings": "사용자는 자신의 기록을 볼 수 있습니다",
+					"device": "내선번호",
+					"device_not_found": "할당 된 장치, {source}는 PBX에서 찾을 수 없거나 사용할 수 없습니다",
+					"group_module_info": "선택한 테넌트에 대해 검색된 그룹이 없습니다. 여기에서 그룹을 만들 수 있습니다",
+					"group_placeholder": "그룹 선택",
+					"groups": "그룹",
+					"groups_hint": "사용자가 속한 그룹 설정",
+					"no_devices": "사용 가능한 장치 없음",
+					"no_phonebooks": "사용 가능한 전화 번호부 없음",
+					"phonebooks": "전화번호부",
+					"phonebooks_hint": "할당 할 전화 번호부 선택",
+					"remove_device": "할당 된 디바이스 제거",
+					"section_name": "사용자 데이타",
+					"tenant": "테넌트",
+					"validations": {
+						"device": "할당 할 디바이스를 선택하십시오",
+						"phonebooks": "할당 할 전화 번호부를 선택하십시오",
+						"tenant": "할당 할 테넌트를 선택하십시오"
+					}
+				}
+			},
+			"user": "사용자 | 사용자",
+			"user_already_exists": "사용자 이름이 이미 존재합니다"
+		}
+	},
+	"app_setup": {
+		"alerts": {
+			"error": "제공된 호스트에 {app_name}가 설치되어 있지 않습니다.",
+			"success": "앱이 성공적으로 감지되었습니다."
+		},
+		"fields": {
+			"auto_launch": {
+				"label": "OS 시작 시 앱 자동 실행"
+			},
+			"host": {
+				"placeholder": "당신의-pbx.com"
+			}
+		},
+		"title": "{app_name} 가 설치된 PBX 호스트를 입력하십시오."
+	},
+	"calls": {
+		"actions": {
+			"answer": "응답",
+			"audio_answer": "음성 받기",
+			"call": "전화하다",
+			"cancel_share_screen": "화면 공유 취소",
+			"crm": {
+				"label": "CRM"
+			},
+			"direct_call": {
+				"label": "직접 통화"
+			},
+			"disable_camera": "카메라 해제",
+			"enable_camera": "카메라 사용",
+			"forward": {
+				"forward": "전화 전달"
+			},
+			"hang_up": "종료",
+			"hold": {
+				"hold": "보류 설정",
+				"unhold": "통화 재개"
+			},
+			"keypad": "키패드",
+			"make_call": "전화 걸기",
+			"mute_audio": "음성소거",
+			"mute_video": "영상소거",
+			"reject": "거절",
+			"share_screen": "화면 공유",
+			"transfer": {
+				"alerts": {
+					"accepted": "수락 됨",
+					"failed": "실패 됨",
+					"progress": "진행 중",
+					"request_failed": "요청 실패",
+					"request_succeeded": "요청 성공",
+					"success": "전환 성공",
+					"trying": "전환중"
+				},
+				"complete_transfer": "전환완료",
+				"label": "전송할 번호를 입력하세요",
+				"transfer": "전환",
+				"type": {
+					"attended": "문의 후 전환",
+					"blind": "무조건 전환"
+				}
+			},
+			"unmute_audio": "음성소거 해제",
+			"video_answer": "영상 받기"
+		},
+		"call": "통화 | 통화",
+		"conference": {
+			"actions": {
+				"end_conference": "회의 종료",
+				"end_conference_and_hang_up": "회의를 종료하고 전화를 끊습니다",
+				"start_audio_conference": "오디오 회의 시작",
+				"start_conference": "회의 시작"
+			},
+			"add_participant": "참가자 추가",
+			"audio_conferences": "오디오 회의",
+			"conference": "회의",
+			"join_call": "전화 회의에 참여",
+			"participant_limit": "최대 {limit} 참가자까지.",
+			"participants": "참가자",
+			"status": {
+				"in_audio_conference": "음성 회의에서"
+			},
+			"type": {
+				"audio_conference": "음성 회의",
+				"video_conference": "영상 회의"
+			}
+		},
+		"current_call": "현재 통화",
+		"current_calls": "현재 통화",
+		"incoming": {
+			"auto_answer": {
+				"label": "자동 응답이 활성화되었습니다"
+			},
+			"incoming_from": "{uri}에서 걸려온 전화",
+			"type": {
+				"audio_call": "음성 통화",
+				"video_call": "영상 통화"
+			}
+		},
+		"info": {
+			"answered": "응답",
+			"auto_answered": "자동 응답",
+			"busy": "바빠요",
+			"calling": "발신",
+			"call_forwarding_to": "{target}(으)로 통화가 전달되고 있습니다...",
+			"unknown_destination": "알 수 없는 목적지",
+			"call_on_hold": "통화 보류 중",
+			"connected": "연결됨",
+			"duration": "통화시간",
+			"failed": "실패",
+			"history": "기록",
+			"in_progress": "진행 중",
+			"incoming_call": "수신 통화",
+			"info": "통화 정보",
+			"media_errors": {
+				"DevicesNotFoundError": "통화를 초기화하기 위해 감지 된 오디오 또는 비디오 장치가 없습니다"
+			},
+			"no_answer": "부재",
+			"ringing": "링잉",
+			"tenant": "테넌트",
+			"type": "통화 종류",
+			"types": {
+				"incoming": "수신",
+				"internal": "내선",
+				"outgoing": "발신",
+				"transit": "전환",
+				"undefined": "미정의"
+			}
+		},
+		"line": "라인 {line}",
+		"loaders": {
+			"connecting": "연결"
+		},
+		"media_errors": {
+			"DevicesNotFoundError": "통화를 초기화 하는 데 오디오 또는 비디오 장치가 감지되지 않았습니다"
+		},
+		"search": {
+			"hint": "검색 필드를 사용하려면 “모두” 필터를 선택해야 합니다.",
+			"label": "출발지 또는 도착지로 검색"
+		}
+	},
+	"chats": {
+		"add_contact_to_chat": "채팅을 시작하려면 연락처를 추가하세요",
+		"attachments": {
+			"attachment": "첨부 | 첨부 파일",
+			"types": {
+				"audio": "오디오",
+				"file": "파일",
+				"image": "영상",
+				"video": "비디오"
+			}
+		},
+		"chat": "채팅 | 채팅",
+		"conversation": "대화 | 대화",
+		"conversation_actions": {
+			"clear": "대화 기록 삭제",
+			"delete": "삭제",
+			"load_more": "더 불러오기"
+		},
+		"conversation_types": {
+			"sip": "SIP 대화",
+			"vitxi": "VitXi 대화"
+		},
+		"draft": "초안",
+		"exceptions": {
+			"conversation": "대화를 받는 중에 오류가 발생했습니다",
+			"messages": "메시지를 받을 수 없습니다"
+		},
+		"message": "메세지",
+		"message_actions": {
+			"copy": "복사",
+			"delete": "삭제",
+			"forward": "전달",
+			"reply": "답장"
+		},
+		"message_rules": {
+			"sip_message_character_limit": "최대 1023 자까지 허용됩니다"
+		},
+		"new": {
+			"placeholder": {
+				"description": "참가자를 선택하고 아래에 첫 번째 메시지를 작성하십시오.",
+				"first_message": "아래에 첫 번째 메시지를 작성하세요.",
+				"heading": "새 대화 시작"
+			}
+		},
+		"new_conversation": "새로운 대화",
+		"new_message": "새로운 메시지",
+		"say_hello": "안녕하세요",
+		"start_conversation": "대화 시작",
+		"suggestions": {
+			"app": {
+				"description": "앱 내 채팅",
+				"label": "앱 채팅",
+				"search_placeholder": "이름, 이메일 또는 확장자로 사용자 검색하기"
+			},
+			"sip": {
+				"description": "저장된 연락처와 채팅하세요",
+				"label": "SIP 채팅",
+				"search_placeholder": "연락처를 검색하거나 내선 번호를 입력하세요"
+			}
+		},
+		"typing": "입력"
+	},
+	"contacts": {
+		"actions": {
+			"edit": {
+				"label": "연락처 편집"
+			},
+			"favorites": {
+				"mark_as_favorite": "즐겨찾기로 표시",
+				"unmark_as_favorite": "즐겨찾기 해제"
+			}
+		},
+		"contact_info": {
+			"company": "회사 : {source}",
+			"email": "이메일",
+			"info": "연락 정보",
+			"job_title": "직책 : {source}",
+			"type": "종류 : {source}",
+			"types": {
+				"external": "외부 연락처",
+				"internal": "내부 연락"
+			}
+		},
+		"contacts": "연락처 | 연락처",
+		"create": {
+			"add": "연락처 추가",
+			"errors": {
+				"save": "연락처 추가 오류"
+			},
+			"fields": {
+				"avatar": {
+					"label": "아바타",
+					"limit_size_alert": "아바타 크기는 512kb 미만이어야 합니다!",
+					"placeholder": "아바타 이미지를 선택하세요"
+				},
+				"blf": {
+					"description": "BLF 상태 보기를 활성화하려면 사용하세요.",
+					"label": "BLF"
+				},
+				"company": "회사",
+				"contact_type": "연락처 종류",
+				"contact_types": {
+					"external": "외부",
+					"internal": "내부"
+				},
+				"email": "이메일",
+				"first_name": "전체 이름",
+				"job_title": "직책",
+				"last_name": "성",
+				"location": "위치",
+				"phone": {
+					"add_phone": "전화 추가",
+					"country": "국가",
+					"extension": "내선번호",
+					"invalid_number": "잘못된 번호",
+					"phone": "전화 | 전화",
+					"phone_number": "번호",
+					"prefix": "프리픽스",
+					"required_phone": "전화를 하나 이상 추가해야 합니다.",
+					"type": "종류",
+					"types": {
+						"alerts": {
+							"external": {
+								"content": "전화기가 외부에 있는 경우 메시지 (SMS)는 관리자가 구성하고 할당 한 SMS 트렁크를 통해 전송됩니다",
+								"title": "외부 전화"
+							},
+							"internal_sip": {
+								"content": "전화기가 \"내부 SIP\"유형 인 경우 메시지는 별표를 통해 전송됩니다. 메시지는 텍스트 유형입니다",
+								"title": "내부 (SIP)"
+							}
+						},
+						"external": "외부",
+						"internal_sip": "내부 (SIP)"
+					}
+				}
+			},
+			"required_fields_alert": "필수 필드를 나타냅니다"
+		},
+		"favorites": {
+			"favorites": "즐겨찾기"
+		},
+		"my_contacts": "내 연락처",
+		"no_contacts": "사용 가능한 연락처가 없습니다",
+		"pagination_info": "{total}개 연락처 중 {startIndex}-{endIndex} 표시",
+		"rules": {
+			"phone": {
+				"dial_code": {
+					"required": "목록에서 다이얼 코드를 선택하십시오"
+				},
+				"invalid": "전화 번호는 E.164 형식이어야합니다."
+			}
+		}
+	},
+	"device": {
+		"actions": {
+			"refresh": "새로고침"
+		},
+		"alerts": {
+			"not_found": "등록 할 수 없습니다.이 계정과 관련된 장치가 존재하지 않습니다.\n  자세한 내용은 관리자에게 문의하십시오"
+		},
+		"call_center": {
+			"active_queues": "활성 대기열",
+			"alerts": {
+				"failed": {
+					"login": "로그인하는 동안 예기치 않은 오류가 발생했습니다. 큐가 할당되었는지 관리자에게 확인하십시오."
+				},
+				"no_active_queues": "활성 대기열 없음",
+				"no_queues_paused": "일시 중지 된 대기열 없음",
+				"success": {
+					"login": "대기열에 성공적으로 로그인했습니다.",
+					"logout": "성공적으로 로그 아웃했습니다",
+					"pause": "성공적으로 일시 중지되었습니다",
+					"unpause": "성공적으로 통화가 재개되었습니다"
+				}
+			},
+			"default_reasons": {
+				"administrative": "관리",
+				"break": "쉬는시간",
+				"lunch": "점심시간",
+				"wc": "화장실"
+			},
+			"manage": {
+				"tabs": {
+					"logged_in_queues": "로그인 된 대기열",
+					"logged_out_queues": "로그 아웃 된 대기열",
+					"paused_queues": "일시 중지 된 대기열"
+				}
+			},
+			"queue": "대기열 | 큐",
+			"queue_actions": {
+				"login": "로그인",
+				"login_all": "모두 로그인",
+				"logout": "로그아웃",
+				"logout_all": "모두에서 로그 아웃",
+				"manage": "꾸리다",
+				"pause": "일시정지",
+				"pause_all": "모두 일시 중지",
+				"pause_section_title": "일시 중지 할 대기열을 선택합니다",
+				"reload_queues": "대기열 리로드",
+				"select_queues": "대기열 선택",
+				"unpause": "일시 정지 해제",
+				"unpause_all": "모두 일시 중지 해제",
+				"unpause_section_title": "일시 중지를 해제 할 대기열을 선택합니다"
+			},
+			"queues_paused": "대기열이 일시 정지되었습니다",
+			"reason": "이유",
+			"tooltips": {
+				"is_active": "{count} 대기열에서 활성",
+				"logged_out_queues": "로그 아웃 한 대기열 {count} 개",
+				"logged_queues": "{count} 개의 대기열에 로그인 됨.",
+				"login": "대기열에 로그인",
+				"paused_queues": "일시 중지 된 대기열 {count} 개."
+			}
+		},
+		"disconnected": {
+			"reconnect": "지금 연결해보세요",
+			"reconnection_attempt": "재 연결 시도",
+			"seconds": "초",
+			"ssl_error": "포트 {port}가 활성화되어 있는지 확인하세요",
+			"title": "PBX에 연결할 수 없습니다.."
+		},
+		"status": {
+			"registered": "등록됨",
+			"sending_registration": "등록중",
+			"unregistered": "미등록"
+		},
+		"unregistered": {
+			"title": "기기가 등록되지 않았습니다. 부재중 전화를 방지하려면 PBX 관리자에게 문의하십시오.",
+			"try_register": "등록을 시도"
+		}
+	},
+	"directories": {
+		"directory": "디렉토리 | 디렉토리",
+		"info": {
+			"actions": "실행",
+			"email": "이메일",
+			"home_number": "집 전화 번호",
+			"job_title": "직책",
+			"mobile_number": "휴대폰 번호",
+			"name": "이름",
+			"organization": "조직",
+			"telephone": "전화번호"
+		},
+		"loading": "연락처 불러오는 중",
+		"no_assigned": "할당 된 전화 번호부가 없습니다",
+		"no_contacts": "표시 할 데이터 없음",
+		"type": {
+			"external": "외부",
+			"internal": "내부"
+		}
+	},
+	"export": {
+		"alerts": {
+			"success": "데이터를 성공적으로 내보냈습니다."
+		},
+		"delimiter": {
+			"label": "Csv 구분 기호 선택",
+			"options": {
+				"comma": "반점 (,)",
+				"semicolon": "세미콜론 (;)"
+			}
+		}
+	},
+	"footer": {
+		"copyright": "{app_name} 옴니 채널 통신 시스템-{company} Copyright © {year}.",
+		"documentation": "추가 문서 및 정보",
+		"slogan": "통합 커뮤니케이션"
+	},
+	"globals": {
+		"actions": {
+			"back": "뒤로",
+			"cancel": "취소",
+			"create": {
+				"create": "생성",
+				"success": "{source}가 성공적으로 생성되었습니다"
+			},
+			"delete": {
+				"delete": "삭제",
+				"success": "{source}가 성공적으로 삭제되었습니다"
+			},
+			"done": "완료",
+			"edit": "수정",
+			"export": "수출",
+			"import": "수입",
+			"reset": "재설정",
+			"restart": "U재시작",
+			"save": "저장",
+			"update": {
+				"success": "{source}가 성공적으로 업데이트되었습니다",
+				"update": "업데이트"
+			}
+		},
+		"alerts": {
+			"actions": {
+				"close": "닫기",
+				"ok": "확인",
+				"view": "전망"
+			},
+			"avatar": {
+				"invalid_file_size": "파일이 너무 큽니다! 2MB 미만의 이미지를 선택하세요.",
+				"invalid_file_type": "유효한 이미지를 선택하십시오"
+			},
+			"confirm": {
+              "switch_tenant": {
+                "content": "저장되지 않은 변경 사항이 있습니다. 테넌트를 전환하면 변경 사항이 사라질 수 있습니다. 계속하시겠습니까?",
+                "title": "{name} 테넌트로 전환하시겠습니까?"
               },
-              "queue": {
-                "label": "열"
-              },
-              "caller_id_name": {
-                "label": "발신자 이름"
-              },
-              "caller_id_number": {
-                "label": "발신자 번호"
-              },
-              "callee_name": {
-                "label": "목적지 이름"
-              },
-              "callee_number": {
-                "label": "목적지 번호"
-              }
-            }
-          },
-          "preview": "URL 미리보기"
+              "delete": {
+					"content": "이 {source}을 삭제 하시겠습니까?",
+					"title": "{name} 삭제"
+				}
+			},
+			"dev_console_alert_content": "이 브라우저 기능은 개발자를위한 것입니다. 누군가 기능을 활성화하기 위해 여기에 무언가를 복사하여 붙여 넣으라고 지시 한 경우 이는 사기입니다. 그렇게하면이 사람이 귀하의 계정에 액세스 할 수 있습니다.",
+			"dev_console_alert_title": "중지!",
+			"not_authorized": "이 작업을 수행할 수 있는 권한이 없습니다.",
+			"restart_app": {
+				"message": "일부 변경 사항을 적용하려면 {app_name}를 다시 시작해야 합니다.",
+				"title": "{app_name}"
+			},
+			"success": "작업 완료"
+		},
+		"bar_chart": "막대 차트",
+		"created_at": "생성됨",
+        "close_search_box": "검색 상자 닫기",
+		"daily_traffic": "일일 트래픽",
+        "display_search_box": "검색 상자 표시",
+		"email": "이메일",
+		"hourly_traffic": "시간별 트래픽",
+		"invalid_file": "유효한 파일을 선택하십시오",
+		"last_7_days": "지난 7일",
+		"last_30_days": "지난 30일",
+		"last_activity_at": "마지막 활동 시간:",
+		"line_chart": "선형 차트",
+		"loaders": {
+			"creating": "생성",
+			"deleting": "삭제",
+			"loading": "로딩",
+			"updating": "업데이트"
+		},
+		"max_file_size_exceeded": "파일이 너무 큽니다! {size}MB 이하의 파일을 선택하십시오.",
+		"name": "이름",
+		"no_extension": "할당 된 내선이 없습니다",
+		"no_results": "검색 결과가 없습니다",
+		"not_available": "사용 불가",
+		"notifications": {
+			"info": {
+				"read": "읽음으로 표시된 알림은 24시간마다 자동으로 삭제됩니다."
+			},
+			"mention": {
+				"label": "대화에서 언급되었습니다 (#{id}).",
+				"type": "언급"
+			},
+			"unread_notifications": {
+				"label": "읽지 않은 알림",
+				"mark_all_as_read": "모든 것이 읽힌 것처럼 마스크"
+			}
+		},
+		"order_by": {
+			"options": {
+				"date": "데이트",
+				"name": "이름"
+			}
+		},
+		"pagination": {
+			"page": "페이지"
+		},
+		"password": "비밀번호",
+		"peak_day": "피크일",
+		"received": "수신됨",
+		"required": "필수",
+		"rules": {
+			"email": "이메일이 유효해야합니다",
+			"number": "값은 숫자여야 합니다.",
+			"phone-number": {
+				"pattern": "숫자, #, * 및 +만 허용됩니다",
+				"required": "전화번호는 필수입니다"
+			}
+		},
+		"search": "검색",
+		"search_source": "{source} 검색",
+		"sent": "보냈습니다",
+		"sort_by": {
+			"options": {
+				"asc": "상승",
+				"desc": "떨어지는"
+			}
+		},
+		"suggestions": "제안",
+        "timezone_used": "시간대",
+        "timezone_context": {
+          "inbox": "받은편지함",
+          "user": "사용자",
+          "system": "시스템 기본값"
         },
-        "website_tab": {
-          "label": "사용자 정의 웹 사이트 탭",
-          "hint": "웹 사이트가 포함된 앱에 사용자 정의 탭 추가",
-          "tab_name": {
-            "label": "탭 이름"
-          },
-          "url": {
-            "label": "웹 URL",
-            "hint": "신뢰할 수 있는 보안 웹사이트(https://)를 입력하세요. 이는 사용자를 안전하게 유지하는 데 중요합니다."
-          },
-          "preview": "시사"
-        }
-      }
-    },
-    "groups": {
-      "description": "{app_name} 사용자가 서로간에 표시되도록하기 위해 각 사용자에게 할당 된 그룹이 있어야하며 이후에 다른 사용자에게이 그룹을 볼 수있는 액세스 권한을 부여합니다. 이렇게하면 볼 수있는 그룹을 제한하는 여러 사용자 그룹을 만들 수 있습니다. 이를 위해 먼저 그룹 이름을 만듭니다",
-      "errors": {
-        "groups": "그룹을 불러올 수 없습니다",
-        "tenants": "테넌트를 불러올 수 없습니다"
-      },
-      "fields": {
-        "description": "설명",
-        "name": "이름",
-        "tenant": "테넌트"
-      },
-      "group": "그룹 | 그룹",
-      "module_name": "그룹",
-      "rules": {
-        "name": "그룹 이름이 필요합니다",
-        "tenant": "테넌트가 필요합니다"
-      }
-    },
-    "module_name": "관리",
-    "presence": {
-      "description": "여기서 시스템 관리자는 사용자가 사용할 수있는 다양한 현재 상태를 만들 수 있습니다. 기본적으로 사용 가능, 방해 금지, 점심 시간, 출장의 5 가지 상태가 있지만 더 추가 할 수 있습니다",
-      "info": {
-        "default_status": "기본 상태는 편집하거나 삭제할 수 없습니다"
-      },
-      "module_name": "현재 상태",
-      "offline": "오프라인",
-      "online": "온라인",
-      "select_icon": "아이콘 선택",
-      "status": {
-        "available": "대기",
-        "away": "부재",
-        "business_trip": "출장",
-        "do_not_disturb": "방해금지",
-        "lunch_break": "점심"
-      },
-      "status_color": "상태 색상"
-    },
-    "role_manager": {
-      "agent_profile": {
-        "hint": "*할당 된 역할에 콜 센터 권한이있는 경우 사용할 상담원 프로필을 할당합니다."
-      },
-      "description": "사용자 지정 역할을 편집 또는 생성하고 사용자가 수행 할 역할에 따라 권한을 할당합니다",
-      "full_access": "전체 권한",
-      "module_name": "역활 관리",
-      "permissions": {
-        "label": "권한 | 권한",
-        "permissions": {
-          "assigned-tenant": "할당 된 테넌트",
-          "call-center": {
-            "call-center-features": {
-              "description": "로그인 및  로그 아웃과 같은 콜센터 기능이 활성화됩니다",
-              "label": "콜센터 기능"
-            },
-            "group_name": "콜센터",
-            "queue-selection": {
-              "description": "이 옵션을 선택하면 상담원은 로그인 할 대기열을 선택할 수 있습니다. 선택하지 않으면 자신이 속한 모든 대기열에 로그인합니다",
-              "label": "대기열 선택"
-            }
-          },
-          "management": {
-            "agent-profiles": {
-              "description": "상담원 프로필 모듈에 대한 액세스를 허용하려면 이 옵션을 선택하십시오",
-              "label": "상담원 프로파일"
-            },
-            "group_name": "관리",
-            "roles": {
-              "description": "역할 모듈에 대한 액세스를 허용하려면 이 옵션을 선택하십시오",
-              "label": "역활"
-            },
-            "users": {
-              "description": "사용자 모듈에 대한 액세스를 허용하려면 이 옵션을 선택하십시오",
-              "label": "사용자"
-            }
-          },
-          "misc": {
-            "group_name": "여러 가지 잡다한",
-            "update_social_networks": {
-              "description": "바닥 글에 표시 될 소셜 네트워크를 구성 할 수있는 권한",
-              "label": "소셜 네트워크 업데이트"
-            },
-            "view-recordings": {
-              "description": "사용자는 PBX에서 생성 된 통화 녹음을 볼 수 있습니다",
-              "label": "녹음보기"
-            }
-          }
-        },
-        "select_all": "전체 선택",
-        "unselect": "선택 해제"
-      },
-      "role": "역활 | 역활",
-      "default_roles": {
-        "super-admin": "최고 관리자",
-        "admin": "테넌트 관리자",
-        "user": "사용자",
-        "agent": "에이전트"
-      }
-    },
-    "social_networks": {
-      "description": "여기에서 바닥 글에 표시 될 소셜 미디어를 구성 할 수 있습니다",
-      "module_name": "소셜 네트워크",
-      "socials": {
-        "facebook": {
-          "prefix": "https://facebook.com/",
-          "hint_text": "페이스 북 페이지의 사용자 이름 설정"
-        },
-        "instagram": {
-          "prefix": "https://instagram.com/",
-          "hint_text": "인스타그램 계정의 사용자 이름 설정"
-        },
-        "twitter": {
-          "hint_text": "트위터 계정의 사용자 이름 설정",
-          "prefix": "https://twitter.com/"
-        },
-        "youtube": {
-          "hint_text": "YouTube 채널의 사용자 이름 설정",
-          "prefix": "https://youtube.com/"
-        }
-      }
-    },
-    "user_manager": {
-      "description": "{app_name} 에 대해 다른 사용자를 만듭니다. 이 모듈에서 확장 및 권한을 관리합니다",
-      "error_on_delete": "응용 프로그램에서 유일한 사용자를 삭제할 수 없습니다",
-      "module_name": "사용자 관리자",
-      "sections": {
-        "details": {
-          "change_password": "사용자 암호 변경 (선택 사항)",
-          "permissions": "권한",
-          "role": "역활",
-          "role_with_call_center_features": "역할에는 콜 센터 기능이 있습니다",
-          "section_name": "사용자 상세",
-          "validations": {
-            "name": "이름이 필요합니다",
-            "password": "비밀번호는 8 자 이상이어야합니다.",
-            "role": "사용자 역할이 필요합니다.",
-            "username": "사용자 이름이 필요합니다"
-          }
-        },
-        "device": {
-          "can_view_recordings": "사용자는 자신의 기록을 볼 수 있습니다",
-          "device": "내선번호",
-          "device_not_found": "할당 된 장치, {source}는 PBX에서 찾을 수 없거나 사용할 수 없습니다",
-          "group_module_info": "선택한 테넌트에 대해 검색된 그룹이 없습니다. 여기에서 그룹을 만들 수 있습니다",
-          "group_placeholder": "그룹 선택",
-          "groups": "그룹",
-          "groups_hint": "사용자가 속한 그룹 설정",
-          "no_devices": "사용 가능한 장치 없음",
-          "no_phonebooks": "사용 가능한 전화 번호부 없음",
-          "phonebooks": "전화번호부",
-          "phonebooks_hint": "할당 할 전화 번호부 선택",
-          "remove_device": "할당 된 디바이스 제거",
-          "section_name": "사용자 데이타",
-          "tenant": "테넌트",
-          "validations": {
-            "device": "할당 할 디바이스를 선택하십시오",
-            "phonebooks": "할당 할 전화 번호부를 선택하십시오",
-            "tenant": "할당 할 테넌트를 선택하십시오"
-          }
-        }
-      },
-      "user": "사용자 | 사용자",
-      "user_already_exists": "사용자 이름이 이미 존재합니다"
-    },
-    "manage": "꾸리다"
-  },
-  "calls": {
-    "actions": {
-      "answer": "응답",
-      "audio_answer": "음성 받기",
-      "cancel_share_screen": "화면 공유 취소",
-      "disable_camera": "카메라 해제",
-      "enable_camera": "카메라 사용",
-      "hang_up": "종료",
-      "hold": {
-        "hold": "보류 설정",
-        "unhold": "통화 재개"
-      },
-      "keypad": "키패드",
-      "make_call": "전화 걸기",
-      "mute_audio": "음성소거",
-      "mute_video": "영상소거",
-      "reject": "거절",
-      "share_screen": "화면 공유",
-      "transfer": {
-        "alerts": {
-          "accepted": "수락 됨",
-          "failed": "실패 됨",
-          "progress": "진행 중",
-          "request_failed": "요청 실패",
-          "request_succeeded": "요청 성공",
-          "success": "전환 성공",
-          "trying": "전환중"
-        },
-        "complete_transfer": "전환완료",
-        "label": "전송할 번호를 입력하세요",
-        "transfer": "전환",
-        "type": {
-          "attended": "문의 후 전환",
-          "blind": "무조건 전환"
-        }
-      },
-      "unmute_audio": "음성소거 해제",
-      "video_answer": "영상 받기",
-      "crm": {
-        "label": "CRM"
-      },
-      "call": "전화하다"
-    },
-    "call": "통화 | 통화",
-    "current_calls": "현재 통화",
-    "conference": {
-      "actions": {
-        "end_conference": "회의 종료",
-        "end_conference_and_hang_up": "회의를 종료하고 전화를 끊습니다",
-        "start_conference": "회의 시작",
-        "start_audio_conference": "오디오 회의 시작"
-      },
-      "add_participant": "참가자 추가",
-      "conference": "회의",
-      "join_call": "전화 회의에 참여",
-      "participants": "참가자",
-      "status": {
-        "in_audio_conference": "음성 회의에서"
-      },
-      "type": {
-        "audio_conference": "음성 회의",
-        "video_conference": "영상 회의"
-      },
-      "audio_conferences": "오디오 회의"
-    },
-    "incoming": {
-      "incoming_from": "{uri}에서 걸려온 전화",
-      "type": {
-        "audio_call": "음성 통화",
-        "video_call": "영상 통화"
-      },
-      "auto_answer": {
-        "label": "자동 응답이 활성화되었습니다"
-      }
-    },
-    "info": {
-      "answered": "응답",
-      "calling": "발신",
-      "connected": "연결됨",
-      "duration": "통화시간",
-      "failed": "실패",
-      "history": "기록",
-      "in_progress": "진행 중",
-      "incoming_call": "수신 통화",
-      "info": "통화 정보",
-      "no_answer": "부재",
-      "ringing": "링잉",
-      "tenant": "테넌트",
-      "type": "통화 종류",
-      "media_errors": {
-        "DevicesNotFoundError": "통화를 초기화하기 위해 감지 된 오디오 또는 비디오 장치가 없습니다"
-      },
-      "types": {
-        "incoming": "수신",
-        "internal": "내선",
-        "outgoing": "발신",
-        "transit": "전환",
-        "undefined": "미정의"
-      },
-      "auto_answered": "자동 응답"
-    },
-    "line": "라인 {line}",
-    "loaders": {
-      "connecting": "연결"
-    },
-    "media_errors": {
-      "DevicesNotFoundError": "통화를 초기화 하는 데 오디오 또는 비디오 장치가 감지되지 않았습니다"
-    },
-    "search_label": "이름으로 검색하거나 번호를 입력",
-    "current_call": "현재 통화"
-  },
-  "chats": {
-    "add_contact_to_chat": "채팅을 시작하려면 연락처를 추가하세요",
-    "attachments": {
-      "attachment": "첨부 | 첨부",
-      "types": {
-        "image": "영상",
-        "audio": "오디오",
-        "file": "파일"
-      }
-    },
-    "chat": "채팅 | 채팅",
-    "conversation": "대화 | 대화",
-    "conversation_actions": {
-      "clear": "대화 기록 삭제",
-      "delete": "삭제",
-      "load_more": "더 불러오기"
-    },
-    "conversation_types": {
-      "sip_conversation": "SIP 대화",
-      "vitxi_conversation": "VitXi 대화"
-    },
-    "exceptions": {
-      "conversation": "대화를 받는 중에 오류가 발생했습니다",
-      "messages": "메시지를 받을 수 없습니다"
-    },
-    "message": "메세지",
-    "message_actions": {
-      "copy": "복사",
-      "delete": "삭제",
-      "forward": "전달",
-      "reply": "답장"
-    },
-    "message_rules": {
-      "sip_message_character_limit": "최대 1023 자까지 허용됩니다"
-    },
-    "new_conversation": "새로운 대화",
-    "new_vitxi_message": "새로운 메시지",
-    "say_hello": "안녕하세요",
-    "start_conversation": "대화 시작",
-    "start_sip_conversation": "인사하고 대화를 시작하세요!",
-    "start_vitxi_conversation": "인사하거나 파일을 공유하고 대화를 시작하세요!"
-  },
-  "contacts": {
-    "contact_info": {
-      "company": "회사 : {source}",
-      "email": "이메일",
-      "info": "연락 정보",
-      "job_title": "직책 : {source}",
-      "type": "종류 : {source}",
-      "types": {
-        "internal": "내부 연락",
-        "external": "외부 연락처"
-      }
-    },
-    "contacts": "연락처 | 연락처",
-    "create": {
-      "add": "연락처 추가",
-      "errors": {
-        "save": "연락처 추가 오류"
-      },
-      "fields": {
-        "avatar": {
-          "label": "아바타",
-          "limit_size_alert": "아바타 크기는 2MB 미만이어야 합니다!",
-          "placeholder": "아바타 이미지를 선택하세요"
-        },
-        "company": "회사",
-        "contact_type": "연락처 종류",
-        "email": "이메일",
-        "first_name": "전체 이름",
-        "job_title": "직책",
-        "last_name": "성",
-        "contact_types": {
-          "external": "외부",
-          "internal": "내부"
-        },
-        "phone": {
-          "country": "국가",
-          "extension": "내선번호",
-          "invalid_number": "잘못된 번호",
-          "phone": "전화 | 전화",
-          "phone_number": "번호",
-          "prefix": "프리픽스",
-          "type": "종류",
-          "types": {
-            "alerts": {
-              "external": {
-                "content": "전화기가 외부에 있는 경우 메시지 (SMS)는 관리자가 구성하고 할당 한 SMS 트렁크를 통해 전송됩니다",
-                "title": "외부 전화"
-              },
-              "internal_sip": {
-                "content": "전화기가 \"내부 SIP\"유형 인 경우 메시지는 별표를 통해 전송됩니다. 메시지는 텍스트 유형입니다",
-                "title": "내부 (SIP)"
-              }
-            },
-            "external": "외부",
-            "internal_sip": "내부 (SIP)"
-          },
-          "add_phone": "전화 추가",
-          "required_phone": "전화를 하나 이상 추가해야 합니다."
-        }
-      },
-      "required_fields_alert": "필수 필드를 나타냅니다"
-    },
-    "no_contacts": "사용 가능한 연락처가 없습니다",
-    "actions": {
-      "favorites": {
-        "mark_as_favorite": "즐겨찾기로 표시",
-        "unmark_as_favorite": "즐겨찾기 해제"
-      }
-    },
-    "favorites": {
-      "favorites": "즐겨찾기"
-    }
-  },
-  "device": {
-    "actions": {
-      "refresh": "새로고침"
-    },
-    "alerts": {
-      "not_found": "등록 할 수 없습니다.이 계정과 관련된 장치가 존재하지 않습니다.\n  자세한 내용은 관리자에게 문의하십시오"
-    },
-    "call_center": {
-      "active_queues": "활성 대기열",
-      "alerts": {
-        "success": {
-          "login": "대기열에 성공적으로 로그인했습니다.",
-          "logout": "성공적으로 로그 아웃했습니다",
-          "pause": "성공적으로 일시 중지되었습니다",
-          "unpause": "성공적으로 통화가 재개되었습니다"
-        },
-        "no_queues_paused": "일시 중지 된 대기열 없음",
-        "no_active_queues": "활성 대기열 없음"
-      },
-      "default_reasons": {
-        "administrative": "관리",
-        "break": "쉬는시간",
-        "lunch": "점심시간",
-        "wc": "화장실"
-      },
-      "queue_actions": {
-        "login": "로그인",
-        "logout": "로그아웃",
-        "pause": "일시정지",
-        "pause_section_title": "일시 중지 할 대기열을 선택합니다",
-        "reload_queues": "대기열 리로드",
-        "select_queues": "대기열 선택",
-        "unpause": "일시 정지 해제",
-        "unpause_section_title": "일시 중지를 해제 할 대기열을 선택합니다",
-        "manage": "꾸리다",
-        "pause_all": "모두 일시 중지",
-        "logout_all": "모두에서 로그 아웃",
-        "unpause_all": "모두 일시 중지 해제",
-        "login_all": "모두 로그인"
-      },
-      "queues_paused": "대기열이 일시 정지되었습니다",
-      "reason": "이유",
-      "tooltips": {
-        "is_active": "{count} 대기열에서 활성",
-        "login": "대기열에 로그인",
-        "logged_queues": "{count} 개의 대기열에 로그인 됨.",
-        "paused_queues": "일시 중지 된 대기열 {count} 개.",
-        "logged_out_queues": "로그 아웃 한 대기열 {count} 개"
-      },
-      "manage": {
-        "tabs": {
-          "logged_out_queues": "로그 아웃 된 대기열",
-          "logged_in_queues": "로그인 된 대기열",
-          "paused_queues": "일시 중지 된 대기열"
-        }
-      },
-      "queue": "대기열 | 대기열"
-    },
-    "disconnected": {
-      "reconnect": "지금 연결해보세요",
-      "reconnection_attempt": "재 연결 시도",
-      "seconds": "초",
-      "ssl_error": "포트 {port}가 활성화되어 있는지 확인하세요",
-      "title": "PBX에 연결할 수 없습니다.."
-    },
-    "status": {
-      "registered": "등록됨",
-      "sending_registration": "등록중",
-      "unregistered": "미등록"
-    },
-    "unregistered": {
-      "title": "기기가 등록되지 않았습니다. 부재중 전화를 방지하려면 PBX 관리자에게 문의하십시오.",
-      "try_register": "등록을 시도"
-    }
-  },
-  "directories": {
-    "directory": "디렉토리 | 디렉토리",
-    "info": {
-      "actions": "실행",
-      "email": "이메일",
-      "job_title": "직책",
-      "name": "이름",
-      "organization": "조직",
-      "telephone": "전화번호",
-      "mobile_number": "휴대폰 번호",
-      "home_number": "집 전화 번호"
-    },
-    "loading": "연락처 불러오는 중",
-    "no_assigned": "할당 된 전화 번호부가 없습니다",
-    "no_contacts": "표시 할 데이터 없음"
-  },
-  "footer": {
-    "copyright": "{app_name} 옴니 채널 통신 시스템-{company} Copyright © {year}.",
-    "documentation": "추가 문서 및 정보",
-    "slogan": "통합 커뮤니케이션"
-  },
-  "globals": {
-    "actions": {
-      "back": "뒤로",
-      "cancel": "취소",
-      "create": {
-        "create": "생성",
-        "success": "{source}가 성공적으로 생성되었습니다"
-      },
-      "delete": {
-        "delete": "삭제",
-        "success": "{source}가 성공적으로 삭제되었습니다"
-      },
-      "done": "완료",
-      "edit": "수정",
-      "reset": "재설정",
-      "save": "저장",
-      "update": {
-        "success": "{source}가 성공적으로 업데이트되었습니다",
-        "update": "업데이트"
-      },
-      "import": "수입",
-      "export": "수출",
-      "restart": "재시작"
-    },
-    "email": "이메일",
-    "invalid_file": "유효한 파일을 선택하십시오",
-    "loaders": {
-      "creating": "생성",
-      "deleting": "삭제",
-      "updating": "업데이트",
-      "loading": "로딩"
-    },
-    "max_file_size_exceeded": "파일이 너무 큽니다! 10MB 미만의 파일을 선택하세요",
-    "name": "이름",
-    "no_extension": "할당 된 내선이 없습니다",
-    "no_results": "검색 결과가 없습니다",
-    "not_available": "사용 불가",
-    "password": "비밀번호",
-    "required": "필수",
-    "search": "검색",
-    "search_source": "{source} 검색",
-    "suggestions": "제안",
-    "unknown": "알 수 없는",
-    "username": "사용자이름",
-    "rules": {
-      "email": "이메일이 유효해야합니다"
-    },
-    "alerts": {
-      "actions": {
-        "close": "닫기",
-        "ok": "확인",
-        "view": "전망"
-      },
-      "avatar": {
-        "invalid_file_size": "파일이 너무 큽니다! 2MB 미만의 이미지를 선택하세요.",
-        "invalid_file_type": "유효한 이미지를 선택하십시오"
-      },
-      "dev_console_alert_content": "이 브라우저 기능은 개발자를위한 것입니다. 누군가 기능을 활성화하기 위해 여기에 무언가를 복사하여 붙여 넣으라고 지시 한 경우 이는 사기입니다. 그렇게하면이 사람이 귀하의 계정에 액세스 할 수 있습니다.",
-      "dev_console_alert_title": "중지!",
-      "confirm": {
-        "delete": {
-          "content": "이 {source}을 삭제 하시겠습니까?",
-          "title": "{name} 삭제"
-        }
-      },
-      "restart_app": {
-        "title": "{app_name}",
-        "message": "일부 변경 사항을 적용하려면 {app_name}를 다시 시작해야 합니다."
-      }
-    },
-    "order_by": {
-      "options": {
-        "name": "이름",
-        "date": "데이트"
-      }
-    },
-    "sort_by": {
-      "options": {
-        "asc": "상승",
-        "desc": "떨어지는"
-      }
-    }
-  },
-  "ice_servers": {
-    "alerts": {
-      "error": "구성을 업데이트 할 수 없습니다. 입력 한 데이터를 확인하고 다시 시도하십시오",
-      "success": "설정이 성공적으로 업데이트되었습니다"
-    },
-    "connectivity": {
-      "checking": "연결 확인",
-      "failed": "서버가 작동하지 않습니다",
-      "success": "서버 작동"
-    },
-    "description": "이 구성 ICE 협상에 사용할 서버의 URL을 지정합니다. 일반적으로 STUN 및 / 또는 TURN 서버입니다.\n\n이는 전역 설정이며 두 개의 URL을 지정해야합니다",
-    "module_name": "ICE 서버",
-    "servers": "섬기는 사람 | 서버",
-    "fields": {
-      "url": {
-        "label": "STUN or TURN URI"
-      },
-      "username": {
-        "label": "사용자 이름"
-      },
-      "credential": {
-        "label": "신임장"
-      }
-    },
-    "actions": {
-      "add_server": {
-        "label": "보조 서버 추가"
-      },
-      "remove_server": {
-        "label": "보조 서버 제거"
-      }
-    }
-  },
-  "login": {
-    "copyright": "{company} 제공 © {year}. 판권 소유.",
-    "loginButton": "로그인",
-    "loginError": "사용자 이름 또는 비밀번호가 잘못되었습니다",
-    "password_reset": {
-      "change": "비밀번호 변경",
-      "forgot_password": "비밀번호를 잊어 버렸습니까?",
-      "reset": "비밀번호 재설정"
-    },
-    "username_or_email": "아이디 또는 이메일"
-  },
-  "mail_settings": {
-    "alerts": {
-      "error": "구성을 업데이트 할 수 없습니다. 입력 한 데이터를 확인하고 다시 시도하십시오",
-      "success": "데이터가 성공적으로 업데이트되었습니다"
-    },
-    "description": "애플리케이션이 이메일을 보낼 수 있도록 메일 서버를 구성하십시오",
-    "fields": {
-      "bcc_mail": {
-        "label": "숨은 참조"
-      },
-      "encryption": {
-        "label": "암호"
-      },
-      "from_address": {
-        "label": "발신자"
-      },
-      "from_name": {
-        "label": "발신자 이름"
-      },
-      "host": {
-        "host": "호스트"
-      },
-      "password": {
-        "label": "비밀번호"
-      },
-      "port": {
-        "port": "포트"
-      },
-      "test": {
-        "label": "이메일 발송 테스트"
-      },
-      "type": {
-        "label": "종류",
-        "options": {
-          "smtp": "SMTP"
-        }
-      },
-      "username": {
-        "label": "사용자이름"
-      }
-    },
-    "module_name": "메일 설정",
-    "pbx_status": {
-      "checking_connection": "연결 확인",
-      "connected": "연결됨",
-      "disconnected": "연결 해제"
-    },
-    "test": {
-      "alerts": {
-        "failed": "메일을 보낼 수 없습니다",
-        "success": "이메일이 성공적으로 전송되었습니다"
-      }
-    }
-  },
-  "main_menu": {
-    "about": "관하여",
-    "administration": {
-      "groups": "그룹",
-      "menu_name": "관리자",
-      "presence_status": "현재 상태",
-      "sms_provider": "SMS 제공사",
-      "users_manager": "사용자"
-    },
-    "logout": "로그아웃",
-    "settings": "설정"
-  },
-  "misc": {
-    "add": "추가",
-    "dial": "다이얼",
-    "hello": "안녕하세요, {user_name} 님",
-    "main_tenant": "기본 테넌트",
-    "no_data": "표시 할 데이터 없음",
-    "try_again": "다시 시도하십시오",
-    "welcome": "{app_name}에 오신 것을 환영합니다",
-    "yesterday": "어제",
-    "active": "유효한",
-    "paused": "일시 중지",
-    "all": "모두",
-    "error_title": "오류가 발생했습니다",
-    "order_by": "주문",
-    "you": "당신",
-    "filter_by_name": "이름으로 필터링",
-    "more": "더",
-    "welcome_features_section_title": "{app_name} 과 연결 유지",
-    "preferences": "환경 설정",
-    "pwa": {
-      "actions": {
-        "install": "설치하다",
-        "not_now": "지금은 아니다"
-      },
-      "promote_install": "우리 앱으로 필요한 것을 더 빨리 찾으십시오!"
-    },
-    "cause": "원인",
-    "server_connection": {
-      "connection_error": {
-        "title": "PBX에 연결할 수 없습니다..",
-        "suggestion": "관리자에게 문의하세요"
-      }
-    }
-  },
-  "pbx_settings": {
-    "alerts": {
-      "error": "연결을 설정할 수 없기 때문에 설정이 업데이트되지 않았습니다. 입력 한 데이터를 확인하고 다시 시도하십시오",
-      "success": "데이터가 성공적으로 업데이트되었습니다"
-    },
-    "description": "PBX에 연결할 관련 데이터를 설정합니다. 이 정보는 사용자의 내선, 음성 메일, 통화 내역 등을 등록하는 데 필요합니다",
-    "module_name": "PBX 설정",
-    "pbx_status": {
-      "checking_connection": "연결 확인",
-      "connected": "연결됨",
-      "disconnected": "연결 해제"
-    },
-    "fields": {
-      "host": {
-        "host": "호스트"
-      },
-      "key": {
-        "edit": "키 편집",
-        "key": "키"
-      },
-      "pjsip_port": {
-        "hint": "확장 등록에 사용할 포트 구성",
-        "pjsip_port": "PJSIP 포트"
-      },
-      "port": {
-        "port": "포트"
-      },
-      "secure": {
-        "secure": "보안"
-      },
-      "wss_port": {
-        "hint": "방화벽이 있는 경우 클라이언트가 연결할 수 있도록 TCP 포트를 허용하는 것을 잊지 마십시오.",
-        "wss_port": "WSS 포트"
-      }
-    }
-  },
-  "recordings": {
-    "not_allowed": "이 모듈에 액세스 할 권한이 없습니다",
-    "recording": "녹음 | 녹음"
-  },
-  "right_menu": {
-    "check_updates": "업데이트 확인",
-    "logout": "로그아웃",
-    "settings": "설정",
-    "troubleshooting": "문제 해결",
-    "reset_app_data": "앱 데이터 재설정",
-    "toggle_desktop_app_size": {
-      "mobile": "모바일 보기",
-      "desktop": "기본 보기"
-    }
-  },
-  "settings": {
-    "account": {
-      "account": "계정",
-      "password": {
-        "alerts": {
-          "error": "암호를 변경할 수 없습니다",
-          "no_match_old_password": "비밀번호가 이전 비밀번호와 일치하지 않습니다",
-          "password_error": "비밀번호 확인",
-          "success": "암호가 성공적으로 변경되었습니다"
-        },
-        "change_password": "비밀번호 변경",
-        "fields": {
-          "new_password": {
-            "label": "새 비밀번호",
-            "rules": {
-              "required": "새 비밀번호가 필요합니다"
-            }
-          },
-          "password": {
-            "label": "현재 비밀번호",
-            "rules": {
-              "required": "현재 비밀번호가 필요합니다"
-            }
-          },
-          "password_confirmation": {
-            "password_confirmation": "비밀번호 확인",
-            "rules": {
-              "no_match": "비밀번호가 일치하지 않습니다",
-              "required": "비밀번호 확인이 필요합니다"
-            }
-          }
-        },
-        "set_new_password": "새 비밀번호 설정"
-      }
-    },
-    "actions": {
-      "save": "저장"
-    },
-    "alert": {
-      "error": "설정을 저장하는 동안 오류가 발생했습니다",
-      "success": "설정이 저장되었습니다"
-    },
-    "audio": {
-      "audio": "음성",
-      "echo_cancellation": {
-        "description": "양방향 오디오 연결에서 에코 효과를 방지하려는 기능",
-        "echo_cancellation": "반향 제거"
-      },
-      "noise_suppression": {
-        "description": "오디오를 자동으로 필터링하여 배경 소음을 제거합니다",
-        "noise_suppression": "소음 억제"
-      },
-      "volume": {
-        "label": "미디어 볼륨",
-        "description": "이 구성은 전화 벨소리 및 응용 프로그램의 기타 소리에 적용됩니다."
-      }
-    },
-    "call_center": {
-      "call_center": "콜센터",
-      "log_into_queues_on_startup": {
-        "description": "응용 프로그램을 시작할 때 할당 된 대기열에 자동으로 로그인",
-        "label": "시작시 대기열에 로그인"
-      },
-      "log_out_from_queues_when_closing_the_app": {
-        "label": "응용 프로그램을 닫을 때 대기열에서 로그 아웃"
-      },
-      "open_crm_url": {
-        "label": "다음에서 CRM URL을 엽니다.",
-        "options": {
-          "new_tab": {
-            "label": "새 탭"
-          },
-          "new_window": {
-            "label": "새창",
-            "support_alert": "이 옵션은 브라우저 및 운영 체제 권한의 적용을 받습니다."
-          }
-        },
-        "description": "상담원 프로필에 CRM URL이 구성되어 있는 경우 브라우저에서 URL을 여는 방법을 선택합니다."
-      }
-    },
-    "calls": {
-      "call": "통화",
-      "call_history_limit": {
-        "call_history_limit": "통화 내역 제한",
-        "description": "통화 내역에 표시 할 기록 제한 설정"
-      },
-      "calls": "통화",
-      "ringtone": {
-        "description": "수신 전화에서 재생되는 벨소리",
-        "ringtone": "링 신호"
-      },
-      "auto_answer": {
-        "label": "자동 응답",
-        "modes": {
-          "instant": "즉각적인 자동 응답",
-          "after": "(1 - 25초) 후 자동 응답"
-        },
-        "rules": {
-          "timer": "숫자는 1에서 25 사이여야 합니다."
-        }
-      }
-    },
-    "devices": {
-      "audio": "음성",
-      "camera": "카메라",
-      "device_placeholder": "장치 선택",
-      "devices": "장치",
-      "microphone": "마이크",
-      "no_devices_available": "감지 된 장치가 없습니다",
-      "speaker": "스피커",
-      "default": {
-        "camera": "기본 카메라",
-        "microphone": "기본 마이크",
-        "speaker": "시스템 기본 스피커"
-      },
-      "devices_selection": {
-        "input_device": {
-          "label": "입력 장치"
-        },
-        "output_device": {
-          "label": "출력 장치"
-        },
-        "input_speaker": {
-          "label": "입력 스피커"
-        },
-        "output_speaker": {
-          "label": "출력 스피커"
-        },
-        "ringing_device": {
-          "label": "울리는 장치"
-        }
-      }
-    },
-    "general": {
-      "dark_mode": {
-        "dark_mode": "다크 모드",
-        "description": "{app_name} 의 모양을 어두운 톤으로 변경"
-      },
-      "general": "일반",
-      "push_notifications": {
-        "description": "특정 이벤트에 대한 데스크탑 알림 수신",
-        "push_notifications": "데스크탑 알림"
-      },
-      "timezone": {
-        "description": "지역 또는 국가의 현지 시간",
-        "timezone": "시간대"
-      }
-    },
-    "presence": {
-      "additional_information": {
-        "additional_information": "추가 정보",
-        "description": "현재 상태에 대한 추가 메시지",
-        "label": "현재 상태 메시지"
-      },
-      "presence": "상태",
-      "presence_status": {
-        "description": "이용 가능 여부에 따라 주를 선택하십시오",
-        "presence_status": "현재 상태"
-      }
-    },
-    "profile": {
-      "extension": {
-        "extension": "내선번호"
-      },
-      "full_name": {
-        "full_name": "전체 이름"
-      },
-      "profile": "프로파일",
-      "profile_picture": {
-        "crop": {
-          "label": "사진 조정",
-          "preview": "미리보기"
-        },
-        "profile_picture": "프로필 사진",
-        "tabs": {
-          "current_picture": "현재 사진",
-          "take_photo": "사진찍기",
-          "upload_photo": "사진 업로드"
-        },
-        "take_photo": {
-          "label": "사진 찍기"
-        },
-        "upload_photo": {
-          "drag": "프로필 사진을 여기로 드래그",
-          "label": "파일을 드롭하거나 클릭하여 업로드",
-          "mobile_label": "업로드하려면 탭하세요",
-          "select": "컴퓨터에서 사진 선택"
-        }
-      },
-      "username": {
-        "username": "사용자이름"
-      }
-    },
-    "settings": "설정",
-    "video": {
-      "frame_rate": {
-        "description": "초당 프레임 수로 프레임 속도를 나타냅니다",
-        "frame_rate": "프레임 속도"
-      },
-      "max_aspect_ratio": {
-        "description": "비디오의 너비와 높이 사이의 비례 관계 설정",
-        "max_aspect_ratio": "최대 종횡비"
-      },
-      "resize_mode": {
-        "description": "비디오 트랙의 해상도 모드를 지정합니다",
-        "options": {
-          "crop_and_scale": "자르기 및 크기 조정",
-          "none": "없음"
-        },
-        "resize_mode": "크기 조정 모드"
-      },
-      "video": "영상"
-    },
-    "application": {
-      "tab_name": "애플리케이션",
-      "fields": {
-        "auto_launch": {
-          "label": "앱 자동 실행",
-          "description": "OS 시작 시 앱 자동 실행"
-        },
-        "open_as_hidden": {
-          "label": "숨겨진 앱으로 열기",
-          "description": "자동 실행 시 앱을 숨김으로 실행합니다."
-        },
-        "host": {
-          "placeholder": "당신의-pbx.com",
-          "label": "{app_name}가 설치된 호스트를 입력하십시오.({app_name}를 다시 시작해야 함)"
-        },
-        "keep_app_on_close": {
-          "label": "닫을 때 응용 프로그램을 계속 실행하십시오."
-        },
-        "hardware_acceleration": {
-          "label": "GPU 하드웨어 가속 비활성화({app_name}를 다시 시작해야 함)"
-        }
-      }
-    }
-  },
-  "users": {
-    "all_groups": "모든 그룹",
-    "has_no_extension": "내선이 없습니다",
-    "no_users": "사용 가능한 사용자 없음",
-    "users": "사용자 | 사용자",
-    "groups": {
-      "members": "회원 | 회원"
-    },
-    "options": {
-      "sort_by": {
-        "label": "온라인 사용자별로 정렬"
-      }
-    },
-    "status": {
-      "in_call": "통화 중",
-      "on_the_phone": "전화로",
-      "available": "사용 가능"
-    }
-  },
-  "voice_messages": {
-    "no_messages": "당신은 새로운 메시지가 없습니다",
-    "not_found": "메시지가 없습니다",
-    "types": {
-      "inbox": "새",
-      "old": "오래",
-      "urgent": "긴급"
-    },
-    "voice_message": "음성메시지 | 음성메시지",
-    "voicemail_count": "음성 메시지가 없습니다. | {count} 개의 음성 메시지가 있습니다. | {count} 개의 음성 메시지가 있습니다"
-  },
-  "wizard": {
-    "actions": {
-      "continue": "계속",
-      "finish": "끝",
-      "next": "다음",
-      "previous": "이전"
-    },
-    "steps": {
-      "database_setup": {
-        "error": "연결할 수 없습니다. 설정을 확인하십시오",
-        "info": "애플리케이션 데이터베이스를 설치할 권한이있는 사용자를 입력하십시오",
-        "loading_message": "데이터베이스를 설치하는 중입니다. 잠시 기다려주십시오...",
-        "step_name": "데이터베이스 설정",
-        "fields": {
-          "password": {
-            "label": "데이터베이스 비밀번호",
-            "placeholder": "비밀번호"
-          },
-          "username": {
-            "label": "데이터베이스 사용자 이름",
-            "placeholder": "root"
-          }
-        }
-      },
-      "pbx_settings": {
-        "fields": {
-          "host": {
-            "label": "ghtmxm",
-            "placeholder": "localhost"
-          },
-          "key": {
-            "hint": "{company}와 동일한 서버에 설치하는 경우이 필드를 비워 둘 수 있습니다. 키가 자동으로 생성됩니다",
-            "label": "애플리케이션 키",
-            "placeholder": "애플리케이션 키"
-          },
-          "port": {
-            "label": "포트",
-            "placeholder": "80"
-          },
-          "secure": {
-            "hint": "HTTPS를 통한 보안 연결을 나타냅니다. 일반적으로 포트 443을 사용할 때 이 옵션을 선택합니다",
-            "label": "보안"
-          }
-        },
-        "loading_message": "연결을 확인하는 중입니다. 잠시 기다려주십시오 ...",
-        "step_name": "PBX 설정"
-      },
-      "user_setup": {
-        "error": "사용자를 생성 할 수 없습니다 설정을 확인하십시오",
-        "fields": {
-          "name": {
-            "label": "이름",
-            "placeholder": "홍길동"
-          },
-          "password": {
-            "hint": "인덱스",
-            "label": "사용자 암호",
-            "placeholder": "비밀번호"
-          },
-          "password_confirmation": {
-            "label": "비밀번호 확인",
-            "placeholder": "비밀번호를 다시 입력하세요"
-          },
-          "timezone": {
-            "label": "시간대"
-          },
-          "username": {
-            "label": "사용자이름",
-            "placeholder": "admin"
-          }
-        },
-        "loading_message": "만드는 중 ...",
-        "step_name": "사용자 설정"
-      }
-    }
-  },
-  "import": {
-    "actions": {
-      "download_template": "가져 오기 형식 다운로드",
-      "remove_file": "파일을 지우다"
-    },
-    "alerts": {
-      "failed": "가져 오는 동안 오류가 발생했습니다."
-    }
-  },
-  "export": {
-    "actions": {},
-    "alerts": {
-      "success": "데이터를 성공적으로 내보냈습니다."
-    }
-  },
-  "shortcuts": {
-    "label": "단축키",
-    "shortcuts": {
-      "make_call": {
-        "description": "전화를 걸다",
-        "tooltip": "현재 보이는 번호, 사용자 또는 연락처로 전화 걸기"
-      },
-      "answer_incoming_call": {
-        "description": "걸려 오는 전화를 받다"
-      },
-      "decline_incoming_call": {
-        "description": "걸려 오는 전화를 거절하다"
-      },
-      "toggle_dialpad": {
-        "description": "다이얼 패드 전환"
-      },
-      "end_call": {
-        "description": "통화를 종료하거나 회의 통화를 종료합니다 (모든 참가자에게 전화 끊기)."
-      },
-      "toggle_mute_audio": {
-        "description": "음소거 오디오 전환"
-      },
-      "toggle_camera": {
-        "description": "통화 중 비디오 카메라 전환"
-      },
-      "toggle_hold": {
-        "description": "통화 패널에 포커스가있을 때 통화 보류 또는 재개"
-      },
-      "transfer_call": {
-        "description": "포커스가 통화 패널에있을 때 설정된 통화 전송"
-      }
-    }
-  },
-  "app_setup": {
-    "title": "{app_name} 가 설치된 PBX 호스트를 입력하십시오.",
-    "description": "",
-    "fields": {
-      "host": {
-        "placeholder": "당신의-pbx.com"
-      },
-      "auto_launch": {
-        "label": "OS 시작 시 앱 자동 실행"
-      }
-    },
-    "alerts": {
-      "success": "앱이 성공적으로 감지되었습니다.",
-      "error": "제공된 호스트에 {app_name}가 설치되어 있지 않습니다."
-    }
-  }
+		"unknown": "알 수 없는",
+		"updated_at": "업데이트 날짜",
+		"username": "사용자이름",
+		"validation": {
+			"required": "{attribute} 필드는 필수입니다."
+		}
+	},
+	"ice_servers": {
+		"actions": {
+			"add_server": {
+				"label": "보조 서버 추가"
+			},
+			"remove_server": {
+				"label": "보조 서버 제거"
+			}
+		},
+		"alerts": {
+			"error": "구성을 업데이트 할 수 없습니다. 입력 한 데이터를 확인하고 다시 시도하십시오",
+			"success": "설정이 성공적으로 업데이트되었습니다"
+		},
+		"connectivity": {
+			"checking": "연결 확인",
+			"failed": "서버가 작동하지 않습니다",
+			"success": "서버 작동"
+		},
+		"description": "이 구성 ICE 협상에 사용할 서버의 URL을 지정합니다. 일반적으로 STUN 및 / 또는 TURN 서버입니다.\n\n이는 전역 설정이며 두 개의 URL을 지정해야합니다",
+		"fields": {
+			"credential": {
+				"label": "신임장"
+			},
+			"url": {
+				"label": "STUN or TURN URI"
+			},
+			"username": {
+				"label": "사용자 이름"
+			}
+		},
+		"module_name": "ICE 서버",
+		"servers": "서버 | 서버"
+	},
+	"import": {
+		"actions": {
+			"download_template": "가져 오기 형식 다운로드",
+			"remove_file": "파일을 지우다",
+			"replace": "기존 레코드 바꾸기",
+			"skip": "기존 레코드 건너뛰기"
+		},
+		"alerts": {
+			"failed": "가져 오는 동안 오류가 발생했습니다."
+		}
+	},
+	"inboxes": {
+		"contacts": {
+			"phone_number": {
+				"duplicate": "이 전화번호는 다른 연락처에 사용 중입니다."
+			},
+			"title": "저장된 연락처"
+		},
+		"conversations": {
+			"actions": {
+				"accept": {
+					"description": "대화 수락",
+					"label": "수락하다"
+				},
+				"status": {
+					"label": "상태",
+					"open": "열림으로 표시",
+					"resolve": "해결됨으로 표시",
+					"success": {
+						"label": "대화 상태가 변경되었습니다"
+					}
+				},
+				"watch": {
+					"description": "대화 참가자로 추가됩니다.",
+					"label": "대화 보기"
+				}
+			},
+			"assignee": {
+				"agent": "대리인"
+			},
+			"messages": {
+				"location": {
+					"google_map_url": {
+						"label": "Google 지도에서 보기"
+					}
+				},
+				"media": {
+					"not_found": {
+						"label": "미디어 첨부 파일을 사용할 수 없습니다. 예상치 못한 경우 지원팀에 문의하세요."
+					}
+				},
+				"status": {
+					"failed": {
+						"generic_message": "메시지 전송 실패",
+						"label": "실패"
+					}
+				},
+				"whatsapp_templates": {
+					"form_error_message": "보내기 전에 모든 변수를 입력해주세요",
+					"go_back_label": "뒤로 가기",
+					"labels": {
+						"category": "카테고리",
+						"language": "언어",
+						"template_body": "템플릿 본문"
+					},
+					"message": "템플릿 메시지",
+					"no_templates_found": "에 대한 템플릿을 찾을 수 없습니다",
+					"search_placeholder": "템플릿 검색",
+					"selected": {
+						"subtitle": "선택됨 {template}"
+					},
+					"send_message_label": "메시지 보내기",
+					"subtitle": "보내고 싶은 WhatsApp 템플릿을 선택하세요",
+					"title": "WhatsApp 템플릿",
+					"variable_placeholder": "{variable} 값 입력",
+					"variables": {
+						"body": {
+							"label": "몸"
+						},
+						"buttons": {
+							"label": "버튼 | 버튼들",
+							"types": {
+								"copy_code": {
+									"label": "코드 복사"
+								},
+								"phone_number": {
+									"label": "전화번호로 전화하세요"
+								},
+								"quick_reply": {
+									"label": "빠른 답장"
+								},
+								"url": {
+									"label": "URL"
+								}
+							}
+						},
+						"footer": {
+							"label": "바닥글"
+						},
+						"header": {
+							"label": "머리글"
+						},
+						"placeholder": "{variable}의 값을 입력하세요"
+					},
+					"variables_label": "변수"
+				}
+			},
+			"panels": {
+				"contact_information": {
+					"header": {
+						"title": "연락처 정보"
+					}
+				},
+				"conversation_actions": {
+					"assigned_agent": {
+						"alert": "상담원은 받은 편지함과 연결된 그룹에 속해야 합니다.",
+						"assign_to_me": "나에게 할당",
+						"hint": "대화를 할당할 사용자를 클릭합니다.",
+						"label": "배정된 에이전트",
+						"placeholder": "이름, 사용자 이름, 내선 번호 또는 이메일로 검색합니다."
+					},
+					"header": {
+						"title": "대화 작업"
+					},
+					"priority": {
+						"high": "높음",
+						"label": "우선순위",
+						"low": "낮은",
+						"medium": "중간",
+						"none": "아무도",
+						"urgent": "긴급한"
+					}
+				},
+				"conversation_information": {
+					"header": {
+						"title": "대화 정보"
+					},
+					"items": {
+						"channel": "채널",
+						"group": "그룹",
+						"initiated_from": "에서 생성됨",
+						"participants": "{count} 참가자 | 참가자 {count} 명",
+						"status": {
+							"open": {
+								"label": "열기"
+							},
+							"resolved": {
+								"label": "해결"
+							}
+						}
+					}
+				}
+			},
+			"placeholder": {
+				"titles": {
+					"variation_1": "시작하려면 대화를 선택하세요",
+					"variation_2": "대화를 선택하고 대화를 시작하세요.",
+					"variation_3": "의미 있는 연결을 위한 채팅 선택",
+					"variation_4": "고객 참여 유도 – 선택부터 시작",
+					"variation_5": "참여 받은 편지함 – 선택 및 연결"
+				}
+			},
+			"private": {
+				"placeholder": "이 메시지는 상담원 전용입니다.",
+				"send": "비공개 메모 보내기"
+			},
+			"reply": {
+				"characters": "문자",
+				"placeholder": "여기에 메시지를 입력하세요...",
+				"send": "보내기",
+				"whatsapp_reply_alert": "24시간 메시지 창 제한으로 인해 이 대화에는 템플릿 메시지만 사용하여 응답할 수 있습니다.",
+				"words": "가사",
+				"assigned_user_alert": "이 대화는 다른 상담사에게 할당되어 있어 응답할 수 없습니다."
+			},
+			"sort_options": {
+				"created_at_asc": {
+					"text": "생성일: 오래된 순"
+				},
+				"created_at_desc": {
+					"text": "생성일: 최신순"
+				},
+				"last_activity_at_asc": {
+					"text": "마지막 활동: 가장 오래된 것부터"
+				},
+				"last_activity_at_desc": {
+					"text": "마지막 활동: 최신순"
+				},
+				"priority_asc": {
+					"text": "우선순위: 가장 낮은 것부터"
+				},
+				"priority_desc": {
+					"text": "우선순위: 가장 높은 것부터"
+				},
+				"waiting_since_asc": {
+					"text": "대기 중인 응답: 가장 긴 것부터"
+				},
+				"waiting_since_desc": {
+					"text": "보류 중인 응답: 가장 짧은 것부터"
+				}
+			},
+			"tabs": {
+				"private_note": "비공개 메모",
+				"reply": "응답"
+			}
+		},
+		"filters": {
+			"assignee": {
+				"all": "모든",
+				"assigned": "할당된",
+				"mine": "광산",
+				"unassigned": "할당"
+			}
+		},
+		"list": {
+			"all_conversations": "모든 대화",
+			"conversations": "회화 | 대화",
+			"sort": {
+				"label": "대화 정렬"
+			},
+			"unassigned": "할당",
+			"unattended": "무인"
+		},
+		"status": {
+			"label": "상태",
+			"options": {
+				"all": "모든",
+				"open": "열기",
+				"resolved": "해결",
+				"unassigned": "할당",
+				"unattended": "방치된",
+				"unattendedTooltip": "{minutes}분 이상 응답을 기다리는 중"
+			},
+			"tooltips": {
+				"unattended": "{minutes}분 이상 응답을 기다리는 중"
+			}
+		}
+	},
+	"login": {
+		"copyright": "{company} 제공 © {year}. 판권 소유.",
+		"loginButton": "로그인",
+		"loginError": "사용자 이름 또는 비밀번호가 잘못되었습니다",
+		"password_reset": {
+			"change": "비밀번호 변경",
+			"forgot_password": "비밀번호를 잊어 버렸습니까?",
+			"reset": "비밀번호 재설정"
+		},
+		"username_or_email": "아이디 또는 이메일"
+	},
+	"2fa": {
+		"title": "2단계 인증",
+		"code": "2FA 코드를 입력하세요",
+		"verify": "확인",
+		"remember_device": "30일 동안 이 기기를 신뢰합니다",
+		"error": "유효하지 않은 코드 또는 인증 실패"
+	},
+	"mail_settings": {
+		"alerts": {
+			"error": "구성을 업데이트 할 수 없습니다. 입력 한 데이터를 확인하고 다시 시도하십시오",
+			"success": "데이터가 성공적으로 업데이트되었습니다"
+		},
+		"description": "애플리케이션이 이메일을 보낼 수 있도록 메일 서버를 구성하십시오",
+		"fields": {
+			"authentication": {
+				"label": "인증"
+			},
+			"bcc_mail": {
+				"label": "숨은 참조"
+			},
+			"encryption": {
+				"label": "암호"
+			},
+			"from_address": {
+				"label": "발신자"
+			},
+			"from_name": {
+				"label": "발신자 이름"
+			},
+			"host": {
+				"host": "호스트"
+			},
+			"password": {
+				"label": "비밀번호"
+			},
+			"port": {
+				"port": "포트"
+			},
+			"test": {
+				"label": "이메일 발송 테스트"
+			},
+			"type": {
+				"label": "종류",
+				"options": {
+					"default": {
+						"label": "기본 (내장 메일 서버 사용)"
+					},
+					"smtp": "SMTP"
+				}
+			},
+			"username": {
+				"label": "사용자이름"
+			}
+		},
+		"module_name": "메일 설정",
+		"pbx_status": {
+			"checking_connection": "연결 확인",
+			"connected": "연결됨",
+			"disconnected": "연결 해제"
+		},
+		"test": {
+			"alerts": {
+				"failed": "메일을 보낼 수 없습니다",
+				"success": "이메일이 성공적으로 전송되었습니다"
+			}
+		}
+	},
+	"main_menu": {
+		"about": "관하여",
+		"administration": {
+			"groups": "그룹",
+			"menu_name": "관리자",
+			"presence_status": "현재 상태",
+			"sms_provider": "SMS 제공사",
+			"users_manager": "사용자"
+		},
+		"logout": "로그아웃",
+		"settings": "설정"
+	},
+	"misc": {
+		"active": "유효한",
+		"add": "추가",
+		"advanced": "고급",
+		"agents": "에이전트",
+		"all": "모두",
+		"all-tenants": {
+			"label": "모든 테넌트"
+		},
+		"cause": "원인",
+		"copied": "복사됨",
+		"default": "기본",
+		"dial": "다이얼",
+		"error_title": "오류가 발생했습니다",
+		"filter_by_name": "이름으로 필터링",
+		"finish": "종료",
+		"generate": "생성하다",
+		"global": "글로벌",
+		"hello": "안녕하세요, {user_name} 님",
+		"info": "정보",
+		"invalid_value": "잘못된 값",
+		"live_data": "라이브",
+		"main_tenant": "기본 테넌트",
+		"more": "더",
+		"next": "다음",
+		"no_data": "표시 할 데이터 없음",
+		"no_tenant_change": "* 임차인 변경은 불가합니다.",
+		"not_found": "찾을 수 없음",
+		"offline_ready": "오프라인에서 작업할 준비가 된 앱",
+		"order_by": "주문",
+		"paused": "일시 중지",
+		"percentage": "백분율",
+		"preferences": "환경 설정",
+		"pwa": {
+			"actions": {
+				"install": "설치하다",
+				"not_now": "지금은 아니다"
+			},
+			"promote_install": "우리 앱으로 필요한 것을 더 빨리 찾으십시오!"
+		},
+		"realtime": "실시간",
+		"reload": "새로고침",
+		"send-message": "메시지 보내기",
+		"server_connection": {
+			"connection_error": {
+				"suggestion": "관리자에게 문의하세요",
+				"title": "PBX에 연결할 수 없습니다.."
+			}
+		},
+		"text": "텍스트",
+		"try_again": "다시 시도하십시오",
+		"type": "유형",
+		"unsupported_feature": "이 브라우저에서는 이 기능을 지원하지 않습니다.",
+		"update": "새로운 콘텐츠를 사용할 수 있습니다. 새로고침 버튼을 클릭하여 업데이트하세요!",
+		"value": "가치",
+		"welcome": "{app_name}에 오신 것을 환영합니다",
+		"welcome_features_section_title": "{app_name} 과 연결 유지",
+		"yesterday": "어제",
+		"you": "당신"
+	},
+	"no_extension": "확장자 없음",
+	"pbx_settings": {
+		"alerts": {
+			"error": "연결을 설정할 수 없기 때문에 설정이 업데이트되지 않았습니다. 입력 한 데이터를 확인하고 다시 시도하십시오",
+			"success": "데이터가 성공적으로 업데이트되었습니다"
+		},
+		"description": "PBX에 연결할 관련 데이터를 설정합니다. 이 정보는 사용자의 내선, 음성 메일, 통화 내역 등을 등록하는 데 필요합니다",
+		"fields": {
+			"api_port": {
+				"hint": "API에서 사용하는 포트를 나타냅니다.",
+				"label": "API 포트"
+			},
+			"host": {
+				"host": "호스트"
+			},
+			"https_port": {
+				"hint": "VitalPBX HTTPS 포트(브랜딩 모듈에서 자산을 가져오는 데 유용함)",
+				"label": "HTTPS 포트"
+			},
+			"key": {
+				"edit": "애플리케이션 키 편집",
+				"hint": "PBX에서 키를 생성할 수 있습니다: Admin/Admin/Application 키",
+				"key": "키"
+			},
+			"pjsip_port": {
+				"hint": "확장 등록에 사용할 포트 구성",
+				"pjsip_port": "PJSIP 포트"
+			},
+			"wss_port": {
+				"hint": "방화벽이 있는 경우 클라이언트가 연결할 수 있도록 TCP 포트를 허용하는 것을 잊지 마십시오.",
+				"wss_port": "WSS 포트"
+			}
+		},
+		"module_name": "PBX 설정",
+		"pbx_status": {
+			"checking_connection": "연결 확인",
+			"connected": "연결됨",
+			"disconnected": "연결 해제"
+		}
+	},
+	"recordings": {
+		"not_allowed": "이 모듈에 액세스 할 권한이 없습니다",
+		"recording": "녹음 | 녹음"
+	},
+	"right_menu": {
+		"check_updates": "업데이트 확인",
+		"logout": "로그아웃",
+		"reset_app_data": "앱 데이터 재설정",
+		"settings": "설정",
+		"toggle_desktop_app_size": {
+			"desktop": "기본 보기",
+			"mobile": "모바일 보기"
+		},
+		"troubleshooting": "문제 해결"
+	},
+	"settings": {
+		"account": {
+			"account": "계정",
+			"password": {
+				"alerts": {
+					"error": "암호를 변경할 수 없습니다",
+					"no_match_old_password": "비밀번호가 이전 비밀번호와 일치하지 않습니다",
+					"password_error": "비밀번호 확인",
+					"success": "암호가 성공적으로 변경되었습니다"
+				},
+				"change_password": "비밀번호 변경",
+				"fields": {
+					"new_password": {
+						"label": "새 비밀번호",
+						"rules": {
+							"required": "새 비밀번호가 필요합니다"
+						}
+					},
+					"password": {
+						"label": "현재 비밀번호",
+						"rules": {
+							"required": "현재 비밀번호가 필요합니다"
+						}
+					},
+					"password_confirmation": {
+						"password_confirmation": "비밀번호 확인",
+						"rules": {
+							"no_match": "비밀번호가 일치하지 않습니다",
+							"required": "비밀번호 확인이 필요합니다"
+						}
+					}
+				},
+				"set_new_password": "새 비밀번호 설정"
+			},
+			"2fa": {
+				"title": "이중 인증",
+				"enable": "2FA 활성화",
+				"disable": "2FA 비활성화",
+				"remember_device": "이 장치를 30일 동안 신뢰하기",
+				"description": "모바일 인증 앱의 코드를 요구하여 계정에 보안을 추가하세요.",
+				"hint": "인증 앱(예: Google Authenticator 또는 Microsoft Authenticator)으로 QR 코드를 스캔하세요.",
+				"enabled": "이중 인증이 활성화되었습니다.",
+				"disabled": "이중 인증이 비활성화되었습니다.",
+				"warning_not_verified": "이중 인증이 아직 확인되지 않았습니다. 활성화하려면 확인을 완료하세요.",
+				"enter_code": "2FA 코드 입력",
+				"or_enter_key": "또는 이 비밀 키를 수동으로 입력:",
+				"secret_description": "QR 코드를 스캔하는 대신 인증 앱에 이 키를 직접 입력할 수 있습니다.",
+				"secret_copied": "비밀 키가 클립보드에 복사되었습니다.",
+				"verify": "코드 확인",
+				"verified_success": "이중 인증이 성공적으로 확인되었습니다.",
+				"snackbar_verified": "2FA가 이제 완전히 활성화되어 다음 로그인 시 요구됩니다.",
+				"recovery_code_hint": "모바일 기기나 보안 키를 분실한 경우 복구 코드를 생성할 수 있습니다.",
+				"recovery_code_instruction": "복구 코드를 안전하게 보관하세요. 계정에 접근하는 데 도움이 될 수 있습니다.",
+				"generate_recovery_code": "복구 코드 생성",
+				"your_recovery_code": "당신의 복구 코드",
+				"recovery_code_warning": "이 코드를 안전하게 저장하세요. 다시는 표시되지 않습니다.",
+				"copy_code": "코드 복사",
+				"download_code": ".txt로 다운로드",
+				"download_started": "다운로드가 시작되었습니다.",
+				"close": "닫기",
+				"verified_error": "잘못된 코드입니다. 다시 시도하세요.",
+				"error": "2FA 상태를 업데이트하는 중 문제가 발생했습니다."
+			}
+		},
+		"actions": {
+			"save": "저장"
+		},
+		"alert": {
+			"error": "설정을 저장하는 동안 오류가 발생했습니다",
+			"success": "설정이 저장되었습니다"
+		},
+		"application": {
+			"fields": {
+				"auto_launch": {
+					"description": "OS 시작 시 앱 자동 실행",
+					"label": "앱 자동 실행"
+				},
+				"hardware_acceleration": {
+					"label": "GPU 하드웨어 가속 비활성화({app_name}를 다시 시작해야 함)"
+				},
+				"host": {
+					"label": "{app_name}가 설치된 호스트를 입력하십시오.({app_name}를 다시 시작해야 함)",
+					"placeholder": "당신의-pbx.com"
+				},
+				"keep_app_on_close": {
+					"label": "닫을 때 응용 프로그램을 계속 실행하십시오."
+				},
+				"open_as_hidden": {
+					"description": "자동 실행 시 앱을 숨김으로 실행합니다.",
+					"label": "숨겨진 앱으로 열기"
+				}
+			},
+			"tab_name": "애플리케이션"
+		},
+		"audio": {
+			"audio": "음성",
+			"echo_cancellation": {
+				"description": "양방향 오디오 연결에서 에코 효과를 방지하려는 기능",
+				"echo_cancellation": "반향 제거"
+			},
+			"noise_suppression": {
+				"description": "오디오를 자동으로 필터링하여 배경 소음을 제거합니다",
+				"noise_suppression": "소음 억제"
+			},
+			"volume": {
+				"description": "이 구성은 전화 벨소리 및 응용 프로그램의 기타 소리에 적용됩니다.",
+				"label": "미디어 볼륨"
+			}
+		},
+		"call_center": {
+			"auto_open_crm_url": {
+				"call_direction": {
+					"label": "통화 방향",
+					"options": {
+						"all": "모든",
+						"incoming": "들어오는",
+						"outgoing": "나가는"
+					}
+				},
+				"description": "통화가 설정되면 CRM URL이 자동으로 열립니다.",
+				"label": "자동으로 CRM URL 열기"
+			},
+			"auto_open_crm_url_event": {
+				"answer-call": {
+					"label": "응답"
+				},
+				"label": "트리거 이벤트",
+				"ringing": {
+					"label": "링잉"
+				}
+			},
+			"call_center": "콜센터",
+			"crm_url": "CRM URL",
+			"log_into_queues_on_startup": {
+				"description": "응용 프로그램을 시작할 때 할당 된 대기열에 자동으로 로그인",
+				"label": "시작시 대기열에 로그인"
+			},
+			"log_out_from_queues_when_closing_the_app": {
+				"label": "응용 프로그램을 닫을 때 대기열에서 로그 아웃"
+			},
+			"open_crm_url": {
+				"description": "상담원 프로필에 CRM URL이 구성되어 있는 경우 브라우저에서 URL을 여는 방법을 선택합니다.",
+				"label": "다음에서 CRM URL을 엽니다.",
+				"options": {
+					"new_tab": {
+						"label": "새 탭"
+					},
+					"new_window": {
+						"label": "새창",
+						"support_alert": "이 옵션은 브라우저 및 운영 체제 권한의 적용을 받습니다."
+					}
+				}
+			}
+		},
+		"calls": {
+			"auto_answer": {
+				"label": "자동 응답",
+				"modes": {
+					"after": "(1 - 25초) 후 자동 응답",
+					"instant": "즉각적인 자동 응답"
+				},
+				"rules": {
+					"timer": "숫자는 1에서 25 사이여야 합니다."
+				}
+			},
+			"call": "통화",
+			"call_history_limit": {
+				"call_history_limit": "통화 내역 제한",
+				"description": "통화 내역에 표시 할 기록 제한 설정"
+			},
+			"calls": "통화",
+			"ringtone": {
+				"description": "수신 전화에서 재생되는 벨소리",
+				"ringtone": "링 신호"
+			}
+		},
+		"devices": {
+			"audio": "음성",
+			"camera": "카메라",
+			"default": {
+				"camera": "기본 카메라",
+				"microphone": "기본 마이크",
+				"speaker": "시스템 기본 스피커"
+			},
+			"device_placeholder": "장치 선택",
+			"devices": "장치",
+			"devices_selection": {
+				"input_device": {
+					"label": "입력 장치"
+				},
+				"input_speaker": {
+					"label": "입력 스피커"
+				},
+				"output_device": {
+					"label": "출력 장치"
+				},
+				"output_speaker": {
+					"label": "출력 스피커"
+				},
+				"ringing_device": {
+					"label": "울리는 장치"
+				}
+			},
+			"microphone": "마이크",
+			"no_devices_available": "감지 된 장치가 없습니다",
+			"speaker": "스피커"
+		},
+		"general": {
+			"appearance": {
+				"description": "이 설정은 이 브라우저에만 적용됩니다.",
+				"label": "외모",
+				"options": {
+					"dark_theme": "다크 테마",
+					"device_theme": "장치 테마",
+					"light_theme": "밝은 테마"
+				}
+			},
+			"general": "일반",
+			"push_notifications": {
+				"description": "특정 이벤트에 대한 데스크탑 알림 수신",
+				"push_notifications": "데스크탑 알림"
+			},
+			"timezone": {
+				"description": "지역 또는 국가의 현지 시간",
+				"timezone": "시간대"
+			}
+		},
+		"hid_integration": {
+			"permission_request": "헤드셋을 사용하려면 필요한 권한을 부여해야 합니다.",
+			"plantronics": {
+				"label": "Plantronics HID 사용"
+			},
+			"subtitle": "외부 헤드셋/헤드셋 통합",
+			"title": "헤드셋 통합"
+		},
+		"presence": {
+			"additional_information": {
+				"additional_information": "추가 정보",
+				"description": "현재 상태에 대한 추가 메시지",
+				"label": "현재 상태 메시지"
+			},
+			"presence": "상태",
+			"presence_status": {
+				"description": "이용 가능 여부에 따라 주를 선택하십시오",
+				"presence_status": "현재 상태"
+			}
+		},
+		"profile": {
+			"extension": {
+				"extension": "내선번호"
+			},
+			"full_name": {
+				"full_name": "전체 이름"
+			},
+			"profile": "프로파일",
+			"profile_picture": {
+				"actions": {
+					"add": "프로필 사진 추가",
+					"change": "변경",
+					"remove": "제거"
+				},
+				"crop": {
+					"label": "사진 조정",
+					"preview": "미리보기"
+				},
+				"profile_picture": "프로필 사진",
+				"tabs": {
+					"current_picture": "현재 사진",
+					"take_photo": "사진찍기",
+					"upload_photo": "사진 업로드"
+				},
+				"take_photo": {
+					"label": "사진 찍기"
+				},
+				"upload_photo": {
+					"drag": "프로필 사진을 여기로 드래그",
+					"label": "파일을 드롭하거나 클릭하여 업로드",
+					"mobile_label": "업로드하려면 탭하세요",
+					"select": "컴퓨터에서 사진 선택"
+				}
+			},
+			"username": {
+				"username": "사용자이름"
+			}
+		},
+		"settings": "설정",
+		"video": {
+			"frame_rate": {
+				"description": "초당 프레임 수로 프레임 속도를 나타냅니다",
+				"frame_rate": "프레임 속도"
+			},
+			"max_aspect_ratio": {
+				"description": "비디오의 너비와 높이 사이의 비례 관계 설정",
+				"max_aspect_ratio": "최대 종횡비"
+			},
+			"resize_mode": {
+				"description": "비디오 트랙의 해상도 모드를 지정합니다",
+				"options": {
+					"crop_and_scale": "자르기 및 크기 조정",
+					"none": "없음"
+				},
+				"resize_mode": "크기 조정 모드"
+			},
+			"video": "영상"
+		}
+	},
+	"shortcuts": {
+		"calls": {
+			"accept-audio-call": "음성 통화 수락",
+			"accept-video-call": "영상 통화 수락",
+			"decline-call": "전화 거절",
+			"start-audio-call": "음성 통화 시작",
+			"start-video-call": "화상 통화 시작",
+			"toggle-mute": "음소거 전환"
+		},
+		"general": {
+			"shortcuts": "키보드 단축키 표시"
+		},
+		"label": "단축키"
+	},
+	"users": {
+		"all_groups": "모든 그룹",
+		"email": "메일 주소",
+		"extension": "확장",
+		"groups": {
+			"members": "회원 | 회원들"
+		},
+		"has_no_extension": "내선이 없습니다",
+		"name": "이름",
+		"no_users": "사용 가능한 사용자 없음",
+		"options": {
+			"sort_by": {
+				"label": "온라인 사용자별로 정렬"
+			}
+		},
+		"status": {
+			"available": "사용 가능",
+			"in_call": "통화 중",
+			"on_the_phone": "전화로",
+			"ringing": "울리는"
+		},
+		"users": "사용자 | 사용자들"
+	},
+	"voice_messages": {
+		"no_messages": "당신은 새로운 메시지가 없습니다",
+		"not_found": "메시지가 없습니다",
+		"types": {
+			"inbox": "새",
+			"old": "오래",
+			"urgent": "긴급"
+		},
+		"voice_message": "음성 메시지 | 음성 메시지들",
+		"voicemail_count": "음성 메시지가 없습니다. | {count} 개의 음성 메시지가 있습니다. | {count} 개의 음성 메시지가 있습니다"
+	},
+	"wizard": {
+		"actions": {
+			"continue": "계속",
+			"finish": "끝",
+			"next": "다음",
+			"previous": "이전"
+		},
+		"steps": {
+			"database_setup": {
+				"error": "연결할 수 없습니다. 설정을 확인하십시오",
+				"fields": {
+					"password": {
+						"label": "데이터베이스 비밀번호",
+						"placeholder": "비밀번호"
+					},
+					"username": {
+						"label": "데이터베이스 사용자 이름",
+						"placeholder": "Root"
+					}
+				},
+				"info": "애플리케이션 데이터베이스를 설치할 권한이있는 사용자를 입력하십시오",
+				"loading_message": "데이터베이스를 설치하는 중입니다. 잠시 기다려주십시오...",
+				"step_name": "데이터베이스 설정"
+			},
+			"pbx_settings": {
+				"fields": {
+					"host": {
+						"label": "Ghtmxm",
+						"placeholder": "Localhost"
+					},
+					"key": {
+						"hint": "{Company}와 동일한 서버에 설치하는 경우이 필드를 비워 둘 수 있습니다. 키가 자동으로 생성됩니다",
+						"label": "애플리케이션 키",
+						"placeholder": "애플리케이션 키"
+					},
+					"port": {
+						"label": "포트"
+					},
+					"secure": {
+						"hint": "HTTPS를 통한 보안 연결을 나타냅니다. 일반적으로 포트 443을 사용할 때 이 옵션을 선택합니다",
+						"label": "보안"
+					}
+				},
+				"loading_message": "연결을 확인하는 중입니다. 잠시 기다려주십시오 ...",
+				"step_name": "PBX 설정"
+			},
+			"user_setup": {
+				"error": "사용자를 생성 할 수 없습니다 설정을 확인하십시오",
+				"fields": {
+					"name": {
+						"label": "이름",
+						"placeholder": "홍길동"
+					},
+					"password": {
+						"label": "사용자 암호",
+						"placeholder": "비밀번호"
+					},
+					"password_confirmation": {
+						"label": "비밀번호 확인",
+						"placeholder": "비밀번호를 다시 입력하세요"
+					},
+					"timezone": {
+						"label": "시간대"
+					},
+					"username": {
+						"label": "사용자이름",
+						"placeholder": "Admin"
+					}
+				},
+				"loading_message": "만드는 중 ...",
+				"step_name": "사용자 설정"
+			}
+		}
+	}
 }

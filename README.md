@@ -1,14 +1,40 @@
-# vitxi-i18n
 VitXi i18n
 
+This repository contains the localization (i18n) files for the VitXi WebRTC application. Help us translate VitXi into your language!
 
-## How to translate to your language
-- Clone the repo or download the files
-- Download and Install the [i18n Manager tool](https://github.com/gilmarsquinelato/i18n-manager/releases). You can also use the [BabelEdit tool](https://www.codeandweb.com/babeledit), which is a paid application that gives you a trial of 14 days.
-- Open the i18n Manager tool, then open the "locales" folder on it.
+🌐 How to Contribute a Translation
 
-Finally, after opening the folder "locales" using the i18n Manager tool, you will see the different languages for translating.
+Follow these steps to add or improve translations:
 
-After finishing the translations, you can make a pull request or send us your translations by e-mail(support@vitalpbx.com) to apply them in the upcoming versions of the VitXi WebRTC app.
+1. Clone or Download the Repository
 
-If you have any questions, don't hesitate to contact us(support@vitalpbx.com).
+Download the repository as a ZIP file or clone it using Git
+
+2. Choose a Translation Tool
+
+You can use one of the following tools to edit translation files:
+
+[i18n Manager (Free)](https://github.com/gilmarsquinelato/i18n-manager/releases)
+
+[BabelEdit (14-day trial)](https://www.codeandweb.com/babeledit)
+
+3. Open the "locales" Folder
+
+Launch your chosen tool and open the locales folder inside the repository. You’ll see existing translations for various languages. You can:
+
+Edit an existing language file
+
+Add a new language if yours isn't listed
+
+4. Submit Your Translation
+
+Once you're done, choose one of the following methods to submit your work:
+
+Preferred: Create a Pull Request on this repository
+
+Alternative: Email your translated files to support@vitalpbx.com
+
+❓ Need Help?
+
+If you have any questions or run into issues, feel free to reach out to us at support@vitalpbx.com
+. We're happy to help!
